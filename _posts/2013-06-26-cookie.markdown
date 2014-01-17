@@ -1,0 +1,87 @@
+---
+layout: post
+title: Работаем с куками через JavaScript
+keywords: Что такое куки, Что такое cookie, cookie js, cookie javascript, запись cookie в javascript, чтение cookie в javascript
+tags:
+- JavaScript
+---
+
+Практически все крупные сайты используют куки. По сути, куки — это небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя. Для чего они нужны? Куки обычно используют в следующих целях:
+
+<ul>
+<li>Авторизация пользователя;</li>
+<li>Хранения настроек пользователя;</li>
+<li>Ведения статистики о пользователях.</li>
+</ul>
+
+Как правило, реклама отображаемая на сайтах использует ваши куки для определения того, какой контент вам показывать :) Для особых параноиков в настройках браузера всегда можно отключить хранение такой информации.
+
+### Запись
+
+Сейчас поговорим о том, как записывать куки.
+
+Для начала нужно проверить, разрешено ли хранить куки на компьютере пользователя или нет. Это делается следующим образом:
+
+{% highlight javascript %}
+var cookie = navigator.cookieEnabled;
+{% endhighlight %}
+
+Если получаем значение *true*, значит браузер поддерживает куки. Можем действовать!
+
+Хранятся они в виде «имя=значение». Простая функция, которая записывает новую куку:
+
+{% highlight javascript %}
+function setCookie(name, value) {
+    document.cookie = name + "=" + value;
+}
+{% endhighlight %}
+
+Помимо этого у куки еще есть время жизни. Например:
+
+{% highlight javascript %}
+expires=Tue, 1 Jan 2014 01:00:01 GMT
+{% endhighlight %}
+
+Дата истечения куки в формате GMT. Получить нужную дату можно, используя объект Date.
+
+### Чтение
+
+Извлекать будем куку по известному нам имени. Для этого напишем функцию, чуть сложнее предыдущей:
+
+{% highlight javascript %}
+function getCookie(name) {
+        var cookie = " " + document.cookie;
+        var search = " " + name + "=";
+        var setStr = null;
+        var offset = 0;
+        var end = 0;
+        if (cookie.length > 0) {
+            offset = cookie.indexOf(search);
+            if (offset != -1) {
+                offset += search.length;
+                end = cookie.indexOf(";", offset)
+                if (end == -1) {
+                    end = cookie.length;
+                }
+                setStr = unescape(cookie.substring(offset, end));
+            }
+        }
+        return(setStr);
+    }
+{% endhighlight %}
+
+### Использование
+
+{% highlight javascript %}
+setCookie('bizikovru', 'hello');
+{% endhighlight %}
+
+Если посмотреть в консоли <span class="file">document.cookie</span>, то увидим результат bizikovru = hello.
+
+Извлекаем значение куки по ее имени с помощью функции *getCookie*
+
+{% highlight javascript %}
+getCookie('bizikovru');
+{% endhighlight %}
+
+Данный очерк об использовании куки очень поверхностный и не претендует на оригинальность. Инормация для ознакомления.

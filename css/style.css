@@ -1,0 +1,333 @@
+/*
+*    Структура стилей:
+*    1. Общие стили ($common)
+*    2. Повторно используемые ($reuse)
+     3. Шапка ($header)
+*    4. Главная страница ($home)
+     5. Сайдбар ($sidebar)
+*/
+
+/*
+*   Общие стили
+*   $common
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'PT Serif', Arial, serif;
+    font-size: 100%;
+    color: #1a171b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1em 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+ul {
+    margin-top: 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+input {
+    width: 100%;
+    padding: 6px;
+    color: #34495e !important;
+    border: 2px solid #bdc3c7;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+sup {
+    font-size: 10px;
+    padding: 0 .5em;
+    text-transform: lowercase;
+}
+
+pre,
+blockquote {
+    font-size: 14px;
+    color: #222;
+    line-height: 24px;
+    border-radius: 3px;
+    overflow: auto;
+    padding: 20px;
+    margin: 0 0 1em 0;
+    background: #F7F7F7;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+/*
+*   Повторно используемые
+*   $reuse
+*/
+.wrapper {
+    overflow: hidden;
+    margin: 0 2em;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 14px;
+}
+
+section {
+    float: left;
+    width: 62%;
+}
+
+aside {
+    position: relative;
+    float: right;
+    width: 38%;
+}
+
+.red {
+    color: #f00;
+}
+
+.date {
+    font-size: .7em;
+    margin-right: 1em;
+    color: #b2b2b2;
+}
+
+.image-description {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+span.file {
+    font-size: 11px;
+    padding: 2px 4px;
+    border: 1px solid #E1E1E8;
+    background-color: #F7F7F9;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.slider {
+    z-index: 9;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.slider ul {
+    width: 9999px;
+}
+
+.slider ul li {
+    list-style-type: none;
+    float: left;
+}
+
+.slider .nav {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.slider .nav span {
+    display: block;
+    height: 18px;
+    width: 18px;
+    overflow: hidden;
+    opacity: 0.9;
+    cursor: pointer;
+    background: #fff;
+}
+
+/*
+*   Шапка
+*   $header
+*/
+header {
+    width: 100%;
+    overflow: hidden;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+header * {
+    color: #ffffff;
+}
+
+header .area {
+    margin: 0 2em;
+    overflow: hidden;
+}
+
+header .bizikov {
+    width: 62%;
+    float: left;
+    line-height: 26px;
+}
+
+header .navigation {
+    width: 38%;
+    overflow: hidden;
+    float: right;
+}
+
+.navigation ul {
+    padding-left: 0;
+}
+
+.navigation ul li {
+    list-style: none;
+    float: left;
+    padding-right: 1em;
+}
+
+/*
+*   Главная страница
+*/
+.aboutme, .blog-post-list {
+    margin-right: 2em;
+}
+
+.blog-post-list {
+    margin-bottom: 1.2em;
+    padding: 1em;
+    background-color: rgb(250, 250, 243);
+}
+
+.blog-post-list .title {
+    margin-top: 0;
+}
+
+.post-title {
+    margin: 2em 0;
+}
+
+.post-list {
+    padding-left: 0;
+}
+
+.post-list li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+/*
+*   Сайдбар
+*   $sidebar
+*/
+
+.sidebar {
+    padding: 1em 0;
+}
+
+.sidebar .item {
+    list-style: none;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(189, 195, 199, .6);
+}
+
+.sidebar .item .title {
+    margin-top: 0;
+}
+
+.item-list {
+    padding-left: 0;
+}
+
+.item-list li {
+    list-style-type: lower-greek;
+    margin-left: 1em;
+}
+
+#social {
+    opacity: 0;
+}
+
+#social .social-btn {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.films .item-list .description {
+    list-style: none;
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.tags .item-list li {
+    list-style: none;
+    display: inline;
+    padding: 0 2px 2px 0;
+    margin: 0 2px 2px 0;
+}
+
+.tags .item-list a {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+.tags .item-list a:hover {
+    color: rgb(85, 26, 139);
+    text-decoration: underline;
+}
+
+#instagram {
+    overflow: hidden;
+    opacity: 0;
+}
+
+#instagram img {
+    float: left;
+    width: 8%;
+    padding: 0 2% 2% 0;
+    height: auto;
+    opacity: 0.8;
+}
+
+#instagram img:hover {
+    opacity: 1;
+}

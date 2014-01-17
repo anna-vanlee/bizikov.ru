@@ -1,0 +1,17 @@
+{% include header.html %}
+
+<div class="wrapper">
+    <section>
+        <h2>{{ page.title }}</h2>
+        <span class="date">{{ page.date | date_to_string }}</span>
+
+        {{ content }}
+
+    </section>
+    <aside>
+        {% include share.html %}
+    </aside>
+</div>
+
+{% include footer.html %}
+
