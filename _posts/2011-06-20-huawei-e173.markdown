@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Прошивка Huawei E173
-keywords: прошивка модема, прошивка Huawei E173, взлом Huawei E173, Huawei E173, usb модем для всех операторов
 tags:
 - Gadgets
 ---
