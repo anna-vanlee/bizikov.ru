@@ -11,8 +11,8 @@ tags:
 
 *Параметры:*
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
+- HSDPA/UMTS 2100 МГц
+- EDGE/GPRS/GSM 900/1800 Мгц
 - [x] this is a complete item
 - [ ] this is an incomplete item
 
