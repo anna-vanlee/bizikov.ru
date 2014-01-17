@@ -19,7 +19,9 @@ tags:
 
 *Поддержка*
 
-- Windows 2000 SP4, XP SP2, Vista, MacOS 10.4/10.5
+<ul>
+<li>Windows 2000 SP4, XP SP2, Vista, MacOS 10.4/10.5</li>
+</ul>
 
 *Размеры:*
 <ul>
