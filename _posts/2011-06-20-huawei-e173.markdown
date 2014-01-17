@@ -13,12 +13,15 @@ tags:
 
 - HSDPA/UMTS 2100 МГц
 - EDGE/GPRS/GSM 900/1800 Мгц
-- [x] this is a complete item
-- [ ] this is an incomplete item
+- Скорость приёма данных до 7,2 Мбит/с
 
 *Поддержка*
 
+- Windows 2000 SP4, XP SP2, Vista, MacOS 10.4/10.5
+
 *Размеры:*
+
+- 72.15х25х12.2 мм
 
 *Дополнительные функции:*
 
