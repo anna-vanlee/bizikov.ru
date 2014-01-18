@@ -26,21 +26,28 @@
     <![endif]-->
 
     <!-- Add CSS Style -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
     <link rel="stylesheet" href="{{ site.url }}/css/style.css">
 
     <!--Add JavaScript -->
     <script type="text/javascript" src="{{ site.url }}/javascript/jquery.min.js"></script>
     <script type="text/javascript" src="{{ site.url }}/javascript/instafeed.min.js"></script>
     <script type="text/javascript" src="{{ site.url }}/javascript/script.js"></script>
-    <script type="text/javascript" src="https://apis.google.com/js/platform.js">{lang: 'ru', parsetags: 'explicit'}</script>
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js">{
+        lang: 'ru'
+    }</script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 </head>
 <body>
 
 <header id="header">
     <div class="area">
         <div class="bizikov">
-            {% if page.url == "/index.html" %}{{ site.name }}{% else %}<a href="{{ site.url }}">{{ site.name }}</a> &rarr; {{ page.title }}{% endif %}
+            {% if page.url == "/index.html" %}{{ site.name }}{% else %}<a href="{{ site.url }}">{{ site.name
+            }}</a> &rarr; {{ page.title }}{% endif %}
         </div>
         <nav class="navigation">
             <ul>
