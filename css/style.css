@@ -177,6 +177,7 @@ span.file {
     display: block;
     height: 18px;
     width: 18px;
+    margin: 2px;
     overflow: hidden;
     opacity: 0.9;
     cursor: pointer;
