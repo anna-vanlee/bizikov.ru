@@ -14,7 +14,7 @@ function customSearchInGoogle() {
 $(document).ready(function () {
     // Добавляем один из цветов
     var header = document.getElementById('header'),
-        colors = ['000', 'F00', '551A8B'],
+        colors = ['1F1F21', 'FF3A2D', '1D62F0'],
         randomNumber = Math.round(Math.random() * 2),
         randomColor = '#' + colors[randomNumber];
     header.style.backgroundColor = randomColor;

@@ -47,6 +47,14 @@ ul {
     margin-top: 0;
 }
 
+a {
+    color: #1D62F0;
+}
+
+a:hover {
+    color: #FF3A2D;
+}
+
 p {
     margin: 1em 0;
 }
@@ -195,7 +203,8 @@ header {
     font-size: 12px;
 }
 
-header * {
+header *,
+header a:hover {
     color: #ffffff;
 }
 
