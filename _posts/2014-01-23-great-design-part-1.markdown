@@ -34,3 +34,4 @@ tags:
 23. [Ghost-mason](http://ghost-mason.themeartisan.com/)
 24. [Diary notes demos](http://diarynotesdemos.blogspot.ru/)
 25. [Moustachey](http://www.meanthemes.com/theme/moustachey/)
+26. [Basic](http://www.dahndesigns.net/themeforest/wordpress/basic/)
