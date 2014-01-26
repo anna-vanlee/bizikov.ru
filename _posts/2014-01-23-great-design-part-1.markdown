@@ -35,3 +35,11 @@ tags:
 24. [Diary notes demos](http://diarynotesdemos.blogspot.ru/)
 25. [Moustachey](http://www.meanthemes.com/theme/moustachey/)
 26. [Basic](http://www.dahndesigns.net/themeforest/wordpress/basic/)
+27. [Notably](http://demo.wearepixel8.com/notably/)
+28. [Howdy Folks!](http://162.243.230.17/)
+29. [Suave Ghost](http://demo.aestik.com/suave-ghost/def/)
+30. [Origami](http://satoristudio.net/origami/)
+
+Тест вставки музыки
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/45205176&amp;color=ff5500&amp;auto_play=false&amp;show_artwork=true"></iframe>
