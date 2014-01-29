@@ -34,7 +34,10 @@
     <script type="text/javascript" src="{{ site.url }}/javascript/instafeed.min.js"></script>
     <script type="text/javascript" src="{{ site.url }}/javascript/script.js"></script>
     <script type="text/javascript" src="https://apis.google.com/js/platform.js">{lang: 'ru', parsetags: 'explicit'}</script>
-    {% if page.layout == "post" %}<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
+    {% if page.layout == "post" %}
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="{{ site.url }}/javascript/tweet.js"></script>
+    {% endif %}
     {% if page.url == "/statistics/index.html" %} <script type="text/javascript" src="{{ site.url }}/javascript/statistics.js"></script> {% endif %}
 </head>
 <body>
