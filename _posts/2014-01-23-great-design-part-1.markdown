@@ -39,3 +39,7 @@ tags:
 28. [Howdy Folks!](http://162.243.230.17/)
 29. [Suave Ghost](http://demo.aestik.com/suave-ghost/def/)
 30. [Origami](http://satoristudio.net/origami/)
+31. [Russ Maschmeyer](http://www.strangenative.com/)
+32. [Tim Van Damme](http://maxvoltar.com/)
+33. [Valient](http://demo.authenticthemes.com/valient/)
+34. [Dimple!](http://demo.visualkicks.com/dimple/minimal/)

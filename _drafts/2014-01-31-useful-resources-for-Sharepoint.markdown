@@ -13,13 +13,11 @@ tags:
 
 В этих блогах так много статей на все случаи жизни, поэтому я не стал выписывать какие то конкретные ссылки на уроки, а просто укажу ссылку на блог.
 
-#### [Benjamin Niaulin](http://bniaulin.wordpress.com/)
-
-#### [Randy Drisgill](http://blog.drisgill.com/)
-
-#### [Learning SharePoint](http://www.learningsharepoint.com/)
-
-#### [SharePoint 2013](http://sp2013.blogspot.ru/)
+- [Benjamin Niaulin](http://bniaulin.wordpress.com/)
+- [Randy Drisgill](http://blog.drisgill.com/)
+- [Learning SharePoint](http://www.learningsharepoint.com/)
+- [SharePoint 2013](http://sp2013.blogspot.ru/)
+- [Erik Swenson](http://erikswenson.blogspot.ru/)
 
 ### Видео
 
