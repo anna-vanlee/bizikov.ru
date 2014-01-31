@@ -1,0 +1,43 @@
+---
+layout: post
+title: Полезные ресурсы по Sharepoint
+tags:
+- Sharepoint
+---
+
+Так вышло, что я работаю с Sharepoint по части дизайна. Поэтому нужно было браться и изучать. Материалов на русском языке крайне мало, из знакомых кто работает с Sharepoint никто не занимался брендингом (так называется процесс создания собственного дизайна для Sharepoint).
+
+На этой странице буду собирать ссылки на разлинчные доклады, тренинги и туториалы по брендингу в Sharepoint.
+
+### Тематические блоги
+
+В этих блогах так много статей на все случаи жизни, поэтому я не стал выписывать какие то конкретные ссылки на уроки, а просто укажу ссылку на блог.
+
+#### [Benjamin Niaulin](http://bniaulin.wordpress.com/)
+
+#### [Randy Drisgill](http://blog.drisgill.com/)
+
+#### [Learning SharePoint](http://www.learningsharepoint.com/)
+
+#### [SharePoint 2013](http://sp2013.blogspot.ru/)
+
+### Видео
+
+Видео с различных конференций, лекций и просто курсы посвященные как основам Sharepoint, так и его брендингу.
+
+### SharePoint Branding & Design
+
+Курс по брендингу Sharepoint от Эрика Свонсона состоит из 7 частей. В них он рассказывает о том, как сделать свой макет главной страницы..
+
+1. [SharePoint 2013 UI Overview](http://www.youtube.com/watch?v=NtebTdxSftQ)
+2. [Design Manager Overview](http://www.youtube.com/watch?v=kItYpLwK0bM)
+3. [Device Channels](http://www.youtube.com/watch?v=9Ul8YanNBAY)
+4. [HTML Master Page](http://www.youtube.com/watch?v=Y9MmWVOVDlU)
+5. [HTML Page Layout](http://www.youtube.com/watch?v=nhzTHGkghDw)
+6. [SharePoint 2013 ComposedLooks](http://www.youtube.com/watch?v=Ob6EjMeUCgw)
+7. [Managed Metadata Navigation](http://www.youtube.com/watch?v=xOuWOAjeJr8)
+
+### Книги
+
+По брендингу Sharepoint 2013 не так уж и много книг, а книг на русском языке вообщем нет. Единственная книга, которая поможет вам разобраться в создании отличного внешнего вида вашего портала на Sharepoint - это [SharePoint 2013 Branding and User Interface Design](http://it-ebooks.info/book/3049/).
+
