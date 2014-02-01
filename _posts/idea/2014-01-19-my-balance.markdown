@@ -3,7 +3,6 @@ layout: post
 title: Мой баланс
 category: idea
 tags:
-- Utility
 - Application
 - iOS
 ---

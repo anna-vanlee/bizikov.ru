@@ -1,0 +1,41 @@
+/* Стильи для оформления записей */
+
+.image-description {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+.full {
+    width: 860px;
+    margin-left: -80px;
+}
+
+.align-right {
+    float: right;
+}
+
+.align-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.quote {
+    text-align: center;
+    font-size: 26px;
+}
+
+.quote-author {
+    text-align: right;
+}
+
+span.file {
+    font-size: 11px;
+    padding: 2px 4px;
+    border: 1px solid #E1E1E8;
+    background-color: #F7F7F9;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}

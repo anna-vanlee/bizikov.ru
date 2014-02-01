@@ -1,0 +1,17 @@
+{% include header.html %}
+
+<div class="wrapper">
+    {% for post in paginator.posts %}
+    <article>
+        {% include cover.html %}
+        <div class="content">
+            <time class="date" datetime="{{ post.date | date_to_xmlschema }}"  pubdate>{{ post.date | date:"%d/%m/%Y" }}</time>
+            <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            {{ post.content }}
+        </div>
+    </article>
+    {% endfor %}
+    <div class="note">Для перемещения по страницам используй <b>&larr;</b> и <b>&rarr;</b></div>
+</div>
+
+{% include footer.html %}

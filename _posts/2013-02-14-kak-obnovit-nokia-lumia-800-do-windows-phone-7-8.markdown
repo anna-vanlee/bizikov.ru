@@ -3,7 +3,7 @@ layout: post
 title: Как обновить NOKIA Lumia 800 до Windows Phone 7.8
 keywords: Lumia 800, Lumia 710, Lumia 610, обновить до 7.8, обновить люмию, обновить до 7.8, обновить Nokia Lumia
 tags:
-- Lumia
+- Nokia
 - Gadgets
 ---
 

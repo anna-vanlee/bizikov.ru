@@ -1,0 +1,35 @@
+body {
+    color: #1a171b;
+    background-color: #ecf0f1;
+}
+
+a {
+    color: #1D62F0;
+}
+
+a:hover {
+    color: #FC6341;
+}
+
+blockquote {
+    border-left: 10px solid #E0F8D8;
+    color: #838689;
+}
+
+article .date {
+    color: #1a171b;
+    background: #E0F8D8;
+}
+
+#social {
+    background-color: #E0F8D8;
+}
+
+.footer-nav-lev a {
+    color: #000;
+    border-right: 1px solid #7f8c8d;
+}
+
+.footer-nav-lev a:hover {
+    color: #FC6341;
+}

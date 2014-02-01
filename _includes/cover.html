@@ -1,0 +1,6 @@
+{% if post.cover %}
+    <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/{{ post.cover }}" alt="{{ post.title }}"/></a>
+{% elsif page.cover %}
+    <a href="{{ page.url }}" title="{{ page.title }}"><img src="{{ site.url }}/{{ page.cover }}" alt="{{ page.title }}"/></a>
+{% endif %}
+

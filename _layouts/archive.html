@@ -1,8 +1,12 @@
 {% include header.html %}
 
 <div class="wrapper">
-    <section>
-        {% include search.html %}
+    <article>
+        <div class="content">
+        <h5>Интересует что-то конкретное?</h5>
+        <form onsubmit="customSearchInGoogle(); return false;">
+            <input type="search" id="searchInGoogle" class="search" placeholder="Поиск">
+        </form>
 
         {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
         {% capture num_words %}
@@ -11,7 +15,7 @@
         {% assign tag_words = site_tags | split:',' | sort %}
 
         <div class="tags">
-            <h3 class="title post-title">Тэги</h3>
+            <h5>Тэги</h5>
             <ul class="item-list">
                 {% for item in (0..num_words) %}{% unless forloop.last %}
                 {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
@@ -21,16 +25,16 @@
 
             {% for item in (0..num_words) %}{% unless forloop.last %}
             {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-            <h3 id="{{ this_word | cgi_escape }}" class="title post-title" >{{ this_word }}</h3>
-            <ul class="post-list">
+            <h5 id="{{ this_word | cgi_escape }}" >{{ this_word }}</h5>
+            <ol class="post-list">
                 {% for post in site.tags[this_word] %}{% if post.title != null %}
-                <li itemscope><time class="date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date:"%d.%m.%Y" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li itemscope><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endif %}{% endfor %}
-            </ul>
+            </ol>
             {% endunless %}{% endfor %}
         </div>
-
-    </section>
+        </div>
+    </article>
 </div>
 
 {% include footer.html %}

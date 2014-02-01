@@ -4,85 +4,84 @@ title: Резюме
 keywords: Бизиков Александр, разработчик, frontend, резюме
 description: Резюме Александра Бизикова
 ---
-<h3 class="title">Специализация</h3>
-<p>Frontend разработка</p>
+### Специализация
 
-<h3 class="title">Языки веб разметки</h3>
+Frontend разработка
+
+### Языки веб разметки
+
+- HTML5
+- CSS3
+- JavaScript
+- LESS
+
+### Фреймворки
+
+- Less Framework 4
+- 960.gs
+- Bootstrap
+
+### Инструменты
+
+- IntelliJ IDEA
+- Adobe Photoshop
+- Xcode
+
+###Операционные системы
+
+- Mac OS
+- Windows
+
+### Профессиональный опыт
 <ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript</li>
-    <li>LESS</li>
-</ul>
-
-<h3 class="title">Фреймворки</h3>
-<ul>
-    <li>Less Framework 4</li>
-    <li>960.gs</li>
-    <li>Bootstrap</li>
-</ul>
-
-<h3 class="title">Инструменты</h3>
-<ul>
-    <li>IntelliJ IDEA</li>
-    <li>Adobe Photoshop</li>
-</ul>
-
-<h3 class="title">Операционные системы</h3>
-<ul>
-    <li>Mac OS</li>
-    <li>Windows</li>
-</ul>
-
-<h3 class="title">Профессиональный опыт</h3>
-<ul class="posts">
-    <li><p class="date">Сентябрь 2012 &mdash; текущее время</p>
+    <li><p>Сентябрь 2012 &mdash; текущее время</p>
         &laquo;Разработчик програмного обеспечения&raquo; в <a href="http://wwww.i-sys.ru" target="_blank">i-Sys</a>
     </li>
 
-    <li><p class="date">Ноябрь 2011 &mdash; август 2012</p>
+    <li><p>Ноябрь 2011 &mdash; август 2012</p>
         Фриланс. Создание сайтов, консультирование по продвижению в социальных сетях
     </li>
 
-    <li><p class="date">Август 2010 &mdash; Ноябрь 2011</p>
+    <li><p>Август 2010 &mdash; Ноябрь 2011</p>
         Подкаст <a href="http://twitter.podfm.ru" target="_blank">Twitterомания</a> для podfm.ru.
         Контракт с ежедневный аудиожурналом PodFM.ru на выпуск аудиопередачи о сервисе микроблогов Twitter
     </li>
 
-    <li><p class="date">Ноябрь 2010 &mdash; август 2011</p>
+    <li><p>Ноябрь 2010 &mdash; август 2011</p>
         PR в <a href="http://w1.ru" target="_blank">W1.ru</a>. Создание обучающих видео уроков для системы
         платежей &laquo;Единый кошелек&raquo;, написание новостей и обзорных статей.
     </li>
 
 </ul>
 
-<h3 class="title">Образование</h3>
-<ul class="posts">
-    <li><p class="date">2009 &mdash; текущее время</p>
+<h3>Образование</h3>
+<ul>
+    <li><p>2009 &mdash; текущее время</p>
         Оренбургский Государственный Университет, Математический факультет, специальность &laquo;Математика&raquo;.
     </li>
 </ul>
 
-<h3 class="title">Профессиональные навыки, умения, компетенции</h3>
-<ul class="posts">
-
-    <li><p class="date">Июнь 2012</p>
+<h3>Профессиональные навыки, умения, компетенции</h3>
+<ul>
+    <li><p>Июнь 2012</p>
         Успешно прошел тренинг для IT-предпринимателей Harvest
     </li>
-    <li><p class="date">Июнь 2012</p>
+    <li><p>Июнь 2012</p>
         Успешно прошел обучение по программе &laquo;Start in Garage&raquo; для интернет проектов
     </li>
-    <li><p class="date">Ноябрь 2011</p>
+    <li><p>Ноябрь 2011</p>
         Награжден званием &laquo;Герой нашего времени&raquo; главой администрации города Оренбурга Араповым Е.С.
     </li>
-    <li><p class="date">Июль 2011</p>
+    <li><p>Июль 2011</p>
         Участие в формуме &laquo;Селигер&raquo; в качестве лектора. Преподавал по дисциплине &laquo;Микроблоги
         Twitter&raquo;</li>
-    <li><p class="date">2011 год</p>
+    <li><p>2011 год</p>
         Награжден званием &laquo;Лучший судья блогов&raquo; в командной игре &laquo;ТРИНЖИНН 3.0 Сарматский
         олень&raquo;</li>
-    <li><p class="date">2011 год</p>
+    <li><p>2011 год</p>
         Звание &laquo;Открытие года&raquo; во всероссийском конкурсе &laquo;Золотой подкаст - лучшие голоса
         рунета&raquo;.
     </li>
 </ul>
+
+<p class="note">Последнее обновление 2 февраля 2014.</p>
