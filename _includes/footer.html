@@ -24,7 +24,7 @@
         <a href="{{ site.url }}/book">Книги</a>
     </div>
     <div class="footer-nav-lev">
-        {% for tag in site.tags %}<a href="{{ site.url }}/blog/#{{ tag | first }}">{{ tag | first }}</a>{% endfor %}
+        {% for tag in site.tags %}<a href="{{ site.url }}/archive/#{{ tag | first }}">{{ tag | first }}</a>{% endfor %}
     </div>
     <div class="footer-nav-lev copy">
         &copy; 2009-2014. {{ site.name }}. Сайт работает на <a href="http://jekyllrb.com/" title="Jekyll"
