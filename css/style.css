@@ -133,6 +133,7 @@ article .date {
 /* Комментарии на странице записи*/
 
 .comments {
+    min-height: 300px;
     padding: 20px 80px;
 }
 
