@@ -32,7 +32,7 @@ tags:
 
 #### SharePoint Branding & Design
 
-Курс по брендингу Sharepoint от Эрика Свонсона состоит из 7 частей. В них он рассказывает о том, как сделать свой макет главной страницы..
+Курс по брендингу Sharepoint от Эрика Свонсона состоит из 7 частей. В них он рассказывает о том, как сделать свой макет главной страницы...
 
 1. [SharePoint 2013 UI Overview](http://www.youtube.com/watch?v=NtebTdxSftQ)
 2. [Design Manager Overview](http://www.youtube.com/watch?v=kItYpLwK0bM)
