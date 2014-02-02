@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Установка и настройка Git
-keywords: GIT
+keywords: GIT, как настроить Git, как установить Git
 tags:
 - Code
 ---
