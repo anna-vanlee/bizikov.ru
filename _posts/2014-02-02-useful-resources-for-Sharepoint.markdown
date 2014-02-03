@@ -26,9 +26,26 @@ tags:
 - [SharePoint 2013](http://sp2013.blogspot.ru/)
 - [Erik Swenson](http://erikswenson.blogspot.ru/)
 
+### Статьи
+
+- [Branding SharePoint Search Center to Bing Look & Feel](http://www.nullskull.com/a/1384/branding-sharepoint-search-center-to-bing-look--feel.aspx)
+- [Real World Branding with SharePoint Server 2007 Publishing Sites (Part 1 of 2)](http://msdn.microsoft.com/en-us/library/ee354191.aspx)
+- [Real-World Branding with SharePoint Server 2007 Publishing Sites (Part 2 of 2)](http://msdn.microsoft.com/en-us/library/ee354190.aspx)
+- [Customizing and branding the wiki pages for a SharePoint 2010 Team Site](http://mosshowto.blogspot.ru/2010/06/sharepoint-2010-wiki-customizing.html)
+- []()
+
 ### Видео
 
 Видео с различных конференций, лекций и просто курсы посвященные как основам Sharepoint, так и его брендингу.
+
+- [Улучшения пользовательского интерфейса](http://www.techdays.ru/videos/2282.html)
+- [Брендинг Sharepoint 2010, автор Илья Бойко](http://www.techdays.ru/videos/2763.html)
+
+### Intuit.ru: Sharepoint для Web
+
+Обучающее видео по основам Sharepoint доступен на [YouTube](http://www.youtube.com/watch?v=gdanJpm2l24&list=PLDrmKwRSNx7JcOc2Cv6FKDoq1GroAd333)
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/gdanJpm2l24?list=PLDrmKwRSNx7JcOc2Cv6FKDoq1GroAd333" frameborder="0" allowfullscreen></iframe>
 
 #### SharePoint Branding & Design
 
