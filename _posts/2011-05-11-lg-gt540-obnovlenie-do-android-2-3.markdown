@@ -15,9 +15,7 @@ tags:
 
 Уверен что хочешь себе поставить android 2.3? Вот пару скринов системы:
 
-<img src="{{ site.url }}/upload/article/2011/05/11/screen_00.jpg" class="center"/>
-
-<img src="{{ site.url }}/upload/article/2011/05/11/screen_01.jpg" class="center"/>
+<img src="{{ site.url }}/upload/article/2011/05/11/screen_00.jpg" class="center"/> | <img src="{{ site.url }}/upload/article/2011/05/11/screen_01.jpg" class="center"/>
 
 Если решил прошить телефон, то советую в первую очередь сохранить все контакты, вытащить симку и карту памяти.
 

@@ -1,6 +1,7 @@
 /* Общие стили */
 @import "color.css";
 @import "post-style.css";
+@import "syntax.css";
 
 html, body {
     margin: 0;
@@ -68,18 +69,10 @@ sup {
 }
 
 pre {
-    font-size: 14px;
-    color: #222;
-    line-height: 24px;
     border-radius: 3px;
-    overflow: auto;
     padding: 20px;
     margin: 0 0 1em 0;
-    background: #F7F7F7;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-
+    background-color: #ECF0F1;
 }
 
 blockquote {
@@ -89,6 +82,28 @@ blockquote {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table thead tr {
+    text-align: left;
+}
+
+table tr > th {
+    padding: 8px;
+    vertical-align: bottom;
+}
+
+table tr > td {
+    padding: 8px;
+    vertical-align: top;
+    border-top: 1px solid #DDD;
 }
 
 /* Повторно используемые */

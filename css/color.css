@@ -1,6 +1,6 @@
 body {
     color: #1a171b;
-    background-color: #ecf0f1;
+    background-color: #ECF0F1;
 }
 
 a {
@@ -15,7 +15,17 @@ blockquote {
     border-left: 10px solid #E0F8D8;
     color: #838689;
 }
+table thead tr{
+    border: 1px solid #ECF0F1;
+    border-bottom-width: 3px;
 
+}
+table thead tr th{
+    border: 1px solid #ECF0F1;
+}
+table tr > td{
+    border: 1px solid #ECF0F1;
+}
 article .date {
     color: #1a171b;
     background: #E0F8D8;
