@@ -13,3 +13,6 @@ tags:
 2. [Obaby](http://www.obabyapp.com/)
 3. [Your Karma](https://yourkarma.com/)
 4. [Benumo](http://benumo.com/)
+5. [Retr](http://retr.io/)
+6. [Directions](http://getdirections.es/)
+7. [Fubiz](http://tablet.fubiz.net/)
