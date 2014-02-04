@@ -43,4 +43,4 @@ tags:
 32. [Tim Van Damme](http://maxvoltar.com/)
 33. [Valient](http://demo.authenticthemes.com/valient/)
 34. [Dimple!](http://demo.visualkicks.com/dimple/minimal/)
-35.  [BRONERD](http://bronerd.com/)
+35. [BRONERD](http://bronerd.com/)
