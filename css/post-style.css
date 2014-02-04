@@ -31,10 +31,10 @@
 }
 
 span.file {
-    font-size: 11px;
+    font-size: 1em;
     padding: 2px 4px;
-    border: 1px solid #E1E1E8;
-    background-color: #F7F7F9;
+    border: 1px solid #D5E0D9;
+    background-color: #ECF0F1;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;

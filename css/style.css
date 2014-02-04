@@ -111,7 +111,7 @@ table tr > td {
 .wrapper {
     width: 900px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
     overflow: hidden;
     box-sizing: border-box;
 }
