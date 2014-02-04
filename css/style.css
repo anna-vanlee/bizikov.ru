@@ -109,8 +109,9 @@ table tr > td {
 /* Повторно используемые */
 
 .wrapper {
-    width: 860px;
+    width: 900px;
     margin: 0 auto;
+    padding: 0 30px;
     overflow: hidden;
     box-sizing: border-box;
 }
