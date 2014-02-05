@@ -126,12 +126,14 @@ article {
     background-color: #FFF;
 }
 
-article > a img{
+article > a img {
     opacity: 1;
 }
-article > a img:hover{
+
+article > a img:hover {
     opacity: 0.8;
 }
+
 article .content {
     position: relative;
     padding: 40px 80px;
@@ -143,6 +145,10 @@ article .date {
     font-size: .7em;
     margin-top: 2em;
     padding: 10px 8px;
+}
+
+article .why {
+    padding: 1em;
 }
 
 .note {
@@ -163,7 +169,7 @@ article .date {
 
 header {
     overflow: hidden;
-    margin: 1em 0;
+    margin-top: 1em;
 }
 
 .logo {
@@ -177,10 +183,13 @@ header {
 .navigation {
     float: right;
     overflow: hidden;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .navigation ul {
+    overflow: hidden;
+    font-size: 12px;
+    text-transform: uppercase;
     padding-left: 0;
 }
 
@@ -190,10 +199,16 @@ header {
     padding-right: 1em;
 }
 
+.navigation ul li a{
+    text-decoration: none;
+}
 .navigation ul li:last-child {
     padding-right: 0;
 }
-
+.navigation .rss{
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+}
 /* Заголовок записи */
 
 .post-title {

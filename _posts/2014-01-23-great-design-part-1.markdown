@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Примеры персональных сайтов для вдохновения
+why: Собрать коллекцию из персональных сайтов и блогов.
 keywords: примервы персональных сайтов, лучше персональные сайты, подборка персональных сайтов
 tags:
 - Design
@@ -44,3 +45,5 @@ tags:
 33. [Valient](http://demo.authenticthemes.com/valient/)
 34. [Dimple!](http://demo.visualkicks.com/dimple/minimal/)
 35. [BRONERD](http://bronerd.com/)
+
+P.S Список постоянно пополняется.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Полезные ресурсы по Sharepoint
+why: Собрать полезные материалы по брендингу Sharepoint в одном месте.
 keywords: Брендинг Sharepoint, как верстать под Sharepoint, Что такое Sharepoint, книга по Sharepoint
 excerpt: На этой странице буду собирать ссылки на различные статьи, видео с конференций, тренинги и туториалы по брендингу Sharepoint
 tags:
