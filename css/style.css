@@ -127,10 +127,10 @@ article {
 }
 
 article > a img{
-    opacity: 0.8;
+    opacity: 1;
 }
 article > a img:hover{
-    opacity: 1;
+    opacity: 0.8;
 }
 article .content {
     position: relative;
