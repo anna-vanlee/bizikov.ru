@@ -126,6 +126,12 @@ article {
     background-color: #FFF;
 }
 
+article > a img{
+    opacity: 0.8;
+}
+article > a img:hover{
+    opacity: 1;
+}
 article .content {
     position: relative;
     padding: 40px 80px;
