@@ -7,36 +7,30 @@
     <![endif]-->
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
-
     <!--Meta SEO -->
     <meta name="Keywords" content="{{ page.keywords }}">
     <meta name="Description" content="{{ page.excerpt }}">
-
     <!-- Open Graph -->
     <meta property="og:title" content="{{ page.title }}"/>
     <meta property="og:url" content="{{ site.url }}{{ page.url}}"/>
-
     <!-- Title -->
     <title>{{ page.title }}</title>
-
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.url }}/feed/">
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
-
     <!-- Add CSS Style -->
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ site.url }}/css/style.css">
-
     <!-- Pagination link -->
     {% include pagination-link.html %}
-
-    <!--Add JavaScript -->
+    <!-- Add JavaScript -->
     <script type="text/javascript" src="{{ site.url }}/javascript/search.js"></script>
     <script type="text/javascript" src="{{ site.url }}/javascript/navigate.js"></script>
     {% if page.layout == "post" %}
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="{{ site.url }}/javascript/tweet.js"></script>
     {% endif %}
-    {% if page.url == "/statistics/index.html" %} <script type="text/javascript" src="{{ site.url }}/javascript/statistics.js"></script> {% endif %}
 </head>
 <body>
 
