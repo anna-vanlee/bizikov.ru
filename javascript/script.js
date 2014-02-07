@@ -1,6 +1,16 @@
+// Поиск по сайту
+function customSearchInGoogle() {
+    var input = document.getElementById('searchInGoogle');
+    if (input.value !== '') {
+        window.open("http://google.com/search?q=" + "site:bizikov.ru%20" + input.value)
+    } else {
+        input.placeholder = "Для поиска введи запрос";
+        return false;
+    }
+}
+
+// Навигация клавишами
 document.onkeydown = NavigateThrough;
-
-
 function NavigateThrough(event) {
     var link;
     switch (event.keyCode ? event.keyCode : event.which ? event.which : null) {
