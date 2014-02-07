@@ -35,7 +35,5 @@ span.file {
     padding: 2px 4px;
     border: 1px solid #D5E0D9;
     background-color: #ECF0F1;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
 }
