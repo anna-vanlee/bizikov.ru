@@ -1,3 +1,12 @@
+// Плавно показываем сайт
+var body = document.body.style.opacity;
+body = 0;
+window.onload = function () {
+    for (var i = 1; i < 10; i++) {
+        body = i/10;
+    }
+}
+
 // Поиск по сайту
 function customSearchInGoogle() {
     var input = document.getElementById('searchInGoogle');
