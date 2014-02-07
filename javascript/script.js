@@ -1,6 +1,6 @@
 // Плавно показываем сайт
-var body = document.body.style.opacity;
 window.onload = function () {
+    var body = document.body.style.opacity;
     for (var i = 1; i < 10; i++) {
         body = i/10;
     }
