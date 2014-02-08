@@ -1,0 +1,75 @@
+// COLOR
+@alpha: #ECF0F1;
+@beta: #1a171b;
+@gamma: #1D62F0;
+@delta: #FC6341;
+@epsilon: #E0F8D8;
+
+// STYLE
+body {
+  color: @beta;
+  background-color: @alpha;
+}
+
+a {
+  color: @gamma;
+  &:hover {
+    color: @delta;
+  }
+}
+
+blockquote {
+  border-left: 10px solid @epsilon;
+  color: @beta;
+}
+
+table {
+  thead {
+    tr {
+      border: 1px solid @alpha;
+      border-bottom-width: 3px;
+      th {
+        border: 1px solid @alpha;
+      }
+      &>td {
+        border: 1px solid @alpha;
+      }
+    }
+  }
+}
+
+article {
+  .date {
+    color: @beta;
+    background: @epsilon;
+  }
+  .why {
+    background-color: @epsilon;
+
+  }
+}
+
+#searchEngine {
+  border: 1px dotted @beta;
+}
+
+#social {
+  background-color: @epsilon;
+}
+
+.navigation {
+  .rss {
+    color: @delta;
+    border: 1px solid @delta;
+  }
+}
+
+.footer-nav-lev {
+  a {
+    color: #000;
+    border-right: 1px solid darken(@alpha, 30%);
+    &:hover {
+      color: @delta;
+    }
+  }
+}
