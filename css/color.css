@@ -41,10 +41,12 @@ article .why {
 #social {
     background-color: #E0F8D8;
 }
-.navigation .rss{
+
+.navigation .rss {
     color: #FC6341;
     border: 1px solid #FC6341;
 }
+
 .footer-nav-lev a {
     color: #000;
     border-right: 1px solid #7f8c8d;
