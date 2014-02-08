@@ -37,6 +37,9 @@ article .date {
 article .why {
     background-color: #E0F8D8;
 }
+#searchEngine{
+    border: 1px dotted #000;
+}
 
 #social {
     background-color: #E0F8D8;

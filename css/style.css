@@ -154,7 +154,19 @@ article ol li img{
     font-style: italic;
     margin-bottom: 1em;
 }
-
+.searchSelect{
+    font-size: 12px;
+    font-style: italic;
+}
+#searchEngine{
+    font-family: 'PT Serif', Arial, serif;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
 /* Комментарии на странице записи*/
 
 .comments {
