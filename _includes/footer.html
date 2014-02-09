@@ -13,10 +13,9 @@
 </footer>
 
 <script type="text/javascript" src="{{ site.url }}/javascript/script.js"></script>
-{% if page.layout == "post" %}
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/javascript" src="{{ site.url }}/javascript/tweet.js"></script>
-{% endif %}
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+{% if page.layout == "post" %}<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="{{ site.url }}/javascript/tweet.js"></script>{% endif %}
 {% include metrika.html %}
 </body>
 </html>
