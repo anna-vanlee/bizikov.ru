@@ -45,5 +45,6 @@ tags:
 33. [Valient](http://demo.authenticthemes.com/valient/)
 34. [Dimple!](http://demo.visualkicks.com/dimple/minimal/)
 35. [BRONERD](http://bronerd.com/)
+36. [Brad Hogan](http://www.bradhogan.me/)
 
 P.S Список постоянно пополняется.
