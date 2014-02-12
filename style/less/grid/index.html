@@ -5,19 +5,60 @@
     <title>Сетка</title>
     <link rel="stylesheet" href="grid.css"/>
     <style>
-        div {
-            outline: 1px solid #000;
+        .module{
+            padding: 1em;
+            background-color: #e9e9e9;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Пример сетки</h1>
+    <!-- Сетка 1 -->
+    <div class="cell-1-1"><div class="alpha module beta">1</div></div>
+    <div class="clear"></div>
 
-    <div class="cell-1-2">1</div>
-    <div class="cell-2-3">2</div>
+    <!-- Сетка 1 1-->
+    <div class="cell-1-2"><div class="alpha module">1/2</div></div>
+    <div class="cell-1-2"><div class="beta module">1/2</div></div>
+    <div class="clear"></div>
+
+    <!-- Сетка 2 и 1-->
+    <div class="cell-2-3"><div class="alpha module">2/3</div></div>
+    <div class="cell-1-3"><div class="beta module">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</div></div>
+    <div class="clear"></div>
+
+    <!--Сетка 1 и 2-->
+    <div class="cell-1-3"><div class="alpha module">1/3</div></div>
+    <div class="cell-2-3"><div class="beta module">2/3</div></div>
+    <div class="clear"></div>
+
+    <!--Сетка 1 2 1-->
+    <div class="cell-1-4"><div class="alpha module">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div></div>
+    <div class="cell-1-2"><div class="module">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div></div>
+    <div class="cell-1-4"><div class="beta module">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</div></div>
+    <div class="clear"></div>
+
+    <!-- Сетка 1 1 1-->
+    <div class="cell-1-3"><div class="alpha module">1/3</div></div>
+    <div class="cell-1-3"><div class="module">1/3</div></div>
+    <div class="cell-1-3"><div class="beta module">1/3</div></div>
+    <div class="clear"></div>
+
+    <!--Сетка 1 1 -->
+    <div class="cell-3-4"><div class="alpha module">3/4</div></div>
+    <div class="cell-1-4"><div class="beta module">3/4</div></div>
+    <div class="clear"></div>
+
+    <!--Сетка 1 1 1 1-->
+    <div class="cell-1-4"><div class="alpha module">1/4</div></div>
+    <div class="cell-1-4"><div class="module">1/4</div></div>
+    <div class="cell-1-4"><div class="module">1/4</div></div>
+    <div class="cell-1-4"><div class="beta module">1/4</div></div>
+    <div class="clear"></div>
+
 </div>
+
 
 </body>
 </html>
