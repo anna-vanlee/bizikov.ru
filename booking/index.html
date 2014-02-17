@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style/css/grid.css"/>
+    <link rel="stylesheet" href="style/css/theme.css"/>
+    <link rel="stylesheet" href="style/css/style.css"/>
+    <!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>-->
+</head>
+<body>
+
+<header>
+    <nav class="container overflow">
+        <div class="cell-1-4 logo">
+            Booking/
+        </div>
+        <div class="cell-3-4">
+            <ul class="right header-menu">
+                <li><a class="button in" href="#">Войти</a></li>
+                <li><a class="button up" href="#">Зарегистрироваться</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="map overflow">
+    <div id="google">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2411076.614328014!2d54.86394018641484!3d53.83277844550869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413816756bee75fd%3A0xa985198f1acab54!2z0J_QvtCy0L7Qu9C20YzQtQ!5e0!3m2!1sru!2sru!4v1392631766662"
+                width="100%" height="300" frameborder="0" style="border:0"></iframe>
+    </div>
+    <div class="container">
+        <form class="form-search" action="">
+            <label for="room">Я ищу</label>
+            <input type="text" id="room" list="list-rooms" placeholder="Номер с видом на море"/>
+            <datalist id="list-rooms">
+                <option value="Президентские аппартаменты"></option>
+                <option value="Дешевый одноместный номер"></option>
+                <option value="Двух местный номер"></option>
+            </datalist>
+
+            <label for="country">в</label>
+            <select id="country">
+                <option value="1">Таиланде</option>
+                <option value="2">Гонконке</option>
+                <option value="3">Турции</option>
+                <option value="4">России</option>
+                <option value="4">Нидерландах</option>
+                <option value="4">Великобритании</option>
+            </select>
+            <input type="submit" value="Найти!" class="button up"/>
+        </form>
+    </div>
+</section>
+
+<section id="container" class="container">
+    <div class="content overflow">
+        <div class="cell-1-4">
+            <div class="item">
+                <img class="thumb" src="images/hotel.jpg" alt=""/>
+                <h3 class="title"><a href="">Империал Парк Отель & SPA</a></h3>
+            </div>
+        </div>
+
+        <div class="cell-1-2">
+            <div class="item">
+                <img class="thumb" src="images/dhigu_hqroom_ru_1.jpg" alt=""/>
+                <h3 class="title top"><a href="">Империал Парк Отель & SPA</a></h3>
+            </div>
+        </div>
+
+        <div class="cell-1-4">
+            <div class="item">
+                <img class="thumb" src="images/oaooo.jpg" alt=""/>
+                <h3 class="title"><a href="">Империал Парк Отель & SPA</a></h3>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="cell-1-3">
+            <div class="item">
+                <img class="thumb" src="images/1_d9a1ae0de4d0432b3cc2c94b72b4a585.jpg" alt=""/>
+                <h3 class="title"><a href="">Империал Парк Отель & SPA</a></h3>
+            </div>
+        </div>
+        <div class="cell-1-3">
+            <div class="item">
+                <img class="thumb" src="images/switzerland-hotels-13166153736458_w687h357.jpg" alt=""/>
+
+                <h3 class="title"><a href="">Империал Парк Отель & SPA</a></h3>
+            </div>
+        </div>
+        <div class="cell-1-3">
+            <div class="item">
+                <img class="thumb" src="images/miura.jpg" alt=""/>
+                <h3 class="title"><a href="">Империал Парк Отель & SPA</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="booking overflow">
+        <div class="cell-2-3">
+            <div class="list-booking">
+                <h3 class="title">У нас бронируют</h3>
+                <ul>
+                    <li><a href="#">Hotel Sukharevsky</a><i class="price">от 3 920 Р</i></li>
+                    <li><a href="#">Weekend Inn Apartments</a><i class="price">от 3 900 Р</i></li>
+                    <li><a href="#">InnDays Apartments Арбат</a><i class="price">от 3 920 Р</i></li>
+                    <li><a href="#">Panorama Apart & Business Hotel</a><i class="price">от 3 145 Р</i></li>
+                    <li><a href="#">Гостиница Мега Лайт</a><i class="price">от 1 920 Р</i></li>
+                    <li><a href="#">LK The Empress</a><i class="price">от 1 920 Р</i></li>
+                    <li><a href="#">Sunshine Hotel & Residences</a><i class="price">от 2 920 Р</i></li>
+                    <li><a href="#">At Mind Serviced Residence</a><i class="price">от 1 920 Р</i></li>
+                    <li><a href="#">Intimate Hotel by Tim Boutique</a><i class="price">от 5 920 Р</i></li>
+                    <li><a href="#">Гостиница Мега Лайт</a><i class="price">от 3 960 Р</i></li>
+                    <li><a href="#">Pattaya Centre Hotel</a><i class="price">от 6 910 Р</i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cell-1-3 bnr">
+            <img src="images/banner.png" alt="Место для рекламы"/>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        &copy; 2014. Booking. Все права защищены.
+    </div>
+</footer>
+</body>
+</html>

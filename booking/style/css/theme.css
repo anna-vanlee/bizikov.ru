@@ -1,0 +1,62 @@
+body {
+  background-color: #ecf0f1;
+}
+a {
+  color: #1d62f0;
+}
+form input,
+form select {
+  border: 3px solid #ecf0f1;
+}
+header {
+  background-color: #34aadc;
+}
+.button.in {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+.button.up {
+  background: #ffcd02;
+  border: 2px solid #f7c600;
+}
+.button.up:hover {
+  background: #f2c200;
+  border: 2px solid #edbe00;
+}
+.logo {
+  color: #FFF;
+}
+.map {
+  border-bottom: 2px solid #34aadc;
+}
+.map .form-search {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.content {
+  background-color: #fff;
+}
+.content .item .title a {
+  color: #1a171b;
+}
+.booking {
+  border: 1px solid #ecf0f1;
+  border-width: 2px 0;
+  background-color: #fff;
+}
+.booking .list-booking .title {
+  border-bottom: 1px solid #1a171b;
+}
+.booking .list-booking ul li {
+  border-bottom: 1px solid #ecf0f1;
+}
+.booking .list-booking ul li a {
+  text-decoration: none;
+  color: #1a171b;
+  border-bottom: 1px solid transparent;
+}
+.booking .list-booking ul li a:hover {
+  border-bottom: 1px solid #1a171b;
+}
+footer {
+  color: #fff;
+  background-color: #1a171b;
+}
