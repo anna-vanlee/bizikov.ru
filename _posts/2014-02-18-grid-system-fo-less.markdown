@@ -29,8 +29,8 @@ tags:
 
 ### Дополнительные стили
 
-1. <span class="file">.alpha</span> и <span class="file">.beta</span> нужны для обнуления отступов с левой и правой стороны блока соответственно
-2. <span class="file">.module</span> блок с отступами
+1. <span class="file">.module</span> блок с отступами
+2. <span class="file">.alpha</span> и <span class="file">.beta</span> нужны для обнуления отступов с левой и правой стороны блока соответственно
 3. <span class="file">.clear</span> переход на новую строку
 
 ### Пример блока
