@@ -18,3 +18,4 @@ tags:
 7. [Fubiz](http://tablet.fubiz.net/)
 8. [Shipment App](http://shipmentapp.com/)
 9. [Days](https://www.days.am/)
+10. [INSTAWIDE](http://www.instawide.co/)
