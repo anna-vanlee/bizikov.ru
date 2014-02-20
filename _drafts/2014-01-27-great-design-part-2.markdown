@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Примеры лендингов для мобильных приложений
-keywords: match
+keywords: лендинги, одностраничны сайт, примеры лендингов, примеры сайтов приложений, примеры мобильных приложений, мобильные приложения
 tags:
 - Design
 ---
@@ -19,3 +19,9 @@ tags:
 8. [Shipment App](http://shipmentapp.com/)
 9. [Days](https://www.days.am/)
 10. [INSTAWIDE](http://www.instawide.co/)
+11. [Rubis](http://rubisapp.com/)
+12. [Forgetfulchef](http://forgetfulchef.com/)
+13. [Oh Beer](http://ohbeer.com/)
+14. [ANA](http://www.ana.pt/app/ANA/HTML/home.html)
+15. [Cambox](http://getcambox.com/)
+16. [Chat Checkin](http://www.chatcheckin.com/)
