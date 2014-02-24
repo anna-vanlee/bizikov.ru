@@ -15,19 +15,24 @@
 }
 .clear {
   clear: both;
-  margin-bottom: 20px;
 }
 .container div[class^='cell-'] {
   float: left;
 }
 .container .module {
-  margin: auto 10px;
+  margin: auto 32px;
 }
 .container .module.alpha {
   margin-left: 0;
 }
 .container .module.beta {
   margin-right: 0;
+}
+.container .module.psi {
+  margin-top: 32px;
+}
+.container .module.omega {
+  margin-bottom: 32px;
 }
 .cell-1-1 {
   width: 1100px;

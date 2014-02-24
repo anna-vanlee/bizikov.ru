@@ -6,7 +6,7 @@
 @desktop: 1100px;
 
 // Отступ
-@margin: 20px;
+@margin: 32px;
 
 /* -------------------------*/
 /*  MIXIN
@@ -28,7 +28,6 @@
 
 .clear {
   clear: both;
-  margin-bottom: @margin;
 }
 
 .container {
@@ -37,7 +36,7 @@
   }
 
   .module {
-    margin: auto @margin / 2;
+    margin: auto @margin;
     // Обнуление отступа с левой стороны
     &.alpha {
       margin-left: 0;
@@ -47,12 +46,24 @@
     &.beta {
       margin-right: 0;
     }
+    &.psi {
+      margin-top: @margin;
+    }
+    &.omega {
+      margin-bottom: @margin;
+    }
+
   }
 }
 
 .cell-1-1 {.cell-a-b(1, 1)}
+
 .cell-1-2 {.cell-a-b(1, 2)}
+
 .cell-1-3 {.cell-a-b(1, 3)}
+
 .cell-1-4 {.cell-a-b(1, 4)}
+
 .cell-2-3 {.cell-a-b(2, 3)}
+
 .cell-3-4 {.cell-a-b(3, 4)}

@@ -52,16 +52,6 @@ form select {
   -webkit-appearance: none;
 }
 
-form input[type=submit] {
-  font-family: 'PT Serif', Arial, serif;
-  font-size: .6em;
-  width: 140px;
-  height: 60px;
-  margin-left: 1em;
-  border: 0;
-  cursor: pointer;
-}
-
 // Хэадер
 header {
   nav {
@@ -89,7 +79,6 @@ header {
   color: rgb(255, 255, 255);
   font-size: 13px;
   font-weight: bold;
-  height: 20px;
   padding: 8px 15px;
   text-decoration: none;
   .radius();
@@ -121,8 +110,18 @@ header {
     font-weight: bold;
     padding: 2em;
     margin: 2px 0;
+    input[type=submit] {
+      font-family: 'PT Serif', Arial, serif;
+      font-size: .6em;
+      width: 140px;
+      height: 60px;
+      margin-left: 1em;
+      border: 0;
+      cursor: pointer;
+    }
   }
 }
+
 
 // Область контента
 .content {
@@ -179,7 +178,7 @@ header {
 
 // Hotel page
 #hotel-page {
-  padding-top: 1em;
+  padding-top: 32px;
 }
 
 .hotel-about {
@@ -197,6 +196,12 @@ header {
     }
   }
 }
+
+.hotel-form-search {
+  padding: 1em;
+  .radius;
+}
+
 
 // photo-gallery
 .photo-gallery {

@@ -32,15 +32,6 @@ form select {
   border-radius: 6px;
   -webkit-appearance: none;
 }
-form input[type=submit] {
-  font-family: 'PT Serif', Arial, serif;
-  font-size: .6em;
-  width: 140px;
-  height: 60px;
-  margin-left: 1em;
-  border: 0;
-  cursor: pointer;
-}
 header nav {
   padding: .2em 0;
 }
@@ -60,7 +51,6 @@ header nav {
   color: #ffffff;
   font-size: 13px;
   font-weight: bold;
-  height: 20px;
   padding: 8px 15px;
   text-decoration: none;
   -webkit-border-radius: 3px;
@@ -93,6 +83,15 @@ header nav {
   font-weight: bold;
   padding: 2em;
   margin: 2px 0;
+}
+.map .form-search input[type=submit] {
+  font-family: 'PT Serif', Arial, serif;
+  font-size: .6em;
+  width: 140px;
+  height: 60px;
+  margin-left: 1em;
+  border: 0;
+  cursor: pointer;
 }
 .content {
   padding: 2em;
@@ -149,7 +148,7 @@ header nav {
   float: right;
 }
 #hotel-page {
-  padding-top: 1em;
+  padding-top: 32px;
 }
 .hotel-about .hotel-logo {
   float: left;
@@ -163,6 +162,12 @@ header nav {
 }
 .hotel-about .hotel-info .hotel-info_address {
   font-style: normal;
+}
+.hotel-form-search {
+  padding: 1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .photo-gallery {
   padding: 1em 2em;

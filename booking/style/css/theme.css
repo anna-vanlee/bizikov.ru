@@ -57,7 +57,12 @@ header {
   border-bottom: 1px solid #1a171b;
 }
 #hotel-page {
+  border-top: 2px solid #1d62f0;
+  margin-top: -130px;
   background-color: #fff;
+}
+.hotel-form-search {
+  background-color: #ecf0f1;
 }
 .photo-gallery {
   border: solid #ecf0f1;
