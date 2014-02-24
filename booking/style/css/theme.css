@@ -56,6 +56,13 @@ header {
 .booking .list-booking ul li a:hover {
   border-bottom: 1px solid #1a171b;
 }
+#hotel-page {
+  background-color: #fff;
+}
+.photo-gallery {
+  border: solid #ecf0f1;
+  border-width: 2px 0;
+}
 footer {
   color: #fff;
   background-color: #1a171b;

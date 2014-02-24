@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic);
 
-html, body, ul, li {
+html, body, ul, li, dd {
   margin: 0;
   padding: 0;
 }
@@ -105,6 +105,7 @@ header {
   }
 }
 
+// Карта
 .map {
   position: relative;
   height: 300px;
@@ -123,6 +124,7 @@ header {
   }
 }
 
+// Область контента
 .content {
   padding: 2em;
   .item {
@@ -171,6 +173,43 @@ header {
           float: right;
         }
       }
+    }
+  }
+}
+
+// Hotel page
+#hotel-page {
+  padding-top: 1em;
+}
+
+.hotel-about {
+  .hotel-logo {
+    float: left;
+  }
+  .hotel-info {
+    float: left;
+    margin-left: 1em;
+    .hotel-info_title {
+      margin: 0;
+    }
+    .hotel-info_address {
+      font-style: normal;
+    }
+  }
+}
+
+// photo-gallery
+.photo-gallery {
+  padding: 1em 2em;
+  .item-photo {
+    float: left;
+    list-style: none;
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: .9;
     }
   }
 }
