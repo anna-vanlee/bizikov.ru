@@ -1,8 +1,8 @@
 /* Общие стили */
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic);
-@import "color";
-@import "post-style";
-@import "syntax";
+@import url('http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic');
+@import "color.less";
+@import "post-style.less";
+@import "syntax.less";
 
 html, body {
   margin: 0;
@@ -106,20 +106,21 @@ table {
 
 /* Повторно используемые */
 .wrapper {
-  width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
   overflow: hidden;
-  box-sizing: border-box;
 }
 
 article {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   margin-bottom: 40px;
-  border-radius: 5px;
   box-sizing: border-box;
   background-color: #FFF;
+  &>a {
+    img {
+      min-width: 100%;
+      height: auto;
+    }
+  }
   .content {
     overflow: hidden;
     position: relative;
@@ -142,6 +143,25 @@ article {
       }
     }
   }
+}
+
+aside {
+  width: 320px;
+  height: 100%;
+  float: left;
+  position: fixed;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+}
+
+.article-content {
+  width: 900px;
+  margin-left: 320px;
+  float: left;
 }
 
 .note {
@@ -171,50 +191,6 @@ article {
 .comments {
   min-height: 300px;
   padding: 20px 80px;
-}
-
-/* Шапка */
-
-header {
-  overflow: hidden;
-  margin-top: 1em;
-}
-
-.logo {
-  float: left;
-  .name {
-    margin: 0;
-  }
-}
-
-.navigation {
-  float: right;
-  overflow: hidden;
-  line-height: 50px;
-  ul {
-    overflow: hidden;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding-left: 0;
-    li {
-      list-style: none;
-      float: left;
-      padding-right: 1em;
-      &:last-child {
-        padding-right: 0;
-      }
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.navigation {
-  .rss {
-    padding: 0.2em 0.5em;
-    border-radius: 5px;
-  }
 }
 
 /* Заголовок записи */
@@ -260,6 +236,37 @@ header {
   }
 }
 
+/* Список тегов на главной */
+.tags-list {
+  overflow: hidden;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      float: left;
+      a {
+        display: block;
+        font-size: 12px;
+        padding: 10px 8px;
+        margin: 2px;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+.widget {
+  padding: 0 2em;
+  &.top {
+    margin-top: 2em;
+  }
+  &.bottom {
+    margin-bottom: 2em;
+  }
+}
+
 /* Список на странице архива */
 
 .item-list {
@@ -270,26 +277,11 @@ header {
   }
 }
 
-/* Футер. Копирайт. */
-.footer-nav-lev {
+.copy {
+  position: absolute;
+  bottom: 0;
+  left: 2em;
   font-size: 11px;
-  text-align: center;
-  margin-bottom: 6px;
-  a {
-    text-decoration: none;
-    margin-right: 10px;
-    padding-right: 10px;
-    &:last-child {
-      border: 0;
-    }
-  }
-}
-
-.footer-nav-lev.me {
-  text-transform: uppercase;
-}
-
-.footer-nav-lev.copy {
   margin-top: 2em;
   margin-bottom: 1em;
   a {

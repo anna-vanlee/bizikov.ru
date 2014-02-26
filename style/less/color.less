@@ -49,6 +49,20 @@ article {
   }
 }
 
+.tags-list {
+  ul {
+    li {
+      a {
+        background-color: @delta;
+        color: @alpha;
+        &:hover {
+          background-color: darken(@delta, 4%);
+        }
+      }
+    }
+  }
+}
+
 #searchEngine {
   border: 1px dotted @beta;
 }

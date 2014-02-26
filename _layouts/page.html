@@ -1,6 +1,9 @@
 {% include header.html %}
 
-<div class="wrapper">
+<aside>
+    {% include sidebar.html %}
+</aside>
+<section class="article-content">
     <article>
         {% include cover.html %}
         <div class="content">
@@ -8,6 +11,6 @@
             {{ content }}
         </div>
     </article>
-</div>
+</section>
 
 {% include footer.html %}

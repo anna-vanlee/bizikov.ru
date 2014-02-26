@@ -1,6 +1,9 @@
 {% include header.html %}
 
-<div class="wrapper">
+<aside>
+    {% include sidebar.html %}
+</aside>
+<section class="article-content">
     {% for post in paginator.posts %}
     <article>
         {% include cover.html %}
@@ -12,6 +15,6 @@
     </article>
     {% endfor %}
     <div class="note">Для перемещения по страницам используй <b>&larr;</b> и <b>&rarr;</b></div>
-</div>
 
+</section>
 {% include footer.html %}

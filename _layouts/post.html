@@ -1,6 +1,9 @@
 {% include header.html %}
 
-<div class="wrapper">
+<aside>
+    {% include sidebar.html %}
+</aside>
+<section class="article-content">
     <article>
         {% include cover.html %}
         <div class="content">
@@ -16,6 +19,6 @@
         {% include share.html %}
         {% include comments.html %}
     </article>
-</div>
+</section>
 
 {% include footer.html %}
