@@ -21,19 +21,21 @@ form select {
 header {
   background-color: @epsilon;
 }
-.button{
-  &.in{
+
+.button {
+  &.in {
     border: 2px solid rgba(255, 255, 255, 0.6);
   }
-  &.up{
+  &.up {
     background: @delta;
-    border: 2px solid darken(@delta,2%);
+    border: 2px solid darken(@delta, 2%);
     &:hover {
-      background: darken(@delta,3%);
-      border: 2px solid darken(@delta,4%);
+      background: darken(@delta, 3%);
+      border: 2px solid darken(@delta, 4%);
     }
   }
 }
+
 .logo {
   color: #FFF;
 }
@@ -44,16 +46,18 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
   }
 }
-.content{
+
+.content {
   background-color: #fff;
-  .item{
-    .title{
-      a{
+  .item {
+    .title {
+      a {
         color: @beta;
       }
     }
   }
 }
+
 .booking {
   border: 1px solid @alpha;
   border-width: 2px 0;
@@ -78,7 +82,27 @@ header {
   }
 }
 
-footer{
+#hotel-page {
+  border-top: 2px solid @gamma;
+  margin-top: -130px;
+  background-color: #fff;
+}
+
+hotel-gallery {
+}
+
+.hotel-form-search {
+  background-color: @alpha;
+}
+
+.photo-gallery {
+  border: solid @alpha;
+  border-width: 2px 0;
+  .item-photo {
+  }
+}
+
+footer {
   color: #fff;
   background-color: @beta;
 }
