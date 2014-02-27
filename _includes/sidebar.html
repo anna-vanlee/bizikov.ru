@@ -2,8 +2,9 @@
     {% if page.url == "/index.html" %}
     <img class="avatar" title="{{ site.name }}" src="{{ site.url }}/images/avatar.jpg" alt="{{ site.name }}"/>
     {% else %}
-    <a href="{{ site.url }}" title="{{ site.name }}"><img class="avatar" title="{{ site.name }}"
-                                                          src="{{ site.url }}/images/avatar.jpg" alt="{{ site.name }}"/></a>
+    <a href="{{ site.url }}" title="{{ site.name }}">
+        <img class="avatar" title="{{ site.name }}" src="{{ site.url }}/images/avatar.jpg" alt="{{ site.name }}"/>
+    </a>
     {% endif %}
     <div class="about-me">
         <p>Меня зовут <b>Александр Бизиков</b>, я интересуюсь версткой и дизайном. Это мой личный блог, подробнее можно почитать <a href="{{ site.url }}/about">тут</a>.</p>

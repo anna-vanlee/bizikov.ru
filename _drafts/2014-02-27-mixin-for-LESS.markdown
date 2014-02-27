@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Mixin для кроссплатформенного LESS
+title: Mixin в LESS для кроссбраузерного CSS
+excerpt: Я люблю LESS. Правда. Это очень клевая штука, которая позволяет упростить написание CSS. В это записи пойдет речь о Mixin.
 keywords: css3, less, mixin
 tags:
 - CSS3
@@ -8,15 +9,13 @@ tags:
 ---
 
 Я люблю LESS. Правда. Это очень клевая штука, которая позволяет упростить написание CSS.
-В это записи пойдет речь о Mixin. О том, что это такое я уже писал в одной из [предудущих записей]({{ site.url }}/2013/06/less/) по LESS.
+В этой записи пойдет речь о **Mixin**. О том, что это такое я уже писал в одной из [предыдущих записей]({{ site.url }}/2013/06/less/) по LESS.
 
-Сейчас использование CSS3 уже не является каким то ноухау. За пару лет практически все разработчики браузеров внедрили поддержку если не всех, то очень многих свойств присутсствующих в CSS3.
-
-Тем не менее, для поддержки на бОльшем количестве устройств использовать префиксы.
+Сейчас использование CSS3 уже не является каким-то ноу-хау. За пару лет практически все разработчики браузеров внедрили поддержку если не всех, то очень многих свойств присутствующих в CSS3.
 
 ### Box-shadow
 
-{% highlight less %}
+{% highlight css %}
 .box-shadow(@x: 0, @y: 0, @blur: 10px, @color: @gray) {
      -moz-box-shadow: @arguments;
   -webkit-box-shadow: @arguments;
@@ -25,7 +24,8 @@ tags:
 {% endhighlight %}
 
 ### Border-radius
-  {% highlight less %}
+
+{% highlight css %}
 .border-radius(@r: 3px){
   -webkit-border-radius: @r;
      -moz-border-radius: @r;
@@ -35,7 +35,7 @@ tags:
 
 ### Transition
 
-{% highlight less %}
+{% highlight css %}
 .transition(@x: all, @y: 0.3s, @z: linear) {
        -o-transition: @arguments;
      -moz-transition: @arguments;
@@ -47,7 +47,7 @@ tags:
 ## Как использовать
 
 ### LESS
-{% highlight less %}
+{% highlight css %}
 a {
     color: #008dd2;
     text-decoration: none;
@@ -58,11 +58,9 @@ a {
     }
 {% endhighlight %}
 
-### CSS
-
 После компиляции получаем следующий CSS:
 
-{% highlight less %}
+{% highlight css %}
 a {
     color: #008dd2;
     text-decoration: none;

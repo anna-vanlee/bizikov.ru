@@ -1,7 +1,4 @@
 {% include header.html %}
-
-
-
 <aside>
     {% include sidebar.html %}
 </aside>
@@ -29,13 +26,13 @@
             <ul class="item-list">
                 {% for item in (0..num_words) %}{% unless forloop.last %}
                 {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-                <li><a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a><sup>{{ site.tags[this_word].size }}</sup></li>
+                <li><a href="#{{ this_word }}">{{ this_word }}</a><sup>{{ site.tags[this_word].size }}</sup></li>
                 {% endunless %}{% endfor %}
             </ul>
 
             {% for item in (0..num_words) %}{% unless forloop.last %}
             {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-            <h5 id="{{ this_word | cgi_escape }}" >{{ this_word }}</h5>
+            <h5 id="{{ this_word }}" >{{ this_word }}</h5>
             <ol class="post-list">
                 {% for post in site.tags[this_word] %}{% if post.title != null %}
                 <li itemscope><a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -46,5 +43,4 @@
         </div>
     </article>
 </section>
-
 {% include footer.html %}

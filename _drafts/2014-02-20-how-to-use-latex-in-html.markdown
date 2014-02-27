@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Примеры лендингов для мобильных приложений
+title: Математические формулы в HTML
 keywords: Latex, mathjax syntax, LaTeX syntax, математические формулы на сайте, математиеские формулы в html, синтаксис LaTeX, примеры формул LaTeX
 tags:
 - Match
