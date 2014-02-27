@@ -35,7 +35,7 @@ Frontend разработка
 ### Профессиональный опыт
 <ul>
     <li><p>Сентябрь 2012 &mdash; текущее время</p>
-        &laquo;Разработчик програмного обеспечения&raquo; в <a href="http://wwww.i-sys.ru" target="_blank">i-Sys</a>
+        &laquo;Разработчик програмного обеспечения&raquo; в <a href="http://www.i-sys.ru" target="_blank">i-Sys</a>
     </li>
 
     <li><p>Ноябрь 2011 &mdash; август 2012</p>

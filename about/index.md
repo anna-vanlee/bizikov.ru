@@ -30,6 +30,7 @@ description: Привет. Этот сайт работает на Jekyll, ис�
 1. [Вконтакте](http://vk.com/bizikov)
 2. [Твиттер](http://twitter.com/bizi)
 3. [Инстаграм](http://instagram.com/bizikov)
+4. [Фликр](http://www.flickr.com/photos/48363663@N05/)
 4. [Пинтерест](http://pinterest.com/bizikov/)
 5. [Форсквер](https://ru.foursquare.com/bizi)
 6. [Ютуб](https://www.youtube.com/user/Bizikov)
