@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>{{ page.title }}</title>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
     <meta name="Keywords" content="{{ page.keywords }}">
     <meta name="Description" content="{{ page.excerpt }}">
-    <meta property="og:title" content="{{ page.title }}"/>
-    <meta property="og:url" content="{{ site.url }}{{ page.url}}"/>
-    {% if page.cover %}<meta property="og:image" content="{{ site.url }}/{{ page.cover }}"/>{% endif %}
-    <title>{{ page.title }}</title>
+    <!-- Twitter Card data -->
+    <meta property="fb:admins" content="1739578466" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@bizi">
+    <meta name="twitter:domain" content="bizikov.ru">
+    <!--Open Graph -->
+    <meta property = "og:title" content="{{ page.title }}"/>
+    <meta property = "og:url" content="{{ site.url }}{{ page.url}}"/>
+    <meta property = "og:type" content = "blog"/>
+    <meta property = "og:description" content="{{ page.excerpt }}"/>
+    <meta property = "og:image" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}"/>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.url }}/feed/">
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ site.url }}/style/css/style.css">
