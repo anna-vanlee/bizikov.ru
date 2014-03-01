@@ -86,6 +86,11 @@ article .why {
   background-color: #ECF0F1;
   border-radius: 3px;
 }
+hr {
+  border: 1px solid #ECF0F1;
+  margin: 1em -5em;
+  clear: both;
+}
 .highlight {
   background: #ffffff;
 }

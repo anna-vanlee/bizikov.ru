@@ -34,7 +34,7 @@ description: Привет. Этот сайт работает на Jekyll, ис�
 4. [Пинтерест](http://pinterest.com/bizikov/)
 5. [Форсквер](https://ru.foursquare.com/bizi)
 6. [Ютуб](https://www.youtube.com/user/Bizikov)
-7. [Гугл плюс](https://plus.google.com/109525416130157014075)
+7. [Гугл плюс](https://plus.google.com/+AlexandrBizikov/)
 8. [Фэйсбук](http://facebook.com/bizikov)
 9. [ЖЖЖ](http://bizikov.livejournal.com/)
 10. [Хабр](http://habrahabr.ru/users/bizikov/)

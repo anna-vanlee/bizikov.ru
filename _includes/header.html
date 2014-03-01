@@ -9,18 +9,18 @@
     <meta name="Keywords" content="{{ page.keywords }}">
     <meta name="Description" content="{{ page.excerpt }}">
     <!-- Twitter Card data -->
-    <meta property="fb:admins" content="1739578466" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@bizi">
     <meta name="twitter:domain" content="bizikov.ru">
-    <!--Open Graph -->
+    <!-- Google + -->
+    <link rel="author" href="https://www.google.com/+AlexandrBizikov" />
+    <a href = "https://www.google.com/+AlexandrBizikov?rel=author" rel = "publisher"></a>
+    <!-- Open Graph -->
     <meta property = "og:title" content="{{ page.title }}"/>
     <meta property = "og:url" content="{{ site.url }}{{ page.url}}"/>
     <meta property = "og:type" content = "blog"/>
     <meta property = "og:description" content="{{ page.excerpt }}"/>
     <meta property = "og:image" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}"/>
-    <link rel="author" href="https://www.google.com/+AlexandrBizikov" />
-    <a href = "https://www.google.com/+AlexandrBizikov?rel=author" rel = "publisher"></a>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.url }}/feed/">
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ site.url }}/style/css/style.css">
