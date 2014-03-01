@@ -1,3 +1,16 @@
-## Alexandr Bizikov
+# Обо мне
 
-[bizikov.ru](http://bizikov.ru)
+Меня зовут Александр Бизиков, я интересуюсь версткой и дизайном.
+
+### Здесь хранятся файлы моего блога
+
+Я перешел на [Jekyll](jekyllrb.com), потому что это удобно.
+
+- Статьи можно писать прямо из любой IDEA
+- Не нужно платить за хостинг
+- Все статьи хранятся в папке _posts, а черновики в _drafts
+
+### Подписаться
+
+- [Feedburner](http://feeds.feedburner.com/bizikov)
+- [RSS](http://bizikov.ru/feed)

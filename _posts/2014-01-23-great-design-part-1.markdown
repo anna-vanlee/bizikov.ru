@@ -48,4 +48,6 @@ tags:
 36. [Brad Hogan](http://www.bradhogan.me/)
 37. [Companion](https://companion.runkite.com/)
 38. [Michael Ngo](http://www.hellomichael.com/)
+39. [Kitbashed](http://kitbashed.com/)
+
 P.S Список постоянно пополняется.
