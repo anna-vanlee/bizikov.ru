@@ -6,13 +6,17 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
-    <meta name="Keywords" content="{{ page.keywords }}">
-    <meta name="Description" content="{{ page.excerpt }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="description" content="{{ page.excerpt }}">
     <meta name="google-site-verification" content="31GFDRk73zQxozznVPGgFu5VuuooTH7ROKIb1DTgXZs" />
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@bizi">
-    <meta name="twitter:domain" content="bizikov.ru">
+    <meta name="twitter:creator" content="@bizi">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt }}">
+    <meta name="twitter:image:src" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}">
+    <meta name="twitter:domain" content="{{ site.url }}">
     <!-- Google + -->
     <link rel="author" href="https://www.google.com/+AlexandrBizikov" />
     <a href = "https://www.google.com/+AlexandrBizikov?rel=author" rel = "publisher"></a>
