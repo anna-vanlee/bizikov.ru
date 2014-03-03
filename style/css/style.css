@@ -31,6 +31,12 @@ article .date {
 article .why {
   background-color: #e0f8d8;
 }
+article .article-tags li a {
+  color: #94aab0;
+}
+article .article-tags li a:hover {
+  color: #fc6341;
+}
 .tags-list ul li a {
   background-color: #fc6341;
   color: #ecf0f1;
@@ -38,15 +44,23 @@ article .why {
 .tags-list ul li a:hover {
   background-color: #fc532d;
 }
+.post-list {
+  overflow: hidden;
+}
+.post-list ul li .date {
+  color: #94aab0;
+}
 #searchEngine {
   border: 1px dotted #1a171b;
 }
 #social {
   background-color: #e0f8d8;
 }
-.navigation .rss {
+.navigation {
+  border-top: 2px solid #fc6341;
+}
+.navigation ul li a:hover {
   color: #fc6341;
-  border: 1px solid #fc6341;
 }
 .footer-nav-lev a {
   color: #000;
@@ -374,6 +388,23 @@ table thead tr > td {
 .wrapper {
   overflow: hidden;
 }
+.navigation {
+  padding: .3em;
+}
+.navigation ul {
+  overflow: hidden;
+  padding: 0;
+}
+.navigation ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: left;
+  margin-right: 1em;
+}
+.navigation ul li a {
+  text-decoration: none;
+}
 article {
   position: relative;
   overflow: hidden;
@@ -389,6 +420,20 @@ article .content {
   overflow: hidden;
   position: relative;
   padding: 40px 80px;
+}
+article .article-tags {
+  overflow: hidden;
+  padding: 0;
+}
+article .article-tags li {
+  padding: 0;
+  margin-right: .5em;
+  list-style: none;
+  float: left;
+}
+article .article-tags li a {
+  font-size: .8em;
+  text-decoration: none;
 }
 article .date {
   position: absolute;
@@ -445,7 +490,7 @@ aside {
 }
 /* Заголовок записи */
 .post-title {
-  margin: 0.6em 0;
+  margin: .6em 0 .3em 0;
 }
 .post-title a {
   color: #000;
@@ -495,6 +540,21 @@ aside {
   padding: 10px 8px;
   margin: 2px;
   text-decoration: none;
+}
+.post-list {
+  overflow: hidden;
+}
+.post-list ul {
+  padding: 0;
+}
+.post-list ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.post-list ul li .date {
+  font-size: 12px;
+  margin-right: 1em;
 }
 .widget {
   padding: 0 2em;

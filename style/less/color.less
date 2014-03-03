@@ -47,6 +47,14 @@ article {
     background-color: @epsilon;
 
   }
+  .article-tags {
+    li a {
+      color: darken(@alpha, 30%);
+      &:hover {
+        color: @delta;
+      }
+    }
+  }
 }
 
 .tags-list {
@@ -63,6 +71,17 @@ article {
   }
 }
 
+.post-list {
+  overflow: hidden;
+  ul {
+    li {
+      .date {
+        color: darken(@alpha, 30%);
+      }
+    }
+  }
+}
+
 #searchEngine {
   border: 1px dotted @beta;
 }
@@ -72,9 +91,15 @@ article {
 }
 
 .navigation {
-  .rss {
-    color: @delta;
-    border: 1px solid @delta;
+  border-top: 2px solid  @delta;
+  ul {
+    li {
+      a {
+        &:hover {
+          color: @delta;
+        }
+      }
+    }
   }
 }
 
