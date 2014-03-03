@@ -24,6 +24,9 @@ table thead tr th {
 table thead tr > td {
   border: 1px solid #ecf0f1;
 }
+table td {
+  border: 1px solid #ecf0f1;
+}
 article .date {
   color: #1a171b;
   background: #e0f8d8;

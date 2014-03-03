@@ -2,5 +2,11 @@
     <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/{{ post.cover }}" alt="{{ post.title }}"/></a>
 {% elsif page.cover %}
     <a href="{{ page.url }}" title="{{ page.title }}"><img src="{{ site.url }}/{{ page.cover }}" alt="{{ page.title }}"/></a>
+{% elsif post.youtube %}
+    <iframe width="900" height="540" src="//www.youtube.com/embed/{{ post.youtube }}?theme=light" frameborder="0" allowfullscreen></iframe>
+{% elsif page.youtube %}
+    <iframe width="900" height="540" src="//www.youtube.com/embed/{{ page.youtube }}?theme=light" frameborder="0" allowfullscreen></iframe>
+
 {% endif %}
+
 
