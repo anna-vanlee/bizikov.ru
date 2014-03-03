@@ -12,7 +12,7 @@
 
 ### Фотографии
 
-Я люблю фотографировать, но при этом не считаю себя фотографом. Часто публикую фотки в [инстаграме](instagram.com/bizikov) и на [Яндекс.Фотках](http://fotki.yandex.ru/users/alexandr-bizikov/)
+Я люблю фотографировать, но при этом не считаю себя фотографом. Часто публикую фотки в [инстаграме](http://instagram.com/bizikov) и на [Яндекс.Фотках](http://fotki.yandex.ru/users/alexandr-bizikov/)
 
 ![Фотка еды](http://img-fotki.yandex.ru/get/6727/35527675.17/0_b49fb_9f268ab6_M.jpg)
 
