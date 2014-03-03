@@ -19,4 +19,4 @@
 ### Подписаться
 
 - [Feedburner](http://feeds.feedburner.com/bizikov)
-- [RSS](http://bizikov.ru/feed)
+- [RSS](http://bizikov.ru/atom.xml)
