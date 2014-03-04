@@ -25,3 +25,7 @@ tags:
 14. [ANA](http://www.ana.pt/app/ANA/HTML/home.html)
 15. [Cambox](http://getcambox.com/)
 16. [Chat Checkin](http://www.chatcheckin.com/)
+17. [Picmoji](http://picmoji.com/)
+18. [Wibki](http://www.wibki.com/)
+19. [GetFitto](http://www.fitto.co/)
+20. [Knock](knocktounlock.com)
