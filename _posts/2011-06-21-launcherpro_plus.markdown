@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Отличный рабочий стол для android
-keywords: LauncherPro PLUS, рабочий стол для android, оболочка для android,
+excerpt: LauncherPro PLUS — Достойная альтернативная замена стандартному экрану, от Android 2 и выше.
+keywords: LauncherPro PLUS, рабочий стол для android, оболочка для android
 tags:
 - Android
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 10 полезных приложений для Android
+excerpt: Список из 10 полезных приложений для Android, которые ваш необходимы!
 keywords: приложения, android apps, android, Universal Androot, Screenshot, DropBox, GhostCommande, WhatsApp, Twicca, OperaMobile, Яндекс.Почта, WordPress
 tags:
 - Android

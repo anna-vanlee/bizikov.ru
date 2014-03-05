@@ -4,7 +4,7 @@ title: Samsung NX300 - обновление прошивки
 cover: upload/article/2014/02/08/samsung-nx-300.jpeg
 why: Обновить прошивку камеры до актуального стостояния.
 keywords: Samsung Camera, Samsung NX300, обновить камеру, обновить прошивку, Обновить NX300, обновление камеры Samsung NX300
-excerpt:
+excerpt: процесс обновления прошивки для смарт камеры Samsung NX300 до версии 1.34
 tags:
 - Samsung
 - Gadgets

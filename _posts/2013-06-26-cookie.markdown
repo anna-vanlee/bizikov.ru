@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Работаем с куками через JavaScript
+excerpt: Описан процесс работы с куками браузера используя JavaScript
 keywords: Что такое куки, Что такое cookie, cookie js, cookie javascript, запись cookie в javascript, чтение cookie в javascript
 tags:
 - JavaScript

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Перенос WordPress на новый домен
+excerpt: Описание процесса переноса сайта wordpress на новый домен
 keywords: WordPress, перенос WordPress, WordPress на новый сайт, перенос сайта на новый хостинг, новый хостинг
 tags:
 - Wordpress

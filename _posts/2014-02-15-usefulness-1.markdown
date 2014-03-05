@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Полезности &#35;1
-keywords:
+excertp: Полезные инструменты и статьи, которые делают жить чуточку веселее.
+keywords: air video, ASCOcam, Wireframe, UX Sketchbook, Sir Trevor
 tags:
 - Design
 ---

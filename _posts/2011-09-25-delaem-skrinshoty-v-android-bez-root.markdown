@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Делаем скриншоты в Android без root
+excerpt: Для Android есть специальные приложения, которые помогают сделать скриншоты с экрана телефона, но для этого вам нужны права root пользователя.
 keywords: LauncherPro PLUS, рабочий стол для android, оболочка для android,
 tags:
 - Android

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Удобная клавиатура для Android
+excerpt: После установки Android 2.3 на свой LG GT540 я испытал некий дискомфорт от стандартной клавиатуры.
 keywords: GO клавиатура, Go Keyboard, Android 2.3, удобная клавиатура для андроид, удобная клавиатура, Android,
 tags:
 - Android

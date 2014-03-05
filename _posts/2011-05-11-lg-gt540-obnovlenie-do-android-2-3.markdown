@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LG GT540 — обновление до Android 2.3
+excerpt: Описание процесса прошивки телефона LG GT540 до версии android 2.3
 keywords: LG GT540, Android, прошивка Android, Android 2.3, обновление до Android 2.3
 tags:
 - Android

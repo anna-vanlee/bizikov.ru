@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Прошивка Huawei E173
+excerpt: Описание процесса прошивки модема Huawei E173
 keywords: Прошить мегафон модем, мегафон Huawei, как прошить модем по все симки, прошить модем
 tags:
 - Gadgets

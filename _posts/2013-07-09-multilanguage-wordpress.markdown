@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Как сделать сайт wordpress мультиязычным
+excerpt: Улучшение сайта на wordpress, делаем его многоязычным
 keywords: wordpress, qtranslate, мультиязычный сайт, как сделать мультиязычный сайт, сайт wordpress на нескольких языках
 tags:
 - Wordpress

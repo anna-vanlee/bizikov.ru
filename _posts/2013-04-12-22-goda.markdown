@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 22 года
+excerp: Вот мне и 22.
 tags:
 - Personal
 ---

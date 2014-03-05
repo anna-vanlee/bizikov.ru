@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Бесплатный хостинг на GitHub.com
+excerpt: Как использовать Github в качестве хранилища файлов сайта? Читайте в статье!
 keywords: GitHub, бесплатный хостинг, a-запись, cname, настройка ip, настройка
 tags:
 - Git

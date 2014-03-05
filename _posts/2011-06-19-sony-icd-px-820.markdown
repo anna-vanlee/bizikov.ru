@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SONY ICD PX 820 помощник подкастера
+excerpt: Сегодня решил написать вам о еще одном своем новом дивайсе - диктофоне SONY ICD PX 820.
 keywords: Диктофон, SONY ICD PX 820, Обзор SONY ICD PX 820, Обзор диктофона, звукозапись, интервьюирование
 tags:
 - Gadgets
