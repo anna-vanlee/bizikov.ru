@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Разблокировка компьютера стуком по айфону, с помощью iOS приложения Knock
-excerpt: Разблокировка компьютера стуком по айфону, с помощью приложения Knock
+excerpt: Описание приложения Knock и опыт взаимодействия с ним
 youtube: CyX8FfSKg04
 app-id: id692929970
 keywords: iphone, mac os, mac mini
