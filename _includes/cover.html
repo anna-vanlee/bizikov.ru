@@ -1,7 +1,13 @@
 {% if post.cover %}
-    <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/{{ post.cover }}" alt="{{ post.title }}"/></a>
+    <div class="cover">
+        <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/{{ post.cover }}" alt="{{ post.title }}"/></a>
+        {% include share.html %}
+    </div>
 {% elsif page.cover %}
-    <a href="{{ page.url }}" title="{{ page.title }}"><img src="{{ site.url }}/{{ page.cover }}" alt="{{ page.title }}"/></a>
+    <div class="cover">
+        <a href="{{ page.url }}" title="{{ page.title }}"><img src="{{ site.url }}/{{ page.cover }}" alt="{{ page.title }}"/></a>
+        {% include share.html %}
+    </div>
 {% elsif post.youtube %}
     <iframe width="900" height="540" src="//www.youtube.com/embed/{{ post.youtube }}?theme=light" frameborder="0" allowfullscreen></iframe>
 {% elsif page.youtube %}
