@@ -74,6 +74,17 @@ article {
   }
 }
 
+.tags {
+  .item-list {
+    a {
+      color: @beta;
+      &:hover {
+        color: @delta;
+      }
+    }
+  }
+}
+
 .post-list {
   overflow: hidden;
   ul {
@@ -85,11 +96,30 @@ article {
   }
 }
 
+.archive-list {
+  .archive-post-date {
+    color: darken(@alpha, 30%);
+  }
+}
+
 #searchEngine {
+  color: #fff;
   border: 1px dotted @beta;
 }
 
 #social {
+}
+
+.cover {
+  background-color: @alpha;
+  form {
+    .search-title {
+      color: #fff;
+    }
+    .searchSelect {
+      color: #fff;
+    }
+  }
 }
 
 .navigation {
@@ -104,21 +134,31 @@ article {
     }
   }
 }
-.more{
+
+.more {
   background-color: @epsilon;
-  .more-title{
+  .more-title {
 
   }
-  .more-post-date{
-    color: darken(@alpha,30%);
+  .more-post-date {
+    color: darken(@alpha, 30%);
   }
 }
+
 .footer-nav-lev {
   a {
     color: #000;
     border-right: 1px solid darken(@alpha, 30%);
     &:hover {
       color: @delta;
+    }
+  }
+}
+
+.sidebar-menu {
+  li {
+    a {
+      color: darken(@alpha, 30%);
     }
   }
 }

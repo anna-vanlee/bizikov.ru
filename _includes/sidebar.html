@@ -7,17 +7,34 @@
     </a>
     {% endif %}
     <div class="about-me">
-        <p>Меня зовут <b>Александр Бизиков</b>, я интересуюсь версткой и дизайном. Это мой личный блог, подробнее можно почитать <a href="{{ site.url }}/about">тут</a>.</p>
+        <p>Меня зовут <b>Александр Бизиков</b>, я интересуюсь версткой и дизайном.</p>
     </div>
+</div>
+
+<div class="widget">
+    <a href="https://twitter.com/Bizi" class="twitter-follow-button" data-show-count="true">Фолловь @Bizi</a>
+</div>
+
+<div class="widget">
+    <h4>Страницы</h4>
+    <menu class="sidebar-menu">
+        <li><a href="{{ site.url }}/about">Обо мне</a></li>
+        <li><a href="{{ site.url }}/archive">Все записи</a></li>
+    </menu>
 </div>
 
 <div class="widget">
     <div class="tags-list">
         <h4>Темы</h4>
-        <ul>{% for tag in site.tags %}<li><a href="{{ site.url }}/archive/#{{ tag | first }}">{{ tag | first }}</a></li>{% endfor %}</ul>
+        <ul>{% for tag in site.tags %}
+            <li><a href="{{ site.url }}/tags/#{{ tag | first }}">{{ tag | first }}</a></li>{% endfor %}
+        </ul>
     </div>
     <div class="copy">
         <p>&copy; 2009-2014. {{ site.name }}.</p>
-        <p>Сайт работает на <a href="http://jekyllrb.com/" title="Джекил" target="_blank">Джекиле</a>, хостится на <a href="https://github.com/bizikov/bizikov.ru" title="Исходники bizikov.ru на Гитхабе" target="_blank">Гитхабе</a>.</p>
+
+        <p>Сайт работает на <a href="http://jekyllrb.com/" title="Джекил" target="_blank">Джекиле</a>, хостится на <a
+                href="https://github.com/bizikov/bizikov.ru" title="Исходники bizikov.ru на Гитхабе" target="_blank">Гитхабе</a>.
+        </p>
     </div>
 </div>

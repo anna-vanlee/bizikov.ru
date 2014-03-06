@@ -16,7 +16,7 @@
             {{ content }}
         </div>
         {% include share.html %}
-        {% include comments.html %}
+        {% if page.comment %}{% include comments.html %}{% endif %}
     </article>
 </section>
 

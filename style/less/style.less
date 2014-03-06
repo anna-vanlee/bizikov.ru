@@ -110,6 +110,11 @@ table {
   box-sizing: @type;
 }
 
+.null {
+  margin: 0;
+  padding: 0;
+}
+
 .navigation {
   padding: .3em;
   ul {
@@ -203,6 +208,17 @@ aside {
     display: block;
     min-width: 100%;
   }
+  form {
+    width: 100%;
+    position: absolute;
+    padding: 0 80px;
+    bottom: 6em;
+    left: 0;
+    .box-sizing;
+    .search-title {
+      font-size: 2em;
+    }
+  }
   #social {
     position: absolute;
     left: 0;
@@ -230,6 +246,7 @@ aside {
   outline: none;
   border-width: 0 0 1px 0;
   border-radius: 0;
+  background-color: transparent;
   -webkit-appearance: none;
 }
 
@@ -303,9 +320,7 @@ aside {
     }
     a {
       text-decoration: none;
-      color: #b2b2b2;
       &:hover {
-        color: rgb(85, 26, 139);
         text-decoration: underline;
       }
     }
@@ -349,6 +364,23 @@ aside {
   }
 }
 
+.archive-list {
+  margin: 0;
+  padding: 0;
+  .archive-post-date {
+    font-size: .8em;
+    display: block;
+  }
+  .archive-post-year {
+    margin-left: -3.4em;
+    margin-bottom: -1.4em;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+}
+
 .widget {
   padding: 0 2em;
   &.top {
@@ -380,5 +412,18 @@ aside {
     border: 0;
     margin: 0;
     padding: 0;
+  }
+}
+
+/* Sidebar menu */
+.sidebar-menu{
+  .null;
+  li{
+    list-style: none;
+    margin-bottom: .2em;
+    a{
+      font-size: .8em;
+      text-decoration: none;
+    }
   }
 }
