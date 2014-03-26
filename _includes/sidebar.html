@@ -33,7 +33,8 @@
     </div>
     <div class="mobile">
         <h4>Навигация</h4>
-        <select class="mobile-navigation">
+        <select id="mobile-navigation" class="mobile-navigation" onchange="mobileNavigation(this)">
+            <option value="select-page">Выбрать страницу</option>
             <optgroup label="Страницы">
                 <option value="about">Обо мне</option>
                 <option value="archive">Архив</option>

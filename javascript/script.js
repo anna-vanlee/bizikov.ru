@@ -29,6 +29,15 @@ function customSearch() {
         return false;
     }
 }
+function mobileNavigation(select) {
+    var url = 'http://bizikov.ru/';
+
+    if (select.selectedIndex !== 0 && select.selectedIndex < 3) {
+        window.location.replace(url + select.value);
+    } else {
+        window.location.replace(url + 'tags/#' + select.value);
+    }
+}
 
 // Навигация клавишами
 document.onkeydown = NavigateThrough;
