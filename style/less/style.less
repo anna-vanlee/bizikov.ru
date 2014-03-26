@@ -4,6 +4,10 @@
 @import "post-style.less";
 @import "syntax.less";
 
+/* Var */
+@width: 900px;
+@aside: 320px;
+
 html, body {
   margin: 0;
   padding: 0;
@@ -110,6 +114,14 @@ table {
   box-sizing: @type;
 }
 
+.pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
 .null {
   margin: 0;
   padding: 0;
@@ -184,7 +196,7 @@ article {
 }
 
 aside {
-  width: 320px;
+  width: @aside;
   height: 100%;
   float: left;
   position: fixed;
@@ -197,8 +209,8 @@ aside {
 }
 
 .article-content {
-  width: 900px;
-  margin-left: 320px;
+  width: @width;
+  margin-left: @aside;
   float: left;
 }
 
@@ -416,12 +428,12 @@ aside {
 }
 
 /* Sidebar menu */
-.sidebar-menu{
+.sidebar-menu {
   .null;
-  li{
+  li {
     list-style: none;
     margin-bottom: .2em;
-    a{
+    a {
       font-size: .8em;
       text-decoration: none;
     }
@@ -430,15 +442,83 @@ aside {
 
 /* 404 */
 
-.error404{
-  width: 320px;
+.error404 {
+  width: @aside;
   margin: 6em auto 0 auto;
   text-align: center;
-  p{
+  p {
     font-size: .8em;
   }
 }
-.error-title{
+
+.error-title {
   font-size: 12em;
   margin: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Media for smart phone */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  pre{
+    .pre;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  aside {
+    position: static;
+    width: @aside;
+    height: auto;
+    margin: 0 auto 1em auto;
+    float: none;
+  }
+
+  #social {
+    padding: 10px;
+  }
+
+  article {
+    iframe {
+      max-width: @aside;
+      height: auto;
+    }
+    .date {
+      position: static;
+      padding: 0;
+      background: transparent;
+    }
+    .content {
+      padding: 10px;
+    }
+  }
+
+  .post-title {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  .article-content {
+    width: @aside - 20;
+    margin: 10px;
+    float: none;
+  }
+
+  .mobile-navigation {
+    width: 100%;
+  }
+
+  .tags-list,
+  .copy {
+    display: none;
+  }
 }

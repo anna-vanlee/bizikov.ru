@@ -15,7 +15,7 @@
     <a href="https://twitter.com/Bizi" class="twitter-follow-button" data-show-count="true">Фолловь @Bizi</a>
 </div>
 
-<div class="widget">
+<div class="widget menu">
     <h4>Страницы</h4>
     <menu class="sidebar-menu">
         <li><a href="{{ site.url }}/about">Обо мне</a></li>
@@ -27,8 +27,24 @@
     <div class="tags-list">
         <h4>Темы</h4>
         <ul>{% for tag in site.tags %}
-            <li><a href="{{ site.url }}/tags/#{{ tag | first }}">{{ tag | first }}</a></li>{% endfor %}
+            <li><a href="{{ site.url }}/tags/#{{ tag | first }}">{{ tag | first }}</a></li>
+            {% endfor %}
         </ul>
+    </div>
+    <div class="mobile">
+        <h4>Навигация</h4>
+        <select class="mobile-navigation">
+            <optgroup label="Страницы">
+                <option value="about">Обо мне</option>
+                <option value="archive">Архив</option>
+                <option value="tags">Теги</option>
+            </optgroup>
+            <optgroup label="Теги">
+                {% for tag in site.tags %}
+                <option value="{{ tag | first }}">{{ tag | first }}</option>
+                {% endfor %}
+            </optgroup>
+        </select>
     </div>
     <div class="copy">
         <p>&copy; 2009-2014. {{ site.name }}.</p>
