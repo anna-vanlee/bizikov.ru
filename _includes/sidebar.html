@@ -7,51 +7,20 @@
     </a>
     {% endif %}
     <div class="about-me">
-        <p>Меня зовут <b>Александр Бизиков</b>, я интересуюсь версткой и дизайном.</p>
+        <p>Здравствуйте! Меня зовут <b>Александр Бизиков</b>, я интересуюсь версткой и дизайном.</p>
     </div>
 </div>
 
-<div class="widget">
-    <a href="https://twitter.com/Bizi" class="twitter-follow-button" data-show-count="true">Фолловь @Bizi</a>
-</div>
+<a href="https://twitter.com/Bizi" class="twitter-follow-button" data-show-count="true">Фолловь @Bizi</a>
 
-<div class="widget menu">
-    <h4>Страницы</h4>
-    <menu class="sidebar-menu">
-        <li><a href="{{ site.url }}/about">Обо мне</a></li>
-        <li><a href="{{ site.url }}/archive">Все записи</a></li>
-    </menu>
-</div>
+<h4>Страницы</h4>
+<menu>
+    <li><a href="{{ site.url }}/about">Обо мне</a></li>
+    <li><a href="{{ site.url }}/archive">Все записи</a></li>
+</menu>
 
-<div class="widget">
-    <div class="tags-list">
-        <h4>Темы</h4>
-        <ul>{% for tag in site.tags %}
-            <li><a href="{{ site.url }}/tags/#{{ tag | first }}">{{ tag | first }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="mobile">
-        <h4>Навигация</h4>
-        <select id="mobile-navigation" class="mobile-navigation" onchange="mobileNavigation(this)">
-            <option value="select-page">Выбрать страницу</option>
-            <optgroup label="Страницы">
-                <option value="about">Обо мне</option>
-                <option value="archive">Архив</option>
-                <option value="tags">Теги</option>
-            </optgroup>
-            <optgroup label="Теги">
-                {% for tag in site.tags %}
-                <option value="{{ tag | first }}">{{ tag | first }}</option>
-                {% endfor %}
-            </optgroup>
-        </select>
-    </div>
-    <div class="copy">
-        <p>&copy; 2009-2014. <a href = "https://www.google.com/+AlexandrBizikov?rel=author" rel = "publisher">{{ site.name }}.</a></p>
-
-        <p>Сайт работает на <a href="http://jekyllrb.com/" title="Джекил" target="_blank">Джекиле</a>, хостится на <a
-                href="https://github.com/bizikov/bizikov.ru" title="Исходники bizikov.ru на Гитхабе" target="_blank">Гитхабе</a>.
-        </p>
-    </div>
-</div>
+<h4>Темы</h4>
+<menu class="sidebar-menu">{% for tag in site.tags %}
+    <li><a href="{{ site.url }}/tags/#{{ tag | first }}">{{ tag | first }}</a></li>
+    {% endfor %}
+</menu>
