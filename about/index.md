@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Обо мне
-cover: images/me.jpg
+cover: upload/page/about/vcard.jpg
 keywords: Бизиков Александр, разработчик, frontend
 description: Привет. Этот сайт работает на Jekyll, исходные коды можно посмотреть на GitHub.
 ---

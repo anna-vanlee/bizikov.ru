@@ -25,6 +25,13 @@
   border-radius: @r;
 }
 
+.transition(@property: all, @duration: 0.3s, @function: linear) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
 .box-shadow(@x: 0, @y: 0, @blur: 10px, @color: #666) {
   -webkit-box-shadow: @arguments;
   box-shadow: @arguments;
@@ -46,6 +53,7 @@ body {
 
 a {
   color: @gamma;
+  .transition(color, 0.3s, linear);
   &:hover {
     color: @delta;
   }
@@ -460,7 +468,7 @@ aside {
 }
 
 /* Sidebar menu */
-menu {
+.list-links {
   .null;
   li {
     list-style: none;
@@ -469,6 +477,9 @@ menu {
       color: darken(@alpha, 30%);
       font-size: .8em;
       text-decoration: none;
+      &:hover{
+        color: @delta;
+      }
     }
   }
 }

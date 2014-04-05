@@ -1,26 +1,24 @@
-<div class="top widget">
-    {% if page.url == "/index.html" %}
+{% if page.url == "/index.html" %}<img class="avatar" title="{{ site.name }}" src="{{ site.url }}/images/bizikov.jpg" alt="{{ site.name }}"/>{% else %}
+<a href="{{ site.url }}" title="{{ site.name }}">
     <img class="avatar" title="{{ site.name }}" src="{{ site.url }}/images/bizikov.jpg" alt="{{ site.name }}"/>
-    {% else %}
-    <a href="{{ site.url }}" title="{{ site.name }}">
-        <img class="avatar" title="{{ site.name }}" src="{{ site.url }}/images/bizikov.jpg" alt="{{ site.name }}"/>
-    </a>
-    {% endif %}
-    <div class="about-me">
-        <p>Здравствуйте! Меня зовут <b>Александр Бизиков</b>, я интересуюсь версткой и дизайном.</p>
-    </div>
+</a>{% endif %}
+<div class="about-me">
+    <p>Здравствуйте! Меня зовут <b>Александр Бизиков</b>, я интересуюсь версткой и дизайном.</p>
 </div>
-
 <a href="https://twitter.com/Bizi" class="twitter-follow-button" data-show-count="true">Фолловь @Bizi</a>
-
 <h4>Страницы</h4>
-<menu>
+<menu class="list-links">
+    <li><a href="{{ site.url }}">Главная</a></li>
     <li><a href="{{ site.url }}/about">Обо мне</a></li>
-    <li><a href="{{ site.url }}/archive">Все записи</a></li>
+    <li><a href="{{ site.url }}/archive">Архив записей</a></li>
 </menu>
-
+<h4>Ссылки</h4>
+<ul class="list-links">
+    <li><a href="http://vk.com/bizikov">Вконтакте</a></li>
+    <li><a href="http://twitter.com/bizi">Твиттер</a></li>
+    <li><a href="http://instagram.com/bizikov">Инстаграм</a></li>
+</ul>
 <h4>Темы</h4>
-<menu class="sidebar-menu">{% for tag in site.tags %}
-    <li><a href="{{ site.url }}/tags/#{{ tag | first }}">{{ tag | first }}</a></li>
-    {% endfor %}
-</menu>
+<ul class="list-links">{% for tag in site.tags %}
+    <li><a href="{{ site.url }}/tags/#{{ tag | first }}">{{ tag | first }}</a></li>{% endfor %}
+</ul>
