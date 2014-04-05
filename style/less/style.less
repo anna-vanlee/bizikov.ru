@@ -309,7 +309,7 @@ aside {
   text-align: center;
   font-size: 12px;
   font-style: italic;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .searchSelect {
@@ -456,9 +456,49 @@ aside {
   }
 }
 
+/* Пагинация */
+.pagination {
+  width: @width * 3 / 4;
+  text-align: center;
+  .circle {
+    font-style: normal;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    .border-radius(50px);
+    background: darken(@alpha, 30%);
+    border: 2px solid @alpha;
+    &.current, &:hover {
+      border: 2px solid #fff;
+    }
+  }
+  a, .circle.current {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin: 0 3%;
+    &:hover {
+      color: @delta;
+    }
+  }
+  .previous, .next {
+    color: darken(@alpha, 30%);
+  }
+  .previous{
+    float: left;
+    margin-left: 1em;
+  }
+  .next{
+    float: right;
+    margin-right: 1em;
+  }
+}
+
 .copy {
+  width: @width * 3 / 4;
   font-size: 11px;
-  margin-top: 2em;
+  text-align: center;
+  margin-top: 4em;
   margin-bottom: 1em;
   a {
     border: 0;
@@ -477,7 +517,7 @@ aside {
       color: darken(@alpha, 30%);
       font-size: .8em;
       text-decoration: none;
-      &:hover{
+      &:hover {
         color: @delta;
       }
     }
