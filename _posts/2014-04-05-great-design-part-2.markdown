@@ -34,7 +34,7 @@ tags:
 17. [Picmoji](http://picmoji.com/)
 18. [Wibki](http://www.wibki.com/)
 19. [GetFitto](http://www.fitto.co/)
-20. [Knock](knocktounlock.com)
+20. [Knock](http://knocktounlock.com)
 21. [Prototyping on Paper](https://popapp.in/)
 22. [Framer](http://www.framerjs.com/)
 23. [Rise](http://simplebots.co/)
