@@ -521,8 +521,7 @@ aside {
   font-size: .9em;
   color: #1a171b;
   padding: 20px 80px;
-  border-top: 1px solid #ecf0f1;
-  background-color: #e0f8d8;
+  border-top: 2px solid #ecf0f1;
 }
 #vkontakte {
   display: none;
