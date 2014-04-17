@@ -29,15 +29,6 @@ function customSearch() {
         return false;
     }
 }
-function mobileNavigation(select) {
-    var url = 'http://bizikov.ru/';
-
-    if (select.selectedIndex !== 0 && select.selectedIndex < 3) {
-        window.location.replace(url + select.value);
-    } else {
-        window.location.replace(url + 'tags/#' + select.value);
-    }
-}
 
 // Навигация клавишами
 document.onkeydown = NavigateThrough;
@@ -54,4 +45,20 @@ function NavigateThrough(event) {
             break;
     }
     if (link && link.href) document.location = link.href;
+}
+
+function showComments() {
+    var vk = document.getElementById('vkontakte'),
+        disqus = document.getElementById('disqus'),
+        name = document.getElementById('name-system');
+
+    if (vk.style.display == 'block') {
+        vk.style.display = 'none';
+        disqus.style.display = 'block';
+        name.innerText = 'Вконтакте';
+    } else {
+        disqus.style.display = 'none';
+        vk.style.display = 'block';
+        name.innerText = 'Дискус';
+    }
 }
