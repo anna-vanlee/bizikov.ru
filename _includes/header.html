@@ -3,13 +3,13 @@
 <head>
     <title>{{ page.title }}</title>
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!-- Meta Tags -->
+    <!-- Мета Тэги -->
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
     <meta name="keywords" content="{{ page.keywords }}">
     <meta name="description" content="{{ page.excerpt }}">
     <meta name="google-site-verification" content="31GFDRk73zQxozznVPGgFu5VuuooTH7ROKIb1DTgXZs" />
-    <!-- Twitter Card data -->
+    <!-- Твиттер карточка -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@bizi">
     <meta name="twitter:creator" content="@bizi">
@@ -17,9 +17,9 @@
     <meta name="twitter:description" content="{{ page.excerpt }}">
     <meta name="twitter:image:src" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}">
     <meta name="twitter:domain" content="{{ site.url }}">
-    <!-- Google + -->
+    <!-- Гугл плюс -->
     <link rel="author" href="https://www.google.com/+AlexandrBizikov" />
-    <!-- Open Graph -->
+    <!-- Опэн граф -->
     <meta property = "og:title" content="{{ page.title }}"/>
     <meta property = "og:url" content="{{ site.url }}{{ page.url}}"/>
     <meta property = "og:type" content = "blog"/>
@@ -29,7 +29,8 @@
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.url }}/atom.xml">
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ site.url }}/style/css/style.css">
+    <!-- Вконтакте -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?111"></script>
     {% include pagination-link.html %}
-    <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
 </head>
 <body>
