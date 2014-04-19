@@ -538,22 +538,16 @@ aside {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  opacity: 0.8;
-  -webkit-transition: opacity 0.3s linear;
-  -moz-transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
 }
 #social .facebook,
 #social .vk,
 #social .twitter {
-  min-width: 120px;
   line-height: 12px;
   display: inline-block;
   margin-right: 1em;
 }
-#social:hover {
-  opacity: 1;
+#social .twitter {
+  width: 80px;
 }
 /* Список похожих записей */
 .more {
