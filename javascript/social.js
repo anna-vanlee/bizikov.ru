@@ -8,10 +8,6 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-// Вконтакте
-VK.init({apiId: 2126013, onlyWidgets: true});
-VK.Widgets.Like("vk_like", {type: "mini"});
-
 // Твиттер
 !function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
