@@ -1,14 +1,18 @@
 <div id="social">
-    <div class="vk">
-        <script type="text/javascript"><!--
-        document.write(VK.Share.button({url: "{{ site.url}}{{ page.url }}"},{type: "round", text: "Мне нравится", eng: 1}));
-        --></script>
-    </div>
-    <div class="twitter">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via="Bizi">Tweet</a>
-    </div>
     <div class="facebook">
         <div id="fb-root"></div>
-        <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    </div>
+    <div class="twitter">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="Bizi">Tweet</a>
+    </div>
+    <div class="vk">
+        <script type="text/javascript">
+            VK.init({apiId: 2126013, onlyWidgets: true});
+        </script>
+        <div id="vk_like"></div>
+        <script type="text/javascript">
+            VK.Widgets.Like("vk_like", {type: "full"});
+        </script>
     </div>
 </div>

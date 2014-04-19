@@ -297,14 +297,6 @@ aside {
     }
 
   }
-  #social {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    background-color: transparent;
-  }
 }
 
 .note {
@@ -377,15 +369,16 @@ aside {
 /* Кнопки социальных сетей */
 
 #social {
-  width: 360px;
-  margin: 0 auto 1em auto;
+  width: 100%;
+  margin: 20px 80px;
   .box-sizing;
   .facebook, .vk, .twitter {
+    min-width: 120px;
     line-height: 12px;
     display: inline-block;
     margin-right: 1em;
   }
-  opacity: 0.6;
+  opacity: 0.8;
   .transition(opacity, 0.3s, linear);
   &:hover {
     opacity: 1;
