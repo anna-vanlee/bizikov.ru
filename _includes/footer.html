@@ -1,18 +1,10 @@
 <footer class="container">
-    {% if paginator.total_pages > 1 %}<nav class="pagination">
-        {% if paginator.previous_page %}<a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Назад</a>{% else %}<span class="previous">&larr; Назад</span>{% endif %}
-        {% for page in (1..paginator.total_pages) %}{% if page == paginator.page %}
-        <i class="circle current"></i>{% elsif page == 1 %}<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}"><i class="circle"></i></a>{% else %}<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"><i class="circle"></i></a>{% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Вперед &rarr;</a>{% else %}<span class="next">Вперед &rarr;</span>{% endif %}
-    </nav>{% endif %}
+    {% include pagination.html %}
     <div class="copy">
         <p>&copy; 2009-т.в. <a href = "https://www.google.com/+AlexandrBizikov?rel=author" rel = "publisher">{{ site.name }}.</a> Сайт работает на <a href="http://jekyllrb.com/" title="Джекил" target="_blank">Джекиле</a>, хостится на <a href="https://github.com/bizikov/bizikov.ru" title="Исходники bizikov.ru на Гитхабе" target="_blank">Гитхабе</a>.
     </div>
 </footer>
 <script type="text/javascript" src="{{ site.url }}/javascript/script.js"></script>
-<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-{% include metrika.html %}{% if page.layout == "post" %}<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
+<script type="text/javascript" src="{{ site.url }}/javascript/metrika.js"></script>
 </body>
 </html>

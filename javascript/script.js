@@ -47,6 +47,7 @@ function NavigateThrough(event) {
     if (link && link.href) document.location = link.href;
 }
 
+// Переключение системы комментариев
 function showComments() {
     var vk = document.getElementById('vkontakte'),
         disqus = document.getElementById('disqus'),
