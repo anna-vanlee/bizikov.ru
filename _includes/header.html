@@ -4,29 +4,30 @@
     <title>{{ page.title }}</title>
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!-- Мета Тэги -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
-    <meta name="keywords" content="{{ page.keywords }}">
-    <meta name="description" content="{{ page.excerpt }}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="description" content="{{ page.excerpt }}" />
     <meta name="google-site-verification" content="31GFDRk73zQxozznVPGgFu5VuuooTH7ROKIb1DTgXZs" />
     <!-- Твиттер карточка -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@bizi">
-    <meta name="twitter:creator" content="@bizi">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt }}">
-    <meta name="twitter:image:src" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}">
-    <meta name="twitter:domain" content="{{ site.url }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@bizi" />
+    <meta name="twitter:creator" content="@bizi" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.excerpt }}" />
+    <meta name="twitter:image:src" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}" />
+    <meta name="twitter:domain" content="{{ site.url }}" />
     <!-- Гугл плюс -->
-    <link rel="author" href="https://www.google.com/+AlexandrBizikov" />
+    <link rel="author" href="https://plus.google.com/u/0/+AlexandrBizikov">
     <!-- Опэн граф -->
-    <meta property = "og:title" content="{{ page.title }}"/>
-    <meta property = "og:url" content="{{ site.url }}{{ page.url}}"/>
-    <meta property="og:site_name" content="Блог Александра Бизикова"/>
-    <meta property = "og:type" content = "blog"/>
-    <meta property = "og:description" content="{{ page.excerpt }}"/>
-    <meta property = "og:image" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}"/>
+    <meta property = "og:title" content="{{ page.title }}" />
+    <meta property = "og:url" content="{{ site.url }}{{ page.url}}" />
+    <meta property = "og:site_name" content="Блог Александра Бизикова" />
+    <meta property = "og:type" content = "blog" />
+    <meta property = "og:description" content="{{ page.excerpt }}" />
+    <meta property = "og:image" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}" />
     <link rel="image_src" href="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/images/bizikov.jpg{% endif %}" />
+    <!-- Атомная лента-->
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.url }}/atom.xml">
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ site.url }}/style/css/style.css">
