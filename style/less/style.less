@@ -1,5 +1,4 @@
 /* Общие стили */
-@import url('http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic');
 @import "post-style.less";
 @import "syntax.less";
 
@@ -35,6 +34,20 @@
 .box-shadow(@x: 0, @y: 0, @blur: 10px, @color: #666) {
   -webkit-box-shadow: @arguments;
   box-shadow: @arguments;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v6/zjBCKJs0bE-LvM0teIV5VHYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v6/QABk9IxT-LFTJ_dQzv7xpEbeuvGrcRTTBH456c-a4yI.woff) format('woff');
 }
 
 // Общие стили
@@ -285,7 +298,7 @@ aside {
     width: 100%;
     position: absolute;
     padding: 0 80px;
-    bottom: 6em;
+    bottom: 1em;
     left: 0;
     .box-sizing;
     .search-title {
@@ -377,7 +390,10 @@ aside {
     display: inline-block;
     margin-right: 1em;
   }
-  .twitter{
+  .facebook {
+    width: 110px;
+  }
+  .twitter {
     width: 80px;
   }
 }
