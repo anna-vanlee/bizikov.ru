@@ -18,7 +18,7 @@ tags:
 
 Необходимо добавить директивы:
 
-{% highlight asp.net %}
+{% highlight C %}
 <%@ Page language="C#" MasterPageFile="../_catalogs/masterpage/myMaster.master"
 	     Inherits="Microsoft.SharePoint.WebPartPages.WebPartPage,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c"
 	     meta:progid="SharePoint.WebPartPage.Document"
@@ -37,7 +37,7 @@ tags:
 В качестве примера можно взять содержимое стандартного мастера Oslo.master и вставить его в новый, только что созданный myMaster.master. При необходимости можно удалить лишние куски кода и добавить свои элементы на страницу.
 Когда доходим до момента, что нужно определить веб-часть для страницы, вставляем в Main.aspx
 
-{% highlight asp.net %}
+{% highlight C %}
 <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
 	<WebPartPages:WebPartZone runat="server" ID="webZone1" CssClass="ms-hide" Title="Название веб-части">
 		<ZoneTemplate></ZoneTemplate>
