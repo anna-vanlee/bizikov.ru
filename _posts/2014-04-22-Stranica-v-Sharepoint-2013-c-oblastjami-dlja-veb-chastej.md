@@ -34,13 +34,12 @@ tags:
 
 Все содержимое страницы по сути будет браться из myMaster.master. Что такое мастер страница? Если коротко, то это шаблон, по которому отображаются все страницы портала. Это как шаблон для wordpress, только все в одном файле :)
 
-В качестве примера можно взять содержимое стандартного мастера Oslo.master и вставить его в новый, только что созданный myMaster.master. При необходимости можно удалить лишние куски кода.
-
-Верстаем необходимую верстку в master. Когда доходим до момента, что нужно определить веб-часть для страницы, вставляем в Main.aspx
+В качестве примера можно взять содержимое стандартного мастера Oslo.master и вставить его в новый, только что созданный myMaster.master. При необходимости можно удалить лишние куски кода и добавить свои элементы на страницу.
+Когда доходим до момента, что нужно определить веб-часть для страницы, вставляем в Main.aspx
 
 {% highlight asp.net %}
 <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
-	<WebPartPages:WebPartZone runat="server" ID="webZone1" CssClass="ms-hide" Title="Новости">
+	<WebPartPages:WebPartZone runat="server" ID="webZone1" CssClass="ms-hide" Title="Название веб-части">
 		<ZoneTemplate></ZoneTemplate>
 	</WebPartPages:WebPartZone>
 </asp:Content>
