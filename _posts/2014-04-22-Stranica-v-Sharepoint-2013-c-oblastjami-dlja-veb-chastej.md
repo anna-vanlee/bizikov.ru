@@ -28,9 +28,7 @@ tags:
 
 {% highlight C %}
 <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
-<WebPartPages:WebPartZone runat="server" ID="webZone1" CssClass="ms-hide" Title="Название веб-части">
-	<ZoneTemplate></ZoneTemplate>
-</WebPartPages:WebPartZone>
+ 	...
 </asp:Content>
 {% endhighlight %}
 
