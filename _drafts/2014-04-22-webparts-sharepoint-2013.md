@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Создаем свою страницу в Sharepoint 2013 c областями для веб-частей
+title: Страница в Sharepoint 2013 c областями для веб-частей
 why: Создать главную страницу корпоративного портала.
 keywords: Sharepoint 2013, masterpage, webParts, веб-части в Sharepoint 2013
 tags:
