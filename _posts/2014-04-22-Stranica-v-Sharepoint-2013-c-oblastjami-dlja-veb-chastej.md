@@ -60,5 +60,5 @@ Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToke
 
 Добавляем нужные веб-части и радуемся.
 
-{% gist 321001c90361c0039e3a %}
+{% gist 11169756 %}
 
