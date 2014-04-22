@@ -47,7 +47,7 @@ tags:
 
 В мастере необходимо для PlaceHolderMain определить место, поэтому в нужной части верстки добавляем плэйсхолдер
 
-{% highlight asp.net %}
+{% highlight C %}
 <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
 {% endhighlight %}
 
