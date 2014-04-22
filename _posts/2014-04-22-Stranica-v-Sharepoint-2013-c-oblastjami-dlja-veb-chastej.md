@@ -34,7 +34,7 @@ tags:
 </asp:Content>
 {% endhighlight %}
 
-В мастере необходимо для PlaceHolderMain определить место, поэтому в нужной части верстки <span class="file">.master страницы добавляем плэйсхолдер
+В мастере необходимо для PlaceHolderMain определить место, поэтому в нужной части верстки <span class="file">.master</span> страницы добавляем плэйсхолдер
 
 {% highlight C %}
 <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
