@@ -46,7 +46,7 @@ Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToke
 </asp:Content>
 {% endhighlight %}
 
-В мастере необходимо для PlaceHolderMain определить место, поэтому в нужной части верстки добавляем плэйсхолдер
+В мастере необходимо для PlaceHolderMain определить место, поэтому в нужной части верстки <span class="file">.master страницы добавляем плэйсхолдер
 
 {% highlight C %}
 <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
