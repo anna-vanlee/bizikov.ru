@@ -19,24 +19,12 @@ tags:
 
 Необходимо добавить директивы:
 
-{% highlight C %}
-<%@ Page language="C#" MasterPageFile="../_catalogs/masterpage/myMaster.master"
-Inherits="Microsoft.SharePoint.WebPartPages.WebPartPage,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c"
-meta:progid="SharePoint.WebPartPage.Document"
-meta:webpartpageexpansion="full"%>
-
-<%@ Register TagPrefix="SharePoint"
-	Namespace="Microsoft.SharePoint.WebControls"
-	Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register Tagprefix="WebPartPages"
-Namespace="Microsoft.SharePoint.WebPartPages"
-Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-{% endhighlight %}
+{% gist 11169756 %}
 
 Все содержимое страницы по сути будет браться из myMaster.master. Что такое мастер страница? Если коротко, то это шаблон, по которому отображаются все страницы портала. Это как шаблон для wordpress, только все в одном файле :)
 
 В качестве примера можно взять содержимое стандартного мастера **Oslo.master** и вставить его в новый, только что созданный myMaster.master. При необходимости можно удалить лишние куски кода и добавить свои элементы на страницу.
-Когда доходим до момента, что нужно определить веб-часть для страницы, вставляем в Main.aspx
+Когда доходим до момента, что нужно определить веб-часть для страницы, в Main.aspx за это отвечает:
 
 {% highlight C %}
 <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -59,6 +47,4 @@ Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToke
 ![]({{ site.url}}/upload/article/2014/04/22/edit-page.png)
 
 Добавляем нужные веб-части и радуемся.
-
-{% gist 11169756 %}
 
