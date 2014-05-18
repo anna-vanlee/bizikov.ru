@@ -30,6 +30,8 @@ description: Привет. Этот сайт работает на Jekyll, ис�
 2. [Твиттер](http://twitter.com/bizi)
 2. [Ядекс.Фотки](http://fotki.yandex.ru/users/alexandr-bizikov/)
 3. [Инстаграм](http://instagram.com/bizikov)
+4. [Кинопоиск](http://www.kinopoisk.ru/user/1129585/)
+5. [Мои сериалы](http://myshows.ru/bizikov)
 4. [Фликр](http://www.flickr.com/photos/48363663@N05/)
 4. [Пинтерест](http://pinterest.com/bizikov/)
 5. [Форсквер](https://ru.foursquare.com/bizi)
