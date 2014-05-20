@@ -60,7 +60,7 @@ category:
 
 Еще одна панорама.
 
-<script src="http://occipital.com/360/embed.js?pano=740Emm&width=640&height=520"></script>
+<script src="http://occipital.com/360/embed.js?pano=532Emm&width=740&height=520"></script>
 
 Вид с горы.
 
