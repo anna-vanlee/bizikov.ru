@@ -47,6 +47,7 @@ category:
 <script src="http://occipital.com/360/embed.js?pano=TYetT7&width=740&height=520"></script>
 
 Река Сакмара. Весна, поэтому вода еще грязная.
+
 <iframe src="//instagram.com/p/nzviZXxc-I/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 Особой достопримечательностью города является гора Ослотау.
