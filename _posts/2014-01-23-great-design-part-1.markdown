@@ -51,5 +51,4 @@ tags:
 38. [Michael Ngo](http://www.hellomichael.com/)
 39. [Kitbashed](http://kitbashed.com/)
 40. [Parker Iain](http://www.parkeriain.com/)
-
-P.S Список постоянно пополняется.
+41. [Ryan Putnam](http://ryanputn.am/)
