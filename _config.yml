@@ -9,3 +9,5 @@ url: http://bizikov.ru
 permalink: /:categories/:year/:month/:title/
 paginate: 5
 markdown: kramdown
+kramdown:
+  auto_ids: false

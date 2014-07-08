@@ -52,3 +52,4 @@ tags:
 39. [Kitbashed](http://kitbashed.com/)
 40. [Parker Iain](http://www.parkeriain.com/)
 41. [Ryan Putnam](http://ryanputn.am/)
+42. [Blogify](http://templates.suitstheme.com/blogify/)
