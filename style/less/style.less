@@ -6,7 +6,7 @@
 @width: 1200px;
 
 @alpha: #ECF0F1;
-@beta: #1a171b;
+@beta: #000;
 @gamma: #1D62F0;
 @delta: #FC6341;
 @epsilon: #E0F8D8;
@@ -59,7 +59,7 @@ html, body {
 
 body {
   font-family: 'PT Serif', Arial, serif;
-  font-size: 100%;
+  font-size: 16px;
   color: @beta;
   background-color: @alpha;
 }
@@ -385,7 +385,7 @@ aside {
   width: 100%;
   margin: 20px 80px;
   .box-sizing;
-  .facebook, .vk, .twitter {
+  .facebook, .vk, .twitter, .pocket {
     line-height: 12px;
     display: inline-block;
     margin-right: 1em;
@@ -395,6 +395,11 @@ aside {
   }
   .twitter {
     width: 100px;
+  }
+  .pocket{
+    width: 90px;
+    height: 20px;
+    overflow: hidden;
   }
 }
 
