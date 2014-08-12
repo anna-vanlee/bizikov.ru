@@ -1,15 +1,15 @@
 /* Общие стили */
-@import "post-style.less";
-@import "syntax.less";
+@import "syntax";
 
 /* VAR */
-@width: 1200px;
+@width: 960px;
 
 @alpha: #ECF0F1;
-@beta: #000;
+@beta: #333;
 @gamma: #1D62F0;
 @delta: #FC6341;
 @epsilon: #E0F8D8;
+@zeta: #FF0;
 
 // MIXIN
 .box-sizing (@type: border-box) {
@@ -58,8 +58,9 @@ html, body {
 }
 
 body {
-  font-family: 'PT Serif', Arial, serif;
-  font-size: 16px;
+  font-family: 'PT Serif', Georgia, serif;
+  font-size: 1em;
+  line-height: 1.6em;
   color: @beta;
   background-color: @alpha;
 }
@@ -125,6 +126,10 @@ pre {
   margin: 0 0 1em 0;
   border-radius: 3px;
   background-color: #ECF0F1;
+}
+
+ins, mark {
+  text-decoration: none;
 }
 
 blockquote {
@@ -199,6 +204,22 @@ table {
   }
 }
 
+header {
+  width: @width;
+  margin: 3em auto 0 auto;
+  nav {
+    padding: 20px 0;
+    margin: 0px 80px;
+    a {
+      color: darken(@alpha, 20%);
+      line-height: 3em;
+      margin-right: 1em;
+      text-decoration: none;
+      margin: 0 1em;
+    }
+  }
+}
+
 .archive-list {
   .archive-post-date {
     color: darken(@alpha, 30%);
@@ -207,23 +228,14 @@ table {
 
 .container {
   width: @width;
-  margin: 2em auto 0 auto;
+  margin: 0 auto;
   overflow: hidden;
-}
-
-section {
-  float: left;
+  .border-radius;
 }
 
 article {
-  width: @width  * 3 / 4;
-  position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
   background-color: #FFF;
-  .box-sizing;
-  .border-radius(5px);
-  .box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
   &>a {
     img {
       min-width: 100%;
@@ -233,11 +245,43 @@ article {
   .content {
     overflow: hidden;
     position: relative;
-    padding: 40px 80px 20px 80px;
+    padding: 10px 80px;
+    .note {
+      width: 100px;
+      font-size: .8em;
+      text-align: left;
+
+      position: absolute;
+      right: 10px;
+      margin: 0;
+      padding: 10px;
+      background: @alpha;
+      border-top: 2px solid @zeta;
+    }
+    p {
+      width: @width * 3/4;
+      img {
+        max-width: @width;
+        width: @width;
+        margin-left: -80px;
+        margin-bottom: 2em;
+        display: block;
+        &.original {
+          width: auto !important;
+          max-width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+    & > ul {
+      width: @width * 3/4;
+      padding: 0 1em;
+    }
   }
   .article-tags {
     overflow: hidden;
-    padding: 0;
+    padding: 0 !important;
+    margin: 0;
     li {
       color: darken(@alpha, 30%);
       padding: 0;
@@ -254,22 +298,18 @@ article {
     }
   }
   .date {
-    position: absolute;
-    left: 0;
-    font-size: .7em;
-    margin-top: 2em;
-    padding: 10px 8px;
-    color: @beta;
-    background: @epsilon;
+    font-family: monospace;
   }
   .why {
     padding: 1em;
+    margin-top: 1em;
     background-color: @epsilon;
   }
   ol {
     li {
       img {
         margin: 1em 0;
+        display: block;
       }
     }
   }
@@ -282,9 +322,10 @@ aside {
 }
 
 .avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  float: left;
+  .border-radius(100px);
 }
 
 .cover {
@@ -370,6 +411,7 @@ aside {
 
 .post-title {
   margin: .6em 0 .3em 0;
+  line-height: 1.2em;
   a {
     color: @beta;
     text-decoration: none;
@@ -396,7 +438,7 @@ aside {
   .twitter {
     width: 100px;
   }
-  .pocket{
+  .pocket {
     width: 90px;
     height: 20px;
     overflow: hidden;
@@ -423,6 +465,8 @@ aside {
   }
   .more-post-link {
     display: block;
+    font-size: 1em;
+    line-height: 1.2em;
   }
   .more-post-date {
     font-size: 12px;
@@ -498,32 +542,36 @@ aside {
 
 /* Пагинация */
 .pagination {
-  width: @width * 3 / 4;
+  width: @width;
   text-align: center;
-  margin-bottom: 3em;
-  .circle {
+  padding: 40px 80px;
+  background: #fff;
+  .box-sizing;
+  .page {
     font-style: normal;
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    .border-radius(50px);
-    background: darken(@alpha, 30%);
-    border: 2px solid @alpha;
-    &.current, &:hover {
-      border: 2px solid #fff;
+    padding: 2px 10px;
+    &.current {
+      background: @alpha;
+      margin: 0 1em;
+      &:hover {
+        color: @beta;
+      }
     }
   }
-  a, .circle.current {
+  a {
+    color: @beta;
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    margin: 0 3%;
+    margin: 0 1em;
     &:hover {
       color: @delta;
     }
   }
   .previous, .next {
     color: darken(@alpha, 30%);
+    padding: 2px 0;
   }
   .previous {
     float: left;
@@ -534,23 +582,18 @@ aside {
     margin-right: 1em;
   }
 }
-footer{
+
+footer {
   width: @width;
   margin: 0 auto;
+  overflow: hidden;
 }
+
 .copy {
-  width: @width * 3 / 4;
-  font-size: 11px;
-  margin-bottom: 1em;
-  a {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
+  color: darken(@alpha, 20%);
+  text-align: center;
 }
-.counter{
-  opacity: .2;
-}
+
 /* Sidebar menu */
 .list-links {
   .null;
@@ -558,7 +601,7 @@ footer{
     list-style: none;
     margin-bottom: .2em;
     a {
-      color: darken(@alpha, 30%);
+      color: darken(@alpha, 50%);
       font-size: .8em;
       text-decoration: none;
       &:hover {
@@ -582,4 +625,78 @@ footer{
 .error-title {
   font-size: 12em;
   margin: 0;
+}
+
+/* Оформление заметок */
+.image-description {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #b2b2b2;
+}
+
+.full {
+  width: 860px;
+  margin-left: -80px;
+}
+
+.align-right {
+  float: right;
+}
+
+.align-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.quote {
+  text-align: center;
+  font-size: 26px;
+}
+
+.quote-author {
+  text-align: right;
+}
+
+.file {
+  font-size: .8em;
+  padding: 2px 8px;
+  background-color: @alpha;
+  border-radius: 3px;
+}
+
+hr {
+  border: 1px solid @alpha;
+  margin: 1em -5em;
+  clear: both;
+}
+
+/* Настройка слайдера */
+.folium {
+  width: @width;
+  margin-left: -80px !important;
+  .folium--caption {
+    text-align: left;
+    margin-left: 80px;
+  }
+  &.normal {
+    padding: 1em 0;
+    background: lighten(@alpha, 5%);
+    img {
+      width: auto !important;
+    }
+    .folium--caption {
+      text-align: center;
+      margin-left: 0;
+    }
+    &.bg-null {
+      background: transparent;
+    }
+    &.ios {
+      img {
+        width: 320px;
+        height: 480px;
+      }
+    }
+  }
 }

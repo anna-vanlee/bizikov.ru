@@ -13,7 +13,7 @@ tags:
 
 В моем случае стенд *(место где располагается наш шарик)* находится на другом компьютере, поэтому я подключился к нему через Дизайнер ([Sharepoint Designer 2013](http://www.microsoft.com/ru-ru/download/details.aspx)). Через "Все файлы" находим папку Pages и создаем там свою <span class="file">.aspx</span> страницу. Например, Main.aspx.
 
-![Создание страницы Main.aspx]({{ site.url }}/upload/article/2014/04/22/mainaspx.png)
+<img class="original" src="{{ site.url }}/upload/article/2014/04/22/mainaspx.png" alt="Создание страницы Main.aspx" title="Создание страницы Main.aspx">
 
 Стандартный код можно спокойно удалять, он не понадобится.
 
@@ -42,7 +42,7 @@ tags:
 
 После этого заходим на портал и выбираем **изменить страницу**
 
-![]({{ site.url}}/upload/article/2014/04/22/edit-page.png)
+<img class="original" src="{{ site.url}}/upload/article/2014/04/22/edit-page.png" alt="" title="">
 
 Добавляем нужные веб-части и радуемся.
 

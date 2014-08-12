@@ -7,7 +7,6 @@ keywords: Samsung Camera, Samsung NX300, обновить камеру, обно
 excerpt: процесс обновления прошивки для смарт камеры Samsung NX300 до версии 1.34
 tags:
 - Samsung
-- Gadgets
 ---
 
 Моим первым фотоаппаратом была мыльница **FujiFilm FinePix J32**, купленная примерно за 2 тысячи рублей, которые я получил от университета в качестве академической стипендии на первом курсе.
@@ -31,13 +30,13 @@ tags:
 
 1. [Скачать файл прошивки 1.34 для Samsung NX300](http://yadi.sk/d/lveVznXpHXRBC).
 2. Разархивировать скачанный <span class="file">.zip</span> файл и переместить в корневую директорию карты памяти.
-   ![]({{ site.url }}/upload/article/2014/02/08/screen_01.png)
+   <img class="original" src="{{ site.url }}/upload/article/2014/02/08/screen_01.png" alt="" title="">
 
 3. Вставить карту памяти обратно в фотоаппарат, зайти в Menu > Setting > Device Information, нажать на Firmware Update (Обновление прошивки) и выбрать Body Firmware (Прошивка для камеры).
-   ![]({{ site.url }}/upload/article/2014/02/08/screen_00.jpg)
+   <img class="original" src="{{ site.url }}/upload/article/2014/02/08/screen_00.jpg" alt="" title="">
 
 4. Начнется обновление. Фотоаппарат пару раз перезагрузится, так что не удивляйтесь этому. Процесс не займет много времени, у меня NX300 обновился за 5 минут. После этого можно зайти в Device Information и убедиться, что обновление прошло успешно.
-   ![]({{ site.url }}/upload/article/2014/02/08/screen_02.jpg)
+   <img class="original" src="{{ site.url }}/upload/article/2014/02/08/screen_02.jpg" alt="" title="">
 
 5. Фотографируем.
 

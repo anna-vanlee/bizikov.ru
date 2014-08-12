@@ -2,8 +2,6 @@
 layout: post
 title: Разблокировка компьютера стуком по айфону, с помощью iOS приложения Knock
 excerpt: Описание приложения Knock и опыт взаимодействия с ним
-youtube: CyX8FfSKg04
-app-id: id692929970
 keywords: iphone, mac os, mac mini
 tags:
 - iOS
@@ -11,19 +9,24 @@ tags:
 
 Прежде чем начать читать статью, посмотрите промо-ролик приложения.
 
+<iframe width="800" height="450" src="//www.youtube.com/embed/CyX8FfSKg04" frameborder="0" allowfullscreen></iframe>
+
 Посмотрели? Круто, правда? Вот и я так же подумал и купил приложение в [App Store](https://itunes.apple.com/ru/app/knock-unlock-your-mac-without/id692929970) за 129 рублей.
 Потом скачал с официального сайта [Knock Software](http://knocktounlock.com) программу для мака и установил ее. Процесс настройки достаточно простой, поэтому описывать не буду.
 
 После запуска в панели задач появилась иконка приложения **Knock**, по клику на которую доступно немного опций:
 
-![Приложение Knock на компьютере Mac OS Maverick]({{ site.url }}/upload/article/2014/03/04/toolbar.png)
+<img class="original" alt="Приложение Knock на компьютере Mac OS Maverick" title="Приложение Knock на компьютере Mac OS Maverick" src="{{ site.url }}/upload/article/2014/03/04/toolbar.png" />
 
 Приложение для айфона недалеко ушло от своего собрата - оно тоже с минимальным набором настроек. Knock показывает состояние подключения.
 Если его нет, то нужно связаться с приложением на маке через блютус. После этого приложение на айфоне начнет показывать состояние экрана и, если потянуть иконку компьютера вниз, то можно разорвать соединение.
 
----------------|-------------
-![]({{ site.url }}/upload/article/2014/03/04/screen_00.png) | ![]({{ site.url }}/upload/article/2014/03/04/screen_03.png)
-![Монитор  Mac OS активен]({{ site.url }}/upload/article/2014/03/04/screen_01.png) | ![Монитор  Mac OS заблокирован]({{ site.url }}/upload/article/2014/03/04/screen_02.png)
+<figure class="folium normal ios">
+<img class="original" src="{{ site.url }}/upload/article/2014/03/04/screen_00.png" alt="" title="">
+<img class="original" src="{{ site.url }}/upload/article/2014/03/04/screen_01.png" alt="Монитор  Mac OS активен" title="Монитор  Mac OS активен">
+<img class="original" src="{{ site.url }}/upload/article/2014/03/04/screen_02.png" alt="Монитор  Mac OS заблокирован" title="Монитор  Mac OS заблокирован">
+<img class="original" src="{{ site.url }}/upload/article/2014/03/04/screen_03.png" alt="" title="">
+</figure>
 
 Настало время воспользоваться приложением. Вот тут меня ждала засада. Ребята из **Knock Software** схитрили на видео.
 

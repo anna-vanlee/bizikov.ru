@@ -1,9 +1,0 @@
-<div class="more">
-    <h3 class="more-title">Почитать ещё</h3>
-    <ul>{% for post in site.related_posts limit:4 %}
-        <li>
-            <a class="more-post-link" href="{{ post.url }}">{{ post.title }}</a>
-            <time class="more-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%d.%m.%Y" }}</time>
-        </li>{% endfor %}
-    </ul>
-</div>

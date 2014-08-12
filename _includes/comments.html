@@ -1,18 +1,9 @@
 <div class="comments">
     <h3>Комментарии</h3>
-
-    <div id="vkontakte">
-        <script type="text/javascript" src="//vk.com/js/api/openapi.js?105"></script>
-        <div id="vk_comments"></div>
-        <script type="text/javascript">
-            VK.init({apiId: 2126013, onlyWidgets: true});
-            VK.Widgets.Comments("vk_comments", {limit: 10, width: "700", attach: "*"});
-        </script>
-    </div>
     <div id="disqus">
         <div id="disqus_thread"></div>
         <script type="text/javascript">
-            var disqus_shortname = 'bizikov';
+            var disqus_shortname = '{{ site.disqus_shortname }}';
             (function () {
                 var dsq = document.createElement('script');
                 dsq.type = 'text/javascript';
@@ -23,7 +14,4 @@
         </script>
         <noscript>Включите Джаваскрипт в своем браузере, что бы оставить комментарий.</noscript>
     </div>
-</div>
-<div class="system-comments">
-    Переключить систему комментирования на <span id="name-system" class="social-comments" onclick="showComments()">Вконтакте</span>
 </div>

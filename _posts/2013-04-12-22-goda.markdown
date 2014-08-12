@@ -3,7 +3,7 @@ layout: post
 title: 22 года
 excerpt: Вот мне и 22.
 tags:
-- Personal
+- Личное
 ---
 
 Вот мне и 22.

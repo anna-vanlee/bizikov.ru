@@ -17,7 +17,7 @@ tags:
 
 После запуска установщика вам будет предложено выбрать тип запуска Git:
 
-![После запуска установщика вам будет предложено выбрать тип запуска Git]({{site.url}}/upload/article/2012/07/23/screen_00.jpg)
+<img class="original" src="{{site.url}}/upload/article/2012/07/23/screen_00.jpg" alt="После запуска установщика вам будет предложено выбрать тип запуска Git"/>
 
 * Git bash only: Git инсталлируется и вызывается командой контекстного меню Git bash here / Git GUI here
 
@@ -36,6 +36,6 @@ tags:
 
 Заходим в IDEA  VCS →  Checkout from Version Control → Git
 
-![Git clone]({{site.url}}/upload/article/2012/07/23/screen_01.jpg)
+<img class="original" src="{{site.url}}/upload/article/2012/07/23/screen_01.jpg" alt="Git clone" />
 
 Готово!

@@ -5,7 +5,7 @@ excerpt: Описание процесса прошивки телефона LG 
 keywords: LG GT540, Android, прошивка Android, Android 2.3, обновление до Android 2.3
 tags:
 - Android
-- Gadgets
+- LG
 ---
 
 По заявлениям производителя телефон не поддерживает версии андроида выше 2.1. Ан нет, это лишь официально, а на деле можно поставить на этот телефон и 2.2 и 2.3! Решил сразу 2.3 использовать.
@@ -16,7 +16,10 @@ tags:
 
 Уверен что хочешь себе поставить android 2.3? Вот пару скринов системы:
 
-<img src="{{ site.url }}/upload/article/2011/05/11/screen_00.jpg" class="center"/> | <img src="{{ site.url }}/upload/article/2011/05/11/screen_01.jpg" class="center"/>
+<figure class="folium normal">
+<img src="{{ site.url }}/upload/article/2011/05/11/screen_00.jpg" alt="Скриншот рабочего стола" />
+<img src="{{ site.url }}/upload/article/2011/05/11/screen_01.jpg" alt="Скриншот приложения с погодой" />
+</figure>
 
 Если решил прошить телефон, то советую в первую очередь сохранить все контакты, вытащить симку и карту памяти.
 

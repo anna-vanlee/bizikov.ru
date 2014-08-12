@@ -4,7 +4,7 @@ title: Эффективное использование mixin в LESS
 excerpt: Я люблю LESS. Правда. Это очень клевая штука, которая позволяет упростить написание CSS. В это записи пойдет речь о Mixin.
 keywords: css3, less, mixin
 tags:
-- CSS3
+- CSS
 - LESS
 ---
 

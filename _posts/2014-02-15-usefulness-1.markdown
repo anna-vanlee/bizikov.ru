@@ -4,7 +4,7 @@ title: Полезности &#35;1
 excertp: Полезные инструменты и статьи, которые делают жить чуточку веселее.
 keywords: air video, ASCOcam, Wireframe, UX Sketchbook, Sir Trevor
 tags:
-- Design
+- Дизайн
 ---
 
 Полезные инструменты и статьи, которые делают жить чуточку веселее.

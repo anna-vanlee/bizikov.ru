@@ -13,31 +13,31 @@ tags:
 
 Приложение очень просто использвать, достаточно его включить и навести на код, он сканирует и выдает результат, вот как это выглядит:
 
-<img src="{{ site.url }}/upload/article/2011/01/12/qrcode.png" alt="Barcode Scanner" class="center"/>
+<img src="{{ site.url }}/upload/article/2011/01/12/qrcode.png" alt="Barcode Scanner" class="original"/>
 
 ### 2. Universal Androot
 
 Приложение, для получение прав root на телефоне, эти права могут пригодиться скажем для снятие скриншотов. Выбираете версию андроида и нажимаете «Root :)»
 
-<img src="{{ site.url }}/upload/article/2011/01/12/universalandroot.png" alt="Universal Androot" class="center"/>
+<img src="{{ site.url }}/upload/article/2011/01/12/universalandroot.png" alt="Universal Androot" class="original"/>
 
 ### 3. Screenshot
 
 Приложение, благодаря которому я делаю все эти скриншоты! Для его работы необходимы права Root, как их получить вы уже узнали.
 
- <img src="{{ site.url }}/upload/article/2011/01/12/screenshot.png" alt="Screenshot" class="center"/>
+ <img src="{{ site.url }}/upload/article/2011/01/12/screenshot.png" alt="Screenshot" class="original"/>
 
 ### 4. DropBox
 
 Наверно всем известно это название, есть клиенты на все популярные платформы. Я использую DropBox на ноутбуке, поэтому поставил и на телефон. Иногда бывает лень подключить телефон к ноуту и перекинуть файлы. И тут приходит на помошь DropBox! Скидываю в папку картинку и тут же вижу, уведомление на ноуте)) Это очень удобно!
 
-<img src="{{ site.url }}/upload/article/2011/01/12/dropbox.png" alt="DropBox" class="center"/>
+<img src="{{ site.url }}/upload/article/2011/01/12/dropbox.png" alt="DropBox" class="original"/>
 
 ### 5. GhostCommande
 
 Это как Total Commander, но для Android!
 
-<img src="{{ site.url }}/upload/article/2011/01/12/ghostcommande.png" alt="GhostCommande" class="center"/>
+<img src="{{ site.url }}/upload/article/2011/01/12/ghostcommande.png" alt="GhostCommande" class="original"/>
 
 Об одной половине приложений я написал, а теперь пришло время для приложений, которые помогают общаться через интернет.
 
@@ -49,20 +49,22 @@ tags:
 
 На мой взгляд это лучший твиттер-клиент для Android. Очень удобен и функционален.
 
+<figure class="folium normal">
 <img src="{{ site.url }}/upload/article/2011/01/12/twicca.png" alt="Twicca Профиль"/>
 <img src="{{ site.url }}/upload/article/2011/01/12/twicca--tweet.png" alt="Twicca Лента твиттов"/>
+</figure>
 
 ### 8. OperaMobile
 
 OperaMobile — удобнее стандартного браузера (хотя если честно, стандартным я и не пользовался, сразу поставил Оперу.
 
-<img src="{{ site.url }}/upload/article/2011/01/12/operamobile.png" alt="OperaMobile" class="center"/>
+<img src="{{ site.url }}/upload/article/2011/01/12/operamobile.png" alt="OperaMobile" class="original"/>
 
 ### 9. Яндекс.Почта
 
 Для использования Gmail в андроиде есть встроенный клиент. А что делать если я использую яндекс почту для домена?  Яндекс о нас подумал! Вот так выглядит моя почта:
 
-<img src="{{ site.url }}/upload/article/2011/01/12/yandexmail.png" alt="Яндекс.Почта" class="center"/>
+<img src="{{ site.url }}/upload/article/2011/01/12/yandexmail.png" alt="Яндекс.Почта" class="original"/>
 
 ### 10. WordPress
 
@@ -70,7 +72,9 @@ OperaMobile — удобнее стандартного браузера (хот
 
 Вот как оно выглядит:
 
+<figure class="folium normal">
 <img src="{{ site.url }}/upload/article/2011/01/12/wordpress.png" alt="WordPress Index Page"/>
 <img src="{{ site.url }}/upload/article/2011/01/12/wordpress--newpost.png" alt="WordPress New Post"/>
+</figure>
 
 Для установки приложения следует зайти в Google Play, через поиск по названию приложения найти его и скачать.

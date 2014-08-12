@@ -31,9 +31,19 @@
     <!-- Атомная лента-->
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.url }}/atom.xml">
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.url }}/style/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/folium.css">
     <!-- Вконтакте -->
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?111"></script>
     {% include pagination-link.html %}
 </head>
 <body>
+<header>
+    <nav>
+        {% for link in site.links %}{% if link.icon %}
+        <a href="{{ site.url}}"><img class="avatar" src="{{ site.url }}{{ link.icon }}" alt="{{ link.title }}"/>{{ link.title }}</a>
+        {% else %}
+        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+        {% endif %}{% endfor %}
+    </nav>
+</header>

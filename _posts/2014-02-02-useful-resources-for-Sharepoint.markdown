@@ -8,7 +8,7 @@ tags:
 - Sharepoint
 ---
 
-<img class="align-left" src="{{ site.url}}/upload/article/2014/02/02/sharepoint.png" title="Sharepoint">
+<img class="align-left original" src="{{ site.url}}/upload/article/2014/02/02/sharepoint.png" title="Sharepoint">
 
 Так вышло, что я работаю с Sharepoint по части дизайна. Поэтому нужно было браться и изучать.
 
@@ -45,7 +45,7 @@ tags:
 
 Обучающее видео по основам Sharepoint доступен на [YouTube](http://www.youtube.com/watch?v=gdanJpm2l24&list=PLDrmKwRSNx7JcOc2Cv6FKDoq1GroAd333)
 
-<iframe width="700" height="480" src="//www.youtube.com/embed/gdanJpm2l24?list=PLDrmKwRSNx7JcOc2Cv6FKDoq1GroAd333" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="520" src="//www.youtube.com/embed/gdanJpm2l24?list=PLDrmKwRSNx7JcOc2Cv6FKDoq1GroAd333" frameborder="0" allowfullscreen></iframe>
 
 #### SharePoint Branding & Design
 

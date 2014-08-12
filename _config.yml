@@ -1,13 +1,26 @@
 name: Александр Бизиков
 description: Пишу об интересных и полезных для меня материалах
-email: alexandr@bizikov.ru
-age: 22
-vk: http://vk.com/bizikov
-twitter: http://twitter.com/bizi
-instagram: http://instagram.com/bizikov
+disqus_shortname: bizikov
 url: http://bizikov.ru
+
+# Ссылки для навигации
+links:
+  - title: Александр Бизиков
+    url: /
+    icon: /upload/page/home/bizikov.jpg
+  - title: Архив заметок
+    url: /archive/
+  - title: О себе
+    url: /about/
+
 permalink: /:categories/:year/:month/:title/
+
+timezone:    Asia/Yerevan
+future:      true
+pygments:    true
+markdown:    kramdown
 paginate: 5
-markdown: kramdown
 kramdown:
   auto_ids: false
+
+

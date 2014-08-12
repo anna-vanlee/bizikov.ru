@@ -19,7 +19,7 @@ tags:
 - Скачиваем и устанавливаем <a href="http://developer.android.com/sdk/index.html" target="_blank">Android SDK</a> (советую .exe версию)
 - Запускаем Android SDK и выбираем &laquo;Installed packages&raquo; и устанавливаем все пакеты. (не обязательно, но лучше все)
 
-![]({{ site.url}}/upload/article/2011/09/25/screen_00.jpg)
+<img src="{{ site.url}}/upload/article/2011/09/25/screen_00.jpg" alt="Android SDK" class="original">
 
 Перезапускаем SDK
 
@@ -31,10 +31,10 @@ tags:
 
 Открываем ddms.bat. В меню выбираем Device — Screen capture…
 
-![]({{ site.url}}/upload/article/2011/09/25/screen_01.jpg)
-
-![]({{ site.url}}/upload/article/2011/09/25/screen_02.jpg)
-
-![]({{ site.url}}/upload/article/2011/09/25/screen_03.png)
+<figure class="folium normal bg-null">
+<img src="{{ site.url}}/upload/article/2011/09/25/screen_01.jpg" alt="Android SDK" class="original">
+<img src="{{ site.url}}/upload/article/2011/09/25/screen_02.jpg" alt="Device Screen Capture" class="original">
+<img src="{{ site.url}}/upload/article/2011/09/25/screen_03.png" alt="Результат" class="original">
+</figure>
 
 Готово. Теперь можно легко делать скриншоты без потери гарантии на телефон!

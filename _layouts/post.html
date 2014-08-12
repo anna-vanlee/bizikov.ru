@@ -1,20 +1,24 @@
 {% include header.html %}<div class="container">
-<aside>{% include sidebar.html %}</aside>
-<section>
-    <article>{% include cover.html %}
-    <div class="content">
-        <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%d.%m.%Y" }}</time>
-        <h1 class="post-title">{{ page.title }}</h1>
-        <ul class="article-tags">{% for tag in page.tags %}
-            <li><a href="{{ site.url }}/tags/#{{ tag }}">#{{ tag }}</a></li>{% endfor %}
-        </ul>
-        {% if page.why %}<div class="why">Задача. {{ page.why }}</div>{% endif%}
-        {{ content }}
-    </div>
-    {% include share.html %}
-    {% include more.html %}
-    {% include comments.html %}
-    </article>
-</section>
+<article>
+<div class="content">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
+    {% if page.why %}<div class="why">Задача. {{ page.why }}</div>{% endif%}
+    {{ content }}
+    <ul class="article-tags">{% for tag in page.tags %}
+        <li><a href="{{ site.url }}/tags/#{{ tag }}">#{{ tag }}</a></li>{% endfor %}
+    </ul>
 </div>
+{% include share.html %}
+<div class="more">
+    <h3 class="more-title">Почитать ещё</h3>
+    <ul>{% for post in site.related_posts limit:4 %}
+        <li>
+            <a class="more-post-link" href="{{ post.url }}">{{ post.title }}</a>
+            <time class="more-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%d.%m.%Y" }}</time>
+        </li>{% endfor %}
+    </ul>
+</div>
+{% include comments.html %}
+</article></div>
 {% include footer.html %}
