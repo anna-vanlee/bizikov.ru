@@ -16,42 +16,42 @@ category: travel
 9 мая в Кувандыке, как и во всех городах нашей необъятной страны - прошли празднования Дня Победы.
 
 
-<img src="http://img-fotki.yandex.ru/get/9253/35527675.17/0_b8c4a_c2a734d1_XL.jpg" border="0" title="9 мая" alt="9 мая"/>
+<img src="http://img-fotki.yandex.ru/get/9253/35527675.17/0_b8c4a_c2a734d1_XL.jpg" title="9 мая" alt="9 мая"/>
 
 После парада военной техники, полгорода отправилось на "Родину Мать", где прошло празднование Дня Победы.
 
 <figure class="folium">
-<img src="http://img-fotki.yandex.ru/get/5307/35527675.17/0_b8c5f_532132e7_XL.jpg" border="0" title="Родина мать" alt="Родина мать"/>
-<img src="http://img-fotki.yandex.ru/get/9757/35527675.17/0_b8c5d_b69b869d_XL.jpg" border="0" title="Парад 9 мая" alt="Парад 9 мая"/>
+<img src="http://img-fotki.yandex.ru/get/5307/35527675.17/0_b8c5f_532132e7_XL.jpg" title="Родина мать" alt="Родина мать"/>
+<img src="http://img-fotki.yandex.ru/get/9757/35527675.17/0_b8c5d_b69b869d_XL.jpg" title="Парад 9 мая" alt="Парад 9 мая"/>
 </figure>
 
 Ветераны, прошедшие войну. К сожалению, с каждым годом их становится все меньше и меньше. Поэтому любите своих бабушек и дедушек.
 
-<img src="http://img-fotki.yandex.ru/get/9253/35527675.17/0_b8c49_abe6ec8c_XL.jpg" border="0" title="Ветераны " alt="Ветераны "/>
+<img src="http://img-fotki.yandex.ru/get/9253/35527675.17/0_b8c49_abe6ec8c_XL.jpg" title="Ветераны " alt="Ветераны "/>
 
 Немного техники. Газ.
 
-<img src="http://img-fotki.yandex.ru/get/9818/35527675.17/0_b8c4c_80bfb3e7_XL.jpg" border="0" title="Газ" alt="Газ"/>
+<img src="http://img-fotki.yandex.ru/get/9818/35527675.17/0_b8c4c_80bfb3e7_XL.jpg" title="Газ" alt="Газ"/>
 
 Редкая модель японского автомобиля MITSUOKA LE-SEYDE. Владелец приехал покрасоваться из Медногорска. Собственно есть чем. Автомобиль шикарный.
 
-<img src="http://img-fotki.yandex.ru/get/9321/35527675.17/0_b8c4d_3628b81_XL.jpg" border="0" title="Митсуока" alt="Митсуока"/>
+<img src="http://img-fotki.yandex.ru/get/9321/35527675.17/0_b8c4d_3628b81_XL.jpg" title="Митсуока" alt="Митсуока"/>
 
 Местный байк.
 
-<img src="http://img-fotki.yandex.ru/get/9818/35527675.17/0_b8c4e_5adfee89_XL.jpg" border="0" title="Харлей" alt="Харлей"/>
+<img src="http://img-fotki.yandex.ru/get/9818/35527675.17/0_b8c4e_5adfee89_XL.jpg" title="Харлей" alt="Харлей"/>
 
 Детская площадка. Качели, на которых катался, будучи ребенком.
 
-<img src="http://img-fotki.yandex.ru/get/9321/35527675.17/0_b8c4f_b846b7b7_XL.jpg" width="800" height="542" border="0" title="Детские качели" alt="Детские качели"/>
+<img src="http://img-fotki.yandex.ru/get/9321/35527675.17/0_b8c4f_b846b7b7_XL.jpg" width="800" height="542" title="Детские качели" alt="Детские качели"/>
 
 А вот и родная школа, именуемая "Гимназия №1". Сейчас там поставили пластиковые окна, видео камеры. В общем растут и процветают.
 
-<img src="http://img-fotki.yandex.ru/get/9818/35527675.17/0_b8c53_e89397ee_XL.jpg" width="800" height="542" border="0" title="Гимназия №1" alt="Гимназия №1"/>
+<img src="http://img-fotki.yandex.ru/get/9818/35527675.17/0_b8c53_e89397ee_XL.jpg" width="800" height="542" title="Гимназия №1" alt="Гимназия №1"/>
 
 Вот за что я люблю Кувандык. Отличная природа. Достаточно выйти из дома, перейти дорогу, и ты в лесу, а рядом течет река.
 
-<img src="http://img-fotki.yandex.ru/get/9321/35527675.17/0_b8c50_f7c991c7_XL.jpg" width="800" height="542" border="0" title="Лесная тропа" alt="Лесная тропа"/>
+<img src="http://img-fotki.yandex.ru/get/9321/35527675.17/0_b8c50_f7c991c7_XL.jpg" width="800" height="542" title="Лесная тропа" alt="Лесная тропа"/>
 
 За то время, пока я живу в Оренбурге, в Кувандыке очень многое поменялось. Например, появилась красивая аллея возле реки. Посажены деревья, поставлены мусорные урны, скамейки.
 
@@ -59,7 +59,7 @@ category: travel
 
 Река Сакмара. Весна, поэтому вода еще грязная.
 
-<iframe src="//instagram.com/p/nzviZXxc-I/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+<iframe src="//instagram.com/p/nzviZXxc-I/embed/" width="612" height="710" framescrolling="no" allowtransparency="true"></iframe>
 
 Особой достопримечательностью города является гора Ослотау.
 
