@@ -427,7 +427,7 @@ aside {
   width: 100%;
   margin: 20px 80px;
   .box-sizing;
-  .facebook, .vk, .twitter, .pocket {
+  .facebook, .vk, .twitter, .google, .pocket {
     line-height: 12px;
     display: inline-block;
     margin-right: 1em;
@@ -437,6 +437,9 @@ aside {
   }
   .twitter {
     width: 100px;
+  }
+  .google {
+    width: 60px;
   }
   .pocket {
     width: 90px;
@@ -617,6 +620,7 @@ footer {
   width: @width / 4;
   margin: 6em auto 0 auto;
   text-align: center;
+  background-image: url("../img/404.gif");
   p {
     font-size: .8em;
   }
@@ -699,4 +703,12 @@ hr {
       }
     }
   }
+}
+
+/* Настраиваемый фон страницы */
+.custom-bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

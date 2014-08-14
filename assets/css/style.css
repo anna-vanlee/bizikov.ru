@@ -557,6 +557,7 @@ aside {
 #social .facebook,
 #social .vk,
 #social .twitter,
+#social .google,
 #social .pocket {
   line-height: 12px;
   display: inline-block;
@@ -567,6 +568,9 @@ aside {
 }
 #social .twitter {
   width: 100px;
+}
+#social .google {
+  width: 60px;
 }
 #social .pocket {
   width: 90px;
@@ -737,6 +741,7 @@ footer {
   width: 240px;
   margin: 6em auto 0 auto;
   text-align: center;
+  background-image: url("../img/404.gif");
 }
 .error404 p {
   font-size: .8em;
@@ -807,4 +812,11 @@ hr {
 .folium.normal.ios img {
   width: 320px;
   height: 480px;
+}
+/* Настраиваемый фон страницы */
+.custom-bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
