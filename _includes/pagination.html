@@ -1,5 +1,5 @@
 {% if paginator.total_pages > 1 %}<nav class="pagination">
-    {% if paginator.previous_page %}<a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Назад</a>{% else %}<span class="previous">&larr; Назад</span>{% endif %}
+    {% if paginator.previous_page %}<a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Ctrl</a>{% else %}<span class="previous">&larr; Ctrl</span>{% endif %}
     {% for page in (1..paginator.total_pages) %}{% if page == paginator.page %}<i class="page current">{{ page }}</i>{% elsif page == 1 %}<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}"><i class="page">{{ page }}</i></a>{% else %}<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"><i class="page">{{ page }}</i></a>{% endif %}
-    {% endfor %}{% if paginator.next_page %}<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Вперед &rarr;</a>{% else %}<span class="next">Вперед &rarr;</span>{% endif %}
+    {% endfor %}{% if paginator.next_page %}<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Ctrl &rarr;</a>{% else %}<span class="next">Ctrl &rarr;</span>{% endif %}
 </nav>{% endif %}
