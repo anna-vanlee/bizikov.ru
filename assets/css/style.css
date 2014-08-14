@@ -557,6 +557,7 @@ aside {
 #social .facebook,
 #social .vk,
 #social .twitter,
+#social .google,
 #social .pocket {
   line-height: 12px;
   display: inline-block;
@@ -567,6 +568,9 @@ aside {
 }
 #social .twitter {
   width: 100px;
+}
+#social .google {
+  width: 60px;
 }
 #social .pocket {
   width: 90px;
