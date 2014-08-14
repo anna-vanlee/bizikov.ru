@@ -36,7 +36,7 @@
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?111"></script>
     {% include pagination-link.html %}
 </head>
-<body>
+<body {% if page.bg %} class="custom-bg" style="background-image: url('{{ page.bg }}');" {% endif %}>
 <header>
     <nav>
         {% for link in site.links %}{% if link.icon %}

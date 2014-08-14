@@ -71,7 +71,7 @@ category: travel
 
 На последок немного фотографий из инстаграма:
 
-<figure class="folium normal">
+<figure class="folium normal bg-null">
 <img src="http://photos-h.ak.instagram.com/hphotos-ak-xfa1/1662772_237547859770895_779833905_n.jpg" alt="Вода в Сакмаре еще грязная, но главное что она есть." title="Вода в Сакмаре еще грязная, но главное что она есть." />
 <img src="http://photos-e.ak.instagram.com/hphotos-ak-xap1/10354425_535472646561684_813475119_n.jpg" alt="В Кувандыке отличная природа! " title="В Кувандыке отличная природа! " />
 <img src="http://photos-e.ak.instagram.com/hphotos-ak-xfa1/10311208_290126777821036_562846184_n.jpg" alt="Теперь можно спускаться. Ветер на горе сильный и холодный :(" title="Теперь можно спускаться. Ветер на горе сильный и холодный :(" />
