@@ -640,7 +640,7 @@ aside {
 }
 .archive-list {
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
 }
 .archive-list .archive-post-date {
   font-size: .8em;
