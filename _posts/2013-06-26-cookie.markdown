@@ -71,6 +71,19 @@ function getCookie(name) {
     }
 {% endhighlight %}
 
+### Удаление
+
+Если кука вам больше не нужна, ее можно удалить:
+
+{% highlight javascript %}
+function deleteCookie(name) {
+    var cookieDate = new Date();
+    cookieDate.setTime(cookieDate.getTime() - 1);
+    var cookie = name += "=; expires=" + cookie_date.toGMTString();
+    document.cookie = cookie;
+}
+{% endhighlight %}
+
 ### Использование
 
 {% highlight javascript %}
@@ -86,3 +99,5 @@ getCookie('bizikovru');
 {% endhighlight %}
 
 Данный очерк об использовании куки очень поверхностный и не претендует на оригинальность. Инормация для ознакомления.
+
+**UPD** 15.08.2014: добавлена функция удаление куки
