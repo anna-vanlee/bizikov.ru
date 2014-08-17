@@ -23,5 +23,4 @@ layout: nil
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
-    <rss2lj:owner xmlns:rss2lj="http://rss2lj.net/NS">bizikov</rss2lj:owner>
 </feed>
