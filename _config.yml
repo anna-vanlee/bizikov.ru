@@ -13,6 +13,14 @@ links:
   - title: О себе
     url: /about/
 
+# Ссылки на социальные сети
+social:
+  instagram: http://instagram.com/bizikov
+  twitter:   https://twitter.com/bizi
+  vk:        http://vk.com/bizikov
+  facebook:  https://facebook.com/bizikov
+  google:    https://plus.google.com/+AlexandrBizikov
+
 permalink: /:categories/:year/:month/:title/
 
 timezone:    Asia/Yerevan
