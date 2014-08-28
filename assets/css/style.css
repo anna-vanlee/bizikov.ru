@@ -422,16 +422,22 @@ article .content > ul {
 article .article-tags {
   overflow: hidden;
   padding: 0 !important;
-  margin: 0;
+  margin: 1em 0 0 0;
 }
 article .article-tags li {
-  color: #94aab0;
-  padding: 0;
+  display: inline-block;
+  border: 1px solid #ecf0f1;
+  color: #ecf0f1;
+  padding: 0 10px;
   margin-right: .5em;
   list-style: none;
-  float: left;
+  font-size: 14px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
 }
 article .article-tags li a {
+  color: #94aab0;
   font-size: .8em;
   text-decoration: none;
 }

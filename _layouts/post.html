@@ -6,7 +6,7 @@
     {% if page.why %}<div class="why">Задача. {{ page.why }}</div>{% endif%}
     {{ content }}
     <ul class="article-tags">{% for tag in page.tags %}
-        <li><a href="{{ site.url }}/tags/#{{ tag }}">#{{ tag }}</a></li>{% endfor %}
+        <li><a href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
     </ul>
 </div>
 {% include share.html %}
