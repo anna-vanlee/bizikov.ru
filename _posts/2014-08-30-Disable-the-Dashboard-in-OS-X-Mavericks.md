@@ -32,3 +32,9 @@ tags:
 defaults write com.apple.dashboard mcx-disabled -boolean false
 KillAll Dock
 {% endhighlight %}
+
+**Добавлено**: Оказывается есть способ куда проще. Спасибо [Илье](http://gorenburg.com/ "Илья Горенбург") за наводку.
+
+Заходим в настройки Mission Control и убираем галочку с пункта "Показать Dashboard как пространство".
+
+<img class="original" src="{{site.url}}/upload/article/2014/08/30/mission-control.png" atl="Показать Dashboard как пространство">
