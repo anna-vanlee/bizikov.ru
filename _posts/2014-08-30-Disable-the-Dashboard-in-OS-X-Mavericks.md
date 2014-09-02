@@ -11,8 +11,6 @@ tags:
 
 В Mac OS на виджеты выделен целый экран, который называется [Dashboard](http://support.apple.com/kb/ht2492).
 
-<img src="{{site.url}}/upload/article/2014/08/30/dashboard_01.png" alt="Экран Dashboard в OS X Mavericks" />
-
 За время использования Mac OS X Mavericks, к сожалению, я так и не воспользовался возможностями Dashboard.
 Если вы, так же как и я, не пользуетесь им, то у меня есть хорошие новости: eго можно отключить, и это совсем не больно!
 
