@@ -5,8 +5,8 @@
 {% if page.why %}<div class="why">Задача. {{ page.why }}</div>{% endif%}
 {{ content }}
 </div>
-{% include share.html %}
-{% if page.comment %}{% include comments.html %}{% endif %}
+{% unless page.no_share %}{% include share.html %}{% endunless %}
+{% unless page.no_comments %}{% include comments.html %}{% endunless %}
 </article>
 </div>
 {% include footer.html %}

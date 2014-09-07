@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Список тегов
-cover: upload/page/tags/menu.jpg
-search: true
-comment: false
+no_share: true
+no_comments: true
 ---
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}{% capture num_words %}{{ site_tags | split:',' | size }}{% endcapture %}{% assign tag_words = site_tags | split:',' | sort site_tags%}
 <div class="tags">
