@@ -16,11 +16,23 @@ links:
 
 # Ссылки на социальные сети
 social:
-  instagram: http://instagram.com/bizikov
-  twitter:   https://twitter.com/bizi
-  vk:        http://vk.com/bizikov
-  facebook:  https://facebook.com/bizikov
-  google:    https://plus.google.com/+AlexandrBizikov
+  Инстаграм: http://instagram.com/bizikov
+  Твиттер: https://twitter.com/bizi
+  Вконтакте: http://vk.com/bizikov
+  Фэйсбук:  https://facebook.com/bizikov
+  Гугл плюс: https://plus.google.com/+AlexandrBizikov
+  Ядекс.Фотки: http://fotki.yandex.ru/users/alexandr-bizikov/
+  Кинопоиск: http://www.kinopoisk.ru/user/1129585/
+  Мои сериалы: http://myshows.ru/bizikov
+  Мои книги: http://bibla.ru/Bizi/
+  Фликр: http://www.flickr.com/photos/48363663@N05/
+  Пинтерест: http://pinterest.com/bizikov/
+  Форсквер: https://ru.foursquare.com/bizi
+  Ютуб: https://www.youtube.com/user/Bizikov
+  ЖЖЖ: http://bizikov.livejournal.com/
+  Хабр: http://habrahabr.ru/users/bizikov/
+  Вайн: https://vine.co/u/906514742397517824
+  Вимео: http://vimeo.com/bizikov
 
 permalink: /:categories/:year/:month/:title/
 
