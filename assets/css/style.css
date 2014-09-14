@@ -372,24 +372,21 @@ header nav a {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+  background-color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-}
-article {
-  overflow: hidden;
-  background-color: #FFF;
 }
 article > a img {
   min-width: 100%;
   height: auto;
 }
-article .content {
-  overflow: hidden;
+article.content {
   position: relative;
   padding: 10px 80px;
 }
-article .content .note {
+article.content .note {
   width: 100px;
   font-size: .8em;
   text-align: left;
@@ -400,22 +397,22 @@ article .content .note {
   background: #ecf0f1;
   border-top: 2px solid #ffff00;
 }
-article .content p {
+article.content p {
   width: 720px;
 }
-article .content p img {
+article.content p img {
   max-width: 960px;
   width: 960px;
   margin-left: -80px;
   margin-bottom: 2em;
   display: block;
 }
-article .content p img.original {
+article.content p img.original {
   width: auto !important;
   max-width: 100%;
   margin-left: 0;
 }
-article .content > ul {
+article.content > ul {
   width: 720px;
   padding: 0 1em;
 }
@@ -455,11 +452,6 @@ article .why {
 article ol li img {
   margin: 1em 0;
   display: block;
-}
-aside {
-  width: 208px;
-  float: right;
-  margin: 2em 0 0 2em;
 }
 .avatar {
   width: 50px;
@@ -555,16 +547,13 @@ aside {
 /* Кнопки социальных сетей */
 #social {
   width: 100%;
-  margin: 20px 80px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  margin: 2em 0 0 0;
+  padding: 0;
 }
 #social .facebook,
 #social .vk,
 #social .twitter,
-#social .google,
-#social .pocket {
+#social .google {
   line-height: 12px;
   display: inline-block;
   margin-right: 1em;
@@ -573,20 +562,23 @@ aside {
   width: 110px;
 }
 #social .twitter {
-  width: 100px;
+  width: 80px;
 }
 #social .google {
   width: 60px;
 }
-#social .pocket {
-  width: 90px;
-  height: 20px;
-  overflow: hidden;
+.pocket {
+  position: absolute;
+  top: 2em;
+  right: 1em;
+  width: 70px;
+  z-index: 9999;
 }
 /* Список похожих записей */
 .more {
+  overflow: hidden;
+  padding: 0 80px 20px 80px;
   background-color: #e0f8d8;
-  padding: 20px 80px;
 }
 .more ul {
   overflow: hidden;
@@ -608,6 +600,7 @@ aside {
 .more .more-post-link {
   display: block;
   font-size: 1em;
+  text-decoration: none;
   line-height: 1.2em;
 }
 .more .more-post-date {

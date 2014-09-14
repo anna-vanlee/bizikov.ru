@@ -1,6 +1,10 @@
 {% include header.html %}<div class="container">
-<article>
-<div class="content">
+<aside class="pocket">
+    <a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a>
+    <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+</aside>
+
+<article class="content">
     <h1 class="post-title">{{ page.title }}</h1>
     <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
     {% if page.why %}<div class="why">Задача. {{ page.why }}</div>{% endif%}
@@ -8,21 +12,17 @@
     <ul class="article-tags">{% for tag in page.tags %}
         <li><a href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
     </ul>
-</div>
-{% include share.html %}
-<div class="more">
-    <div class="read">
-        <h3 class="more-title">Почитать ещё</h3>
-        <ul>{% for post in site.related_posts limit:4 %}
-            <li>
-                <time class="more-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%d.%m.%Y" }}</time>
-                <a class="more-post-link" href="{{ post.url }}">{{ post.title }}</a>
-            </li>{% endfor %}
-        </ul>
-    </div>
-    <div class="tweet">
-    </div>
-</div>
+    {% include share.html %}
+</article>
+<aside class="more">
+    <h3 class="more-title">Почитать ещё</h3>
+    <ul>{% for post in site.related_posts limit:4 %}
+    <li><article>
+        <time class="more-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
+            <a class="more-post-link" href="{{ post.url }}">{{ post.title }}</a>
+    </article></li>{% endfor %}
+    </ul>
+</aside>
 {% include comments.html %}
-</article></div>
+</div>
 {% include footer.html %}

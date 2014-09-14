@@ -230,20 +230,19 @@ header {
   width: @width;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+  background-color: #fff;
   .border-radius;
 }
 
 article {
-  overflow: hidden;
-  background-color: #FFF;
   &>a {
     img {
       min-width: 100%;
       height: auto;
     }
   }
-  .content {
-    overflow: hidden;
+  &.content {
     position: relative;
     padding: 10px 80px;
     .note {
@@ -317,12 +316,6 @@ article {
       }
     }
   }
-}
-
-aside {
-  width: @width / 4 - 32;
-  float: right;
-  margin: 2em 0 0 2em;
 }
 
 .avatar {
@@ -429,9 +422,9 @@ aside {
 
 #social {
   width: 100%;
-  margin: 20px 80px;
-  .box-sizing;
-  .facebook, .vk, .twitter, .google, .pocket {
+  margin: 2em 0 0 0;
+  padding: 0;
+  .facebook, .vk, .twitter, .google{
     line-height: 12px;
     display: inline-block;
     margin-right: 1em;
@@ -440,20 +433,24 @@ aside {
     width: 110px;
   }
   .twitter {
-    width: 100px;
+    width: 80px;
   }
   .google {
     width: 60px;
   }
-  .pocket {
-    width: 90px;
-    height: 20px;
-    overflow: hidden;
-  }
 }
 
+.pocket {
+  position: absolute;
+  top: 2em;
+  right: 1em;
+  width: 70px;
+  z-index: 9999;
+}
 /* Список похожих записей */
 .more {
+  overflow: hidden;
+  padding: 0 80px 20px 80px;
   background-color: @epsilon;
   ul {
     overflow: hidden;
@@ -473,12 +470,12 @@ aside {
   .more-post-link {
     display: block;
     font-size: 1em;
+    text-decoration: none;
     line-height: 1.2em;
   }
   .more-post-date {
     font-size: 12px;
   }
-  padding: 20px 80px;
 }
 
 /* Теги на странице архива */
