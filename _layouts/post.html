@@ -17,10 +17,10 @@
 <aside class="more">
     <h3 class="more-title">Почитать ещё</h3>
     <ul>{% for post in site.related_posts limit:4 %}
-    <li><article>
+    <li>
         <time class="more-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
-            <a class="more-post-link" href="{{ post.url }}">{{ post.title }}</a>
-    </article></li>{% endfor %}
+        <a class="more-post-link" title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
+    </li>{% endfor %}
     </ul>
 </aside>
 {% include comments.html %}
