@@ -13,7 +13,7 @@ tags:
 
 ## Установка
 
-[Скачиваем](http://code.google.com/p/msysgit/downloads/list)  Git for Windows. Нас интересует Full installer for official Git for Windows последней актуальной версии
+[Скачиваем](http://msysgit.github.io/)  Git for Windows. Нас интересует Full installer for official Git for Windows последней актуальной версии
 
 После запуска установщика вам будет предложено выбрать тип запуска Git:
 
