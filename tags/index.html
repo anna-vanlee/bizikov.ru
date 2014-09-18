@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Список тегов
+title: Теги
 no_share: true
 no_comments: true
 ---
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}{% capture num_words %}{{ site_tags | split:',' | size }}{% endcapture %}{% assign tag_words = site_tags | split:',' | sort site_tags%}
 <div class="tags">
-    <h3>Тэги</h3>
     <ul class="item-list">{% for item in (0..num_words) %}{% unless forloop.last %}{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
         <li><a href="#{{ this_word }}">{{ this_word }}</a><sup>{{ site.tags[this_word].size }}</sup></li>{% endunless %}{% endfor %}
     </ul>{% for item in (0..num_words) %}{% unless forloop.last %}{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}

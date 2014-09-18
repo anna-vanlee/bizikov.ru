@@ -11,6 +11,8 @@ links:
     icon: /upload/page/home/bizikov.jpg
   - title: Архив заметок
     url: /archive/
+  - title: Теги
+    url: /tags/
   - title: О себе
     url: /about/
 
