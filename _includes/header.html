@@ -41,11 +41,8 @@
 </head>
 <body {% if page.bg %} class="custom-bg" style="background-image: url('{{ page.bg }}');" {% endif %}>
 <header>
-    <nav>
-        {% for link in site.links %}{% if link.icon %}
+    <nav>{% for link in site.links %}{% if link.icon %}
         <a href="{{ site.url}}"><img class="avatar" src="{{ site.url }}{{ link.icon }}" alt="{{ link.title }}"/>{{ link.title }}</a>
-        {% else %}
-        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-        {% endif %}{% endfor %}
+        {% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}{% endfor %}
     </nav>
 </header>
