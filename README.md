@@ -21,10 +21,6 @@
 ### Подписаться
 
 - [Feedburner](http://feeds.feedburner.com/bizikov)
-- [RSS](http://bizikov.ru/atom.xml)
+- [RSS](http://bizikov.ru/feed.xml)
 
-### Журнал изменений
-
-- [Обновление блога 2.1](http://bizikov.ru/2014/08/update-2-2/)
- 
-Текущая версия: **2.1**.
+Текущая версия: **2.3**.
