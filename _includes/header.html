@@ -40,9 +40,18 @@
     {% include pagination-link.html %}
 </head>
 <body {% if page.bg %} class="custom-bg" style="background-image: url('{{ page.bg }}');" {% endif %}>
-<header>
+<header {% if page.cover %} style="background-image: url({{ site.url }}/{{ page.cover }})"{% endif %}{% if post.cover %} style="background-image: url({{ site.url }}/{{ post.cover }})"{% endif %}>
+
     <nav>{% for link in site.links %}{% if link.icon %}
         <a href="{{ site.url}}"><img class="avatar" src="{{ site.url }}{{ link.icon }}" alt="{{ link.title }}"/>{{ link.title }}</a>
         {% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}{% endfor %}
     </nav>
+    <div class="header-follow">
+        <div class="follow-twitter">
+            <a href="https://twitter.com/Bizi" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @Bizi</a>
+        </div>
+        <div class="follow-facebook">
+            <div class="fb-follow" data-href="https://www.facebook.com/bizikov" data-colorscheme="dark" data-layout="button_count" data-show-faces="true"></div>
+        </div>
+    </div>
 </header>

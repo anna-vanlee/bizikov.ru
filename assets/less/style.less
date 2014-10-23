@@ -62,7 +62,6 @@ body {
   font-size: 1em;
   line-height: 1.6em;
   color: @beta;
-  background-color: @alpha;
 }
 
 a {
@@ -190,10 +189,9 @@ table {
     padding: 0;
     li {
       padding: 0;
-      margin: 0;
+      margin: 0 1em 0 0;
       list-style: none;
       float: left;
-      margin-right: 1em;
       a {
         text-decoration: none;
         &:hover {
@@ -205,24 +203,53 @@ table {
 }
 
 header {
-  width: @width;
-  margin: 3em auto 0 auto;
+  background-color: @epsilon;
+  background-image: url('http://img-fotki.yandex.ru/get/9761/35527675.17/0_b8c61_ca9576dc_orig.jpg');
+  background-size: cover;
   nav {
-    padding: 20px 0;
-    margin: 0px 80px;
+    width: @width;
+    min-height: @width / 2;
+    padding: 20px 80px;
+    margin: 0 auto;
+    .box-sizing;
     a {
-      color: darken(@alpha, 20%);
+      color: @alpha;
       line-height: 3em;
-      margin-right: 1em;
       text-decoration: none;
       margin: 0 1em;
     }
   }
 }
 
+.header-follow {
+  width: @width;
+  margin: 0 auto;
+  padding: 20px 80px;
+  overflow: hidden;
+  .box-sizing;
+}
+
+.follow-twitter {
+  width: 200px;
+  margin-top: 5px;
+  float: left;
+}
+
+.follow-facebook {
+  float: left;
+}
+
 .archive-list {
   .archive-post-date {
     color: darken(@alpha, 30%);
+  }
+}
+
+.post-main {
+  padding: 20px 80px;
+  list-style-type: none;
+  .post-main-item {
+    margin-top: 2em;
   }
 }
 
@@ -244,7 +271,7 @@ article {
   }
   &.content {
     position: relative;
-    padding: 10px 80px;
+    padding: 20px 80px 10px 80px;
     .note {
       width: 100px;
       font-size: .8em;
@@ -274,7 +301,6 @@ article {
     }
     & > ul {
       width: @width * 3/4;
-      padding: 0 1em;
     }
   }
   .article-tags {
@@ -300,9 +326,6 @@ article {
       }
     }
   }
-  .date {
-    font-family: monospace;
-  }
   .why {
     padding: 1em;
     margin-top: 1em;
@@ -316,6 +339,10 @@ article {
       }
     }
   }
+}
+
+.date {
+  font-family: monospace;
 }
 
 .avatar {
@@ -407,8 +434,8 @@ article {
 /* Заголовок записи */
 
 .post-title {
-  margin: .6em 0 .3em 0;
-  line-height: 1.2em;
+  margin: 0;
+  line-height: 1.6em;
   a {
     color: @beta;
     text-decoration: none;
@@ -420,7 +447,7 @@ article {
 
 /* Кнопки социальных сетей */
 
-#social {
+.social {
   width: 100%;
   margin: 2em 0 0 0;
   padding: 0;
@@ -442,10 +469,8 @@ article {
 
 .pocket {
   position: absolute;
-  top: 2em;
-  right: 1em;
-  width: 70px;
-  z-index: 9999;
+  top: 2.2em;
+  left: 0;
 }
 /* Список похожих записей */
 .more {
@@ -591,12 +616,26 @@ article {
 footer {
   width: @width;
   margin: 0 auto;
+  padding: 20px 80px;
   overflow: hidden;
+  .box-sizing;
+}
+.footer-copy {
+  float: left;
+}
+
+.footer-social {
+  float: right;
+  .social {
+    .twitter {
+      width: 90px;
+    }
+  }
 }
 
 .copy {
+  margin-top: 2em;
   color: darken(@alpha, 20%);
-  text-align: center;
 }
 
 /* Sidebar menu */

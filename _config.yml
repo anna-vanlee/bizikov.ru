@@ -1,7 +1,8 @@
 name: Александр Бизиков
 description: Пишу об интересных и полезных для меня материалах
 disqus_shortname: bizikov
-version: 2.1.2
+version: 2.3
+#url: http://localhost:4000
 url: http://bizikov.ru
 
 # Ссылки для навигации
@@ -42,7 +43,6 @@ timezone:    Asia/Yerevan
 future:      true
 pygments:    true
 markdown:    kramdown
-paginate: 5
 kramdown:
   auto_ids: false
 
