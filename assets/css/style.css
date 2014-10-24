@@ -396,10 +396,9 @@ header nav a {
   margin-top: 2em;
 }
 .container {
+  position: relative;
   width: 960px;
   margin: 0 auto;
-  overflow: hidden;
-  position: relative;
   background-color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -585,7 +584,7 @@ article ol li img {
   margin-right: 1em;
 }
 .social .facebook {
-  width: 110px;
+  width: 135px;
 }
 .social .twitter {
   width: 80px;
