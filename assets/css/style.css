@@ -564,7 +564,12 @@ article ol li img {
 }
 .post-title a {
   color: #333333;
+  border-bottom: 3px solid transparent;
   text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .post-title a:hover {
   border-bottom: 3px solid #333333;
