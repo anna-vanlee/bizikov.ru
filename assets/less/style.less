@@ -3,6 +3,7 @@
 
 /* VAR */
 @width: 960px;
+@font-size: 1em;
 
 @alpha: #ECF0F1;
 @beta: #333;
@@ -59,7 +60,7 @@ html, body {
 
 body {
   font-family: 'PT Serif', Georgia, serif;
-  font-size: 1em;
+  font-size: @font-size;
   line-height: 1.6em;
   color: @beta;
 }
@@ -77,12 +78,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2em;
   margin-bottom: 1em;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: @font-size;
   margin-top: 2em;
   margin-bottom: .5em;
 }
@@ -112,10 +112,11 @@ img {
   max-width: 100%;
   height: auto;
   border: 0;
+  .border-radius(3px);
 }
 
 sup {
-  font-size: 10px;
+  font-size: @font-size * .75;
   padding: 0 .5em;
   text-transform: lowercase;
 }
@@ -132,7 +133,7 @@ ins, mark {
 }
 
 blockquote {
-  font-size: 18px;
+  font-size: @font-size * 1.125;
   border-left: 10px solid @epsilon;
   color: @beta;
   padding: 0 0 0 30px;
@@ -274,7 +275,7 @@ article {
     padding: 20px 80px 10px 80px;
     .note {
       width: 100px;
-      font-size: .8em;
+      font-size: @font-size * .8;
       text-align: left;
 
       position: absolute;
@@ -318,7 +319,7 @@ article {
       .border-radius(1em);
       a {
         color: darken(@alpha, 30%);
-        font-size: .8em;
+        font-size: @font-size * .8;
         text-decoration: none;
         &:hover {
           color: @delta;
@@ -366,14 +367,6 @@ article {
     bottom: 1em;
     left: 0;
     .box-sizing;
-    .search-title {
-      font-size: 2em;
-      color: #fff;
-    }
-    .searchSelect {
-      color: #fff;
-    }
-
   }
 }
 
@@ -382,27 +375,6 @@ article {
   font-size: 12px;
   font-style: italic;
   margin: 1em 0;
-}
-
-.searchSelect {
-  font-size: 12px;
-  font-style: italic;
-}
-
-#searchEngine {
-  font-family: 'PT Serif', Arial, serif;
-  font-size: 12px;
-  color: @alpha;
-  border: 1px dotted @alpha;
-  cursor: pointer;
-  outline: none;
-  border-width: 0 0 1px 0;
-  border-radius: 0;
-  background-color: transparent;
-  -webkit-appearance: none;
-  option {
-    color: @beta;
-  }
 }
 
 /* Комментарии на странице записи*/
@@ -421,14 +393,10 @@ article {
 }
 
 .system-comments {
-  font-size: .9em;
+  font-size: @font-size;
   color: @beta;
   padding: 20px 80px;
   border-top: 2px solid @alpha;
-}
-
-#vkontakte {
-  display: none;
 }
 
 /* Заголовок записи */
@@ -496,12 +464,12 @@ article {
   }
   .more-post-link {
     display: block;
-    font-size: 1em;
+    font-size: @font-size;
     text-decoration: none;
     line-height: 1.2em;
   }
   .more-post-date {
-    font-size: 12px;
+    font-family:  monospace;
   }
 }
 
@@ -534,7 +502,7 @@ article {
       margin: 0;
       list-style: none;
       .date {
-        font-size: 12px;
+        font-size: @font-size * .6;
         margin-right: 1em;
         color: darken(@alpha, 30%);
       }
@@ -546,7 +514,7 @@ article {
   margin: 0;
   padding: 0 !important;
   .archive-post-date {
-    font-size: .8em;
+    font-size: @font-size * .8;
     display: block;
   }
   .archive-post-year {
@@ -665,20 +633,15 @@ footer {
   text-align: center;
   background-image: url("../img/404.gif");
   p {
-    font-size: .8em;
+    font-size: @font-size * .8;
   }
-}
-
-.error-title {
-  font-size: 12em;
-  margin: 0;
 }
 
 /* Оформление заметок */
 .image-description {
   margin: 0;
   text-align: center;
-  font-size: 12px;
+  font-size: @font-size * .6;
   color: #b2b2b2;
 }
 
@@ -698,7 +661,7 @@ footer {
 
 .quote {
   text-align: center;
-  font-size: 26px;
+  font-size: @font-size * 1.5;
 }
 
 .quote-author {
@@ -706,7 +669,7 @@ footer {
 }
 
 .file {
-  font-size: .8em;
+  font-size: @font-size .8;
   padding: 2px 8px;
   background-color: @alpha;
   border-radius: 3px;
