@@ -3,7 +3,7 @@ layout: post
 title: "Настройка Samsung NX300, после очередного обновлениия"
 excerpt: ""
 keywords: 
-cover: 
+cover: /upload/article/2014/11/09/samsung-nx300.jpg 
 tags:
 - Samsung NX300
 ---
