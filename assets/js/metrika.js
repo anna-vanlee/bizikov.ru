@@ -1,7 +1,7 @@
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function () {
         try {
-            w.yaCounter1304907 = new Ya.Metrika({id: 1304907, webvisor: true, clickmap: true, accurateTrackBounce: true});
+            w.yaCounter27017142 = new Ya.Metrika({id: 27017142, webvisor: true, clickmap: true, accurateTrackBounce: true});
         } catch (e) {
         }
     });
