@@ -9,7 +9,7 @@
 0. [Блог](http://bizikov.ru)
 1. [Вконтакте](http://vk.com/bizikov)
 2. [Твиттер](http://twitter.com/bizi)
-2. [Ядекс.Фотки](http://fotki.yandex.ru/users/alexandr-bizikov/)
+2. [Яндекс.Фотки](http://fotki.yandex.ru/users/alexandr-bizikov/)
 3. [Инстаграм](http://instagram.com/bizikov)
 4. [Кинопоиск](http://www.kinopoisk.ru/user/1129585/)
 5. [Мои сериалы](http://myshows.ru/bizikov)
