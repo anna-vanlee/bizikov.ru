@@ -397,6 +397,17 @@ header nav a {
 .post-main .post-main-item {
   margin-top: 2em;
 }
+.post-main .post-main-more a {
+  text-decoration: none;
+  border-bottom: 3px solid #1d62f0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.post-main .post-main-more a:hover {
+  border-color: #fc6341;
+}
 .container {
   position: relative;
   width: 960px;

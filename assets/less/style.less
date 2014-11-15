@@ -154,12 +154,12 @@ table {
       th {
         border: 1px solid @alpha;
       }
-      &>th {
+      & > th {
         padding: 8px;
         vertical-align: bottom;
 
       }
-      &>td {
+      & > td {
         padding: 8px;
         vertical-align: top;
         border-top: 1px solid #DDD;
@@ -206,7 +206,7 @@ table {
 header {
   background-color: @epsilon;
   background-image: url('https://img-fotki.yandex.ru/get/6527/35527675.19/0_bff2c_b5bf004d_orig.jpg');
-//  background-image: url('http://img-fotki.yandex.ru/get/9761/35527675.17/0_b8c61_ca9576dc_orig.jpg');
+  //  background-image: url('http://img-fotki.yandex.ru/get/9761/35527675.17/0_b8c61_ca9576dc_orig.jpg');
   background-size: cover;
   nav {
     width: @width;
@@ -253,6 +253,16 @@ header {
   .post-main-item {
     margin-top: 2em;
   }
+  .post-main-more {
+    a {
+      text-decoration: none;
+      border-bottom: 3px solid @gamma;
+      .transition();
+      &:hover {
+        border-color: @delta;
+      }
+    }
+  }
 }
 
 .container {
@@ -264,7 +274,7 @@ header {
 }
 
 article {
-  &>a {
+  & > a {
     img {
       min-width: 100%;
       height: auto;
@@ -421,7 +431,7 @@ article {
   width: 100%;
   margin: 2em 0 0 0;
   padding: 0;
-  .facebook, .vk, .twitter, .google{
+  .facebook, .vk, .twitter, .google {
     line-height: 12px;
     display: inline-block;
     margin-right: 1em;
@@ -442,6 +452,7 @@ article {
   top: 1.8em;
   left: 0;
 }
+
 /* Список похожих записей */
 .more {
   overflow: hidden;
@@ -469,7 +480,7 @@ article {
     line-height: 1.2em;
   }
   .more-post-date {
-    font-family:  monospace;
+    font-family: monospace;
   }
 }
 
@@ -590,6 +601,7 @@ footer {
   overflow: hidden;
   .box-sizing;
 }
+
 .footer-copy {
   float: left;
 }
