@@ -53,3 +53,5 @@ tags:
 40. [Parker Iain](http://www.parkeriain.com/)
 41. [Ryan Putnam](http://ryanputn.am/)
 42. [Blogify](http://templates.suitstheme.com/blogify/)
+43. [Long Zheng](http://www.istartedsomething.com/)
+44. [Ash Furrow](http://ashfurrow.com/)
