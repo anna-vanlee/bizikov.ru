@@ -19,6 +19,7 @@
     <meta name="twitter:domain" content="{{ site.url }}" />
     <!-- Гугл плюс -->
     <link rel="author" href="https://plus.google.com/u/0/+AlexandrBizikov">
+
     <!-- Опэн граф -->
     <meta property = "og:title" content="{{ page.title }}" />
     <meta property = "og:url" content="{{ site.url }}{{ page.url}}" />
@@ -27,42 +28,25 @@
     <meta property = "og:description" content="{{ page.excerpt }}" />
     <meta property = "og:image" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/upload/page/home/bizikov.jpg{% endif %}" />
     <link rel="image_src" href="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/upload/page/home/bizikov.jpg{% endif %}" />
+
     <!-- Атомная лента-->
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+
     <!-- Иконки -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
     <link rel="apple-touch-icon" href="{{ site.url }}/upload/page/home/bizikov.jpg" />
+
     <!-- Дизайн -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/folium.css">
-    <!-- Вконтакте -->
-    <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/thank.css">
     {% include pagination-link.html %}
 </head>
 <body {% if page.bg %} class="custom-bg" style="background-image: url('{{ page.bg }}');" {% endif %}>
 
-<!-- Добавим facebook sdk -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=116474918428088&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <header {% if page.cover %} style="background-image: url({{ site.url }}/{{ page.cover }})"{% endif %}{% if post.cover %} style="background-image: url({{ site.url }}/{{ post.cover }})"{% endif %}>
-
     <nav>{% for link in site.links %}{% if link.icon %}
         <a href="{{ site.url}}"><img class="avatar" src="{{ site.url }}{{ link.icon }}" alt="{{ link.title }}"/>{{ link.title }}</a>
         {% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}{% endfor %}
     </nav>
-    <div class="header-follow">
-        <div class="follow-twitter">
-            <a href="https://twitter.com/Bizi" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @Bizi</a>
-        </div>
-        <div class="follow-facebook">
-            <div class="fb-follow" data-href="https://www.facebook.com/bizikov" data-colorscheme="dark" data-layout="button_count" data-show-faces="true"></div>
-        </div>
-    </div>
 </header>
