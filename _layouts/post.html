@@ -1,12 +1,12 @@
 {% include header.html %}<div class="container">
 <article class="content">
-    <h1 class="post-title">{{ page.title }}</h1>
     <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
-    {% if page.why %}<div class="why">Задача. {{ page.why }}</div>{% endif%}
-    {{ content }}
+    <h1 class="post-title">{{ page.title }}</h1>
     <ul class="article-tags">{% for tag in page.tags %}
         <li><a href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
     </ul>
+    {% if page.why %}<div class="why">Задача. {{ page.why }}</div>{% endif%}
+    {{ content }}
     {% include share.html %}
 </article>
 <aside class="more">
