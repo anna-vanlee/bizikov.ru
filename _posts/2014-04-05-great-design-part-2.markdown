@@ -15,18 +15,14 @@ tags:
 
 Думаю, что каждый, кому нужно создать лендинг для своего приложения, найдет для себя в данной подборке какие-то интересные идеи и решения. Приятного аппетита!
 
-1. [Doslo](http://dolsto.de/)
 2. [Obaby](http://www.obabyapp.com/)
 3. [Your Karma](https://yourkarma.com/)
-4. [Benumo](http://benumo.com/)
 5. [Retr](http://retr.io/)
 6. [Directions](http://getdirections.es/)
 7. [Fubiz](http://tablet.fubiz.net/)
-8. [Shipment App](http://shipmentapp.com/)
 9. [Days](https://www.days.am/)
 10. [INSTAWIDE](http://www.instawide.co/)
 11. [Rubis](http://rubisapp.com/)
-12. [Forgetfulchef](http://forgetfulchef.com/)
 13. [Oh Beer](http://ohbeer.com/)
 14. [ANA](http://www.ana.pt/app/ANA/HTML/home.html)
 15. [Cambox](http://getcambox.com/)
@@ -43,7 +39,6 @@ tags:
 26. [Squarespace](http://www.squarespace.com/apps#intro)
 27. [Involvio](https://involvio.com/)
 28. [Daypack](http://daypack.io/)
-29. [Dcovery](http://dcovery.com/)
 30. [Languages app](http://languagesapp.com/)
 31. [Turnplay](http://turnplay.ramotion.com/en)
 32. [Weathersnap](http://weathersnap.io/)
