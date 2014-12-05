@@ -10,7 +10,7 @@ tags:
 ---
 
 С выходом Android 5.0, мобильный браузер Chrome начал поддерживать метатег <span class="file">theme-color</span>.
-Для примера, сделаем верхнюю банель красной:
+Для примера, сделаем верхнюю панель красной:
 
 {% highlight css %}
 <meta name="theme-color" content="red">
