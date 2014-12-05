@@ -20,7 +20,7 @@ P.S: данный вариант работает и для моделей Lumia
 
 *Качаем файлы*
 
-1. Скачать [Nokia Care Suite 5.0](http://yadi.sk/d/uYOkZicF2b0qF).
+1. Скачать [Nokia Care Suite 5.0](https://yadi.sk/d/StYSJXSJdAbWm).
 2. Для установки вполне может потребоваться программа «vcredist» (ссылка на программу будет покажет Nokia Care Suite)
     ![]({{site.url}}/upload/article/2013/02/14/screen_00.png)
 3. Скачать [Файлы прошивки](http://yadi.sk/d/T3cH0cEp2b0tL) (*RM-801*)
