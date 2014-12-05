@@ -29,7 +29,7 @@ tags:
 <meta name="viewport" content="ya-title=fade,ya-dock=fade">
 {% endhighlight %}
 
-<img src="{{ site.url }}/upload/article/2014/12/05/screen_00.png" />
+<img src="{{ site.url }}/upload/article/2014/12/05/screen_01.png" />
 
 Добавим вместо <span class="file">fade</span> цвет *#4e69a2*:
 
@@ -37,7 +37,7 @@ tags:
 <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
 {% endhighlight %}
 
-<img src="{{ site.url }}/upload/article/2014/12/05/screen_01.png" />
+<img src="{{ site.url }}/upload/article/2014/12/05/screen_00.png" />
 
 **Когда использовать?**
 
