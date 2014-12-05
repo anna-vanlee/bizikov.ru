@@ -18,7 +18,7 @@ tags:
 
 Мобильный браузер Firefox в Firefox OS начиная с версии 2.1, тоже поддерживает этот метатег.
 
-<a href="https://twitter.com/AhmedNefzaoui/status/492344698493997057" target="_blank"><img class="original" src="{{ site.url }}/upload/article/2014/12/05/screen_02.png" /></a>
+<a href="https://twitter.com/AhmedNefzaoui/status/492344698493997057" target="_blank"><img style="border: 1px solid;" src="{{ site.url }}/upload/article/2014/12/05/screen_02.png" /></a>
 
 С выходом альфа-версии Яндекс.Браузера появились новые возможности для манипулирования внешним видом браузера.
 Так например, можно задавать свои стили для верхней и нижней панелей браузера через ключи <span class="file">ya-title</span> и <span class="file">ya-dock</span> метатега вьюпорт.
@@ -29,7 +29,7 @@ tags:
 <meta name="viewport" content="ya-title=fade,ya-dock=fade">
 {% endhighlight %}
 
-<img class="original" src="{{ site.url }}/upload/article/2014/12/05/screen_00.png" />
+<img src="{{ site.url }}/upload/article/2014/12/05/screen_00.png" />
 
 Добавим вместо <span class="file">fade</span> цвет *#4e69a2*:
 
@@ -37,7 +37,7 @@ tags:
 <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
 {% endhighlight %}
 
-<img class="original" src="{{ site.url }}/upload/article/2014/12/05/screen_01.png" />
+<img src="{{ site.url }}/upload/article/2014/12/05/screen_01.png" />
 
 **Когда использовать?**
 
