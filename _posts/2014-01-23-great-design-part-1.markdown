@@ -56,3 +56,4 @@ tags:
 43. [Long Zheng](http://www.istartedsomething.com/)
 44. [Ash Furrow](http://ashfurrow.com/)
 45. [Timothy](http://timothyachumba.com/)
+46. [Jeremias Menichelli](http://jeremenichelli.github.io/)
