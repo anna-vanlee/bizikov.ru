@@ -2,6 +2,7 @@
 layout: page
 title: Книги
 keywords: книги, список книг, чтение книг, хорошая литература, развитие
+permalink: /about/books/
 description: Список книг которые прочитал
 ---
 

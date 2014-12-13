@@ -4,6 +4,7 @@ title: О себе
 cover: upload/page/about/me.jpg
 keywords: Бизиков Александр, разработчик, frontend
 description: Привет. Этот сайт работает на Jekyll, исходные коды можно посмотреть на GitHub.
+permalink: /about/
 ---
 
 Привет, меня зовут Бизи. Я знаю HTML, CSS, JavaScript, иногда пишу на PHP. Верстаю сайты, иногда делаю темы для Wordpress. Могу и для тебя сделать сайт.
