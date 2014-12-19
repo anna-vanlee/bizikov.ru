@@ -57,3 +57,4 @@ tags:
 44. [Ash Furrow](http://ashfurrow.com/)
 45. [Timothy](http://timothyachumba.com/)
 46. [Jeremias Menichelli](http://jeremenichelli.github.io/)
+47. [Nick Pettit](http://nickpettit.com/)
