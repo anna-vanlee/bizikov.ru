@@ -1,24 +1,26 @@
 ---
 layout: post
 title: "Настройка VPS сервера для дальнейшей работы с LiveStreet"
-keywords: Число Пи, История числа Пи
-excerpt: "11"
+excerpt: "Заметка с описанием настройки VPS сервера, для последующей установки и разработки сайта на CMS LiveStreet"
+keywords: VPS, CMS LiveStreet
 tags:
 - VPS
 - LiveStreet
 ---
 
-Здравствуйте! Необходимо было перейти на выделенный сервер, где будет работать сайт на livestreet, ибо обычный хостинг не справлялся с нагрузкой. Настраивал сервер впервые, много нового узнал :)
-<cut>
-<h4>Вводная информация:</h4>
-Первое с чем мне пришлось столкнуться, так это с выбором размещения сервера. Были варианты зарубежные и отечественные, но т.к мне необходима поддержка на родном языке - решено было выбирать только из русских. Больше всего мне советовали <a href="scalaxy.ru">Оверсан</a>. У них кстати отличная поддержка, ребята быстро реагируют.
+Необходимо было перейти на выделенный сервер, где будет работать сайт на LiveStreet, обычный хостинг не справлялся с нагрузкой. 
+Настраивал сервер впервые, узнал много нового. Ниже опишу основные этапы настройки.
 
-Второе - изменил dns записи у своего регистратора на Оверсановские.
+Первое с чем мне пришлось столкнуться, так это с выбором размещения сервера. Были варианты зарубежные и отечественные, 
+но т.к мне необходима поддержка на родном языке - решено было выбирать только из русских. Больше всего мне советовали <a href="http://scalaxy.ru">Оверсан</a>. 
+У них кстати отличная поддержка, ребята быстро реагируют.
 
-Третье - создание сервера, выбор ос (решил выбрать ubuntu 10.04) и т.д.
+### Настройка веб сервера Ubuntu
 
-<h4>Настройка веб сервера Ubuntu</h4>
-Имеется сервер с установленной операционной системой Ubuntu 10.04. Начинаем настраивать:
+Имеется сервер с установленной операционной системой Ubuntu 10.04. 
+
+Начинаем настраивать:
+
 Для начала заходим по ssh на свой сервер, через консоль:
 
 {% highlight console %}
@@ -26,50 +28,62 @@ sudo ssh root@ваш_ip_сервера
 {% endhighlight %}
 
 Далее разрешаем сертификат и вводим пароль.
+
 Если появляется ошибка 
 
-<center><img src="http://livestreet.ru/uploads/images/01/29/12/2012/01/05/8660ca.png"  alt="" /></center>
+<img class="original" src="{{ site.url }}/upload/article/2012/01/05/8660ca.png"  alt="" />
 
 Скорее всего проблема в том что ключи ssh поменялись и поэтому в целях безопасности система не дает доступа.
 
 Решается следующим образом:
-Заходим в домашнюю директорию пользователя от которого сидите и удаляете файл .ssh/known_hosts
+
+Заходим в домашнюю директорию пользователя и удаляете файл <code class="file">.ssh/known_hosts</code>
 
 Сделать это к примеру можно так:
 
-{% highlight console %}cd ~
+{% highlight console %}
+cd ~
 rm .ssh/known_hosts
 {% endhighlight %}
 
 Перед нами голая система, из которой следует создать полноценный веб сервер.
-Поехали!
-обновим информацию о пакетах, и обновим систему
+
+Обновим информацию о пакетах, и обновим систему
 
 {% highlight console %}aptitude update
-aptitude upgrade{% endhighlight %}
+aptitude upgrade
+{% endhighlight %}
 
 Установка apache2 + phph5 + mysql + phpmyadmin одной строкой
 
-{% highlight console %}aptitude install mysql-server mysql-client libmysqlclient15-dev apache2 apache2-doc apache2-mpm-prefork apache2-utils libexpat1 ssl-cert libapache2-mod-php5 libapache2-mod-ruby php5 php5-common php5-curl php5-dev php5-gd php5-idn php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-mhash php5-ming php5-mysql php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl phpmyadmin{% endhighlight %}
+{% highlight console %}
+aptitude install mysql-server mysql-client libmysqlclient15-dev apache2 apache2-doc apache2-mpm-prefork apache2-utils libexpat1 ssl-cert libapache2-mod-php5 libapache2-mod-ruby php5 php5-common php5-curl php5-dev php5-gd php5-idn php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-mhash php5-ming php5-mysql php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl phpmyadmin
+{% endhighlight %}
 
 Настраиваем виртуальные хосты для работы нескольких сайтов на одном ip адресе:
 
-По умолчанию, Apache прослушивает все IP-адреса, доступные виртуальному серверу. Мы должны настроить его на прослушивание только адреса, который мы укажем. Даже если у вас есть только один IP адрес, не стоит пренебрегать этой процедурой.
+По умолчанию, Apache прослушивает все IP-адреса, доступные виртуальному серверу. 
+Мы должны настроить его на прослушивание только адреса, который мы укажем. 
+Даже если у вас есть только один IP адрес, не стоит пренебрегать этой процедурой.
 
-Начните с изменения параметра NameVirtualHost entry в файле /etc/apache2/ports.conf:
-Редактируем файл /etc/apache2/ports.conf 
+Начните с изменения параметра NameVirtualHost entry в файле <code class="file">/etc/apache2/ports.conf</code>:
 
-{% highlight console %}NameVirtualHost	188.127.241.217:80{% endhighlight %}
+{% highlight console %}
+NameVirtualHost	188.127.241.217:80
+{% endhighlight %}
 
-<blockquote>Замените 188.127.241.217 на IP адрес вашего виртуального сервера.</blockquote>
+Замените <mark>188.127.241.217</mark> на IP адрес вашего виртуального сервера.
 
-Теперь, изменим VirtualHost сайта по умолчанию в файле /etc/apache2/sites-available/default, запись <VirtualHost> должна выглядеть так:
-Редактируем файл /etc/apache2/sites-available/default
+Теперь, изменим VirtualHost сайта по умолчанию в файле <code class="file">/etc/apache2/sites-available/default</code>, запись <VirtualHost> должна выглядеть так:
 
-{% highlight console %}<VirtualHost	188.127.241.217:80>{% endhighlight %}
+{% highlight console %}
+<VirtualHost 188.127.241.217:80>
+{% endhighlight %}
 
-<h4>Настройка виртуальных хостов</h4>
+### Настройка виртуальных хостов
+
 Для каждого домена необходимо создать конфигурационный файл в каталоге /etc/apache2/sites-available/. Название каждого конфигурационного файла для домена должно быть аналогичным самому домену. для примера, создадим конфигурационные файлы для доменов "site1.ru" и "site2.ru"
+
 Редактируем файл /etc/apache2/sites-available/site1.ru
 
 {% highlight console %}<VirtualHost 188.127.241.217:80> 

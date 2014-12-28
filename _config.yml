@@ -1,15 +1,14 @@
 name: Александр Бизиков
 description: Пишу об интересных и полезных для меня материалах
 disqus_shortname: bizikov
-version: 2.3
+version: 2.4
 #url: http://localhost:4000
 url: http://bizikov.ru
 
 # Ссылки для навигации
 links:
-  - title: Александр Бизиков
+  - title: Главная
     url: /
-    icon: /upload/page/home/bizikov.jpg
   - title: Архив заметок
     url: /archive/
   - title: Теги
@@ -46,4 +45,4 @@ markdown:    kramdown
 kramdown:
   auto_ids: false
 
-
+copyright: "&copy; 2009 — 2014, Александр Бизиков."

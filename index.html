@@ -1,6 +1,57 @@
 ---
-layout: blog
+layout: default
 title: Александр Бизиков
 excerpt: Меня зовут Александр Бизиков, я интересуюсь версткой и дизайном.
 keywords: Bizikov, Бизиков, Верстальщик, Разработчик, блог Бизикова
 ---
+<header class="header-about">
+    <div class="container">
+        <div class="about">
+            <div class="about-me">
+                <a href="{{ site.url }}" title="{{ site.title }}"><img class="about-me" src="{{site.url}}/upload/page/home/me.jpg" alt=""/></a>
+            </div>
+            <div class="about-description">
+                <h1>Я есть @Bizi</h1>
+                <p>Привет, меня зовут Бизи. Я знаю HTML, CSS, JavaScript, иногда пишу на PHP. Верстаю сайты, иногда делаю темы для Wordpress. Могу и для тебя сделать сайт.
+                    Родился в Кувандыке, живу в Оренбурге. Работаю веб-разработчиком в <a href="http://i-sys.ru">i-Sys</a>.</p>
+                <div class="contacts">
+                    <a href="mailto:alexandr@bizikov.ru"><i class="contact email"></i></a>
+                    <a href="https://github.com/bizikov" target="_blank"><i class="contact github"></i></a>
+                    <a href="{{ site.url }}/feed.xml" target="_blank"><i class="contact rss"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <ul class="post-main">{% for post in site.posts limit: 5 %}
+        <li class="post-main-item">
+            {% if post.special %}
+            <div class="post-main-special">
+                <img class="post-main-special-cover" src="{{ site.url }}/{{ post.cover }}" alt="{{ post.title }}"/>
+                <div class="post-main-special-area">
+                    <div class="post-main-special-excerpt">
+                        <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
+                        <h1 class="post-title-special"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                        <p>{{ post.excerpt }}</p>
+                        <ul class="btn-tags">{% for tag in post.tags %}
+                            <li><a href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.excerpt }}</p>
+            <ul class="btn-tags">{% for tag in post.tags %}
+                <li><a href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+        <li class="post-main-more"><h2><a href="{{ site.url }}/archive">Eщё</a></h2>
+        </li>
+    </ul>
+</div>
