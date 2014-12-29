@@ -1,13 +1,10 @@
 <head>
     <title>{{ page.title }}</title>
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!-- Мета Тэги -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="robots" content="index, follow" />
     <meta name="keywords" content="{{ page.keywords }}" />
     <meta name="description" content="{{ page.excerpt }}" />
     <meta name="google-site-verification" content="31GFDRk73zQxozznVPGgFu5VuuooTH7ROKIb1DTgXZs" />
-    <!-- Твиттер карточка -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@bizi" />
     <meta name="twitter:creator" content="@bizi" />
@@ -15,20 +12,15 @@
     <meta name="twitter:description" content="{{ page.excerpt }}" />
     <meta name="twitter:image:src" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/upload/page/home/bizikov.jpg{% endif %}" />
     <meta name="twitter:domain" content="{{ site.url }}" />
-    <!-- Гугл плюс -->
-    <link rel="author" href="https://plus.google.com/u/0/+AlexandrBizikov">
-
-    <!-- Опэн граф -->
-    <meta property = "og:title" content="{{ page.title }}" />
-    <meta property = "og:url" content="{{ site.url }}{{ page.url}}" />
-    <meta property = "og:site_name" content="Блог Александра Бизикова" />
-    <meta property = "og:type" content = "blog" />
-    <meta property = "og:description" content="{{ page.excerpt }}" />
-    <meta property = "og:image" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/upload/page/home/bizikov.jpg{% endif %}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url}}" />
+    <meta property="og:site_name" content="Блог Александра Бизикова" />
+    <meta property="og:type" content = "blog" />
+    <meta property="og:description" content="{{ page.excerpt }}" />
+    <meta property="og:image" content="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/upload/page/home/bizikov.jpg{% endif %}" />
     <link rel="image_src" href="{% if page.cover %}{{ site.url }}/{{ page.cover }}{% else %}{{ site.url }}/upload/page/home/bizikov.jpg{% endif %}" />
-    <!-- Атомная лента-->
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
-    <!-- Иконки -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
     <link rel="apple-touch-icon" href="{{ site.url }}/upload/page/home/bizikov.jpg" />
+    <link rel="author" href="https://plus.google.com/u/0/+AlexandrBizikov">
 </head>
