@@ -189,61 +189,17 @@ table {
   padding: 0;
 }
 
-.navigation {
-  position: absolute;
-  z-index: 10;
-  top: 2em;
-  left: 2em;
-  font-size: 13px;
-  .icon-menu {
-    display: block;
-    width: 22px;
-    height: 22px;
-    float: left;
-    background-image: url('../svg/menu.svg');
-    &:hover {
-
-    }
-  }
-  ul {
-    overflow: hidden;
-    padding: 0;
-    li {
-      padding: 0;
-      margin: 0 1em 0 0;
-      list-style: none;
-      float: left;
-      a {
-        text-decoration: none;
-        &:hover {
-          color: @delta;
-        }
-      }
-    }
-  }
-}
-
-.header-about {
-  padding: 2em;
+.header-about, .navigation{
+  padding: 2em 0;
   background-color: @epsilon;
-  nav {
-    a {
-      font-weight: bold;
-      line-height: 3em;
-      text-decoration: none;
-      margin: 0 1em;
-    }
-  }
 }
 
 .about {
-  text-align: center;
   .about-me {
     position: relative;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+    width: 260px;
+    height: 260px;
     img {
       position: absolute;
       z-index: 1;
@@ -260,7 +216,6 @@ table {
 
   }
   .about-description {
-
   }
 }
 
@@ -349,9 +304,6 @@ table {
     }
     line-height: @font-size * 2;
   }
-  .tags a {
-    color: @alpha;
-  }
   img {
     -webkit-transition: all 0.55s linear;
     -moz-transition: all 0.55s linear;
@@ -373,13 +325,6 @@ table {
       transform: scale(1.09);
     }
   }
-}
-
-.container {
-  position: relative;
-  width: @width;
-  margin: 0 auto;
-  .border-radius;
 }
 
 article {
