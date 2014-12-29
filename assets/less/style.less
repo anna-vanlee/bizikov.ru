@@ -190,8 +190,21 @@ table {
 }
 
 .navigation {
-  border-top: 2px solid  @delta;
-  padding: .3em;
+  position: absolute;
+  z-index: 10;
+  top: 2em;
+  left: 2em;
+  font-size: 13px;
+  .icon-menu {
+    display: block;
+    width: 22px;
+    height: 22px;
+    float: left;
+    background-image: url('../svg/menu.svg');
+    &:hover {
+
+    }
+  }
   ul {
     overflow: hidden;
     padding: 0;
@@ -297,18 +310,7 @@ table {
   }
   .post-main-more {
     text-align: center;
-    margin: 5em 0 3em 0;
-    a {
-      text-decoration: none;
-      padding: .2em 2em;
-      border: 2px solid;
-      .border-radius(1em);
-      .transition();
-      &:hover {
-        padding: .2em 2.5em;
-        border-color: @delta;
-      }
-    }
+    margin: 4em 0 2em 0;
   }
 }
 
@@ -452,7 +454,6 @@ article {
     list-style: none;
     .border-radius(1em);
     a {
-      font-size: 13px;
       text-decoration: none;
       &:hover {
         color: @delta;
@@ -567,7 +568,6 @@ article {
 /* Список похожих записей */
 .more {
   overflow: hidden;
-  padding: 0 80px 20px 80px;
   background-color: @epsilon;
   .more-post-link {
     display: block;
@@ -813,6 +813,67 @@ hr {
         width: 320px;
         height: 480px;
       }
+    }
+  }
+}
+
+/* .btn */
+.list {
+  overflow: hidden;
+  padding: 0;
+  margin: 1em 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: .5em;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  .border-radius(1em);
+  .transition();
+  &.normal {
+    font-size: 13px;
+    padding: .4em 1em;
+    border-width: 1px;
+  }
+
+  &.large {
+    font-size: 29px;
+    font-weight: bold;
+    border-width: 2px;
+    padding: .2em 2em;
+    &:hover {
+      padding: .2em 2.5em;
+    }
+  }
+
+  &.light {
+    color: @alpha;
+    border-style: solid;
+    border-color: @alpha;
+    &:hover {
+      border-color: fade(@alpha, 40%);
+    }
+  }
+
+  &.dark {
+    color: lighten(@beta, 40%);
+    border-style: solid;
+    border-color: lighten(@beta, 40%);
+    &:hover {
+      color: @beta;
+      border-color: @beta;
+    }
+  }
+  &.blue {
+    color: @gamma;
+    border-style: solid;
+    border-color: @gamma;
+    &:hover {
+      color: @delta;
+      border-color: @delta;
     }
   }
 }

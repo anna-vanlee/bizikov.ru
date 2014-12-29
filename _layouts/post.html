@@ -16,10 +16,8 @@ layout: default
         <ul class="post-main">{% for post in site.related_posts limit: 1 %}
             <li class="post-main-item">
                 {% include post-special-more.html %}
-            </li>
-            {% endfor %}
-            <li class="post-main-more"><h2><a href="{{ site.url }}/archive">Eщё</a></h2>
-            </li>
+            </li>{% endfor %}
+            <li class="post-main-more"><a class="btn large blue" href="{{ site.url }}/archive">Eщё</a></li>
         </ul>
     </div>
 </aside>

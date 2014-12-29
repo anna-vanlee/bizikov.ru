@@ -6,8 +6,8 @@
             <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
             <h1 class="post-title-special"><a href="{{ page.url }}">{{ page.title }}</a></h1>
             <p>{{ page.excerpt }}</p>
-            <ul class="btn-tags">{% for tag in page.tags %}
-                <li><a href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
+            <ul class="list">{% for tag in page.tags %}
+                <li><a class="btn normal light" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
             </ul>
         </div>
     </div>
@@ -16,7 +16,7 @@
 <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
 <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
 <p>{{ page.excerpt }}</p>
-<ul class="btn-tags">{% for tag in page.tags %}
-    <li><a href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
+<ul class="list">{% for tag in page.tags %}
+    <li><a class="btn normal dark" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
 </ul>
 {% endif %}

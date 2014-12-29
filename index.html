@@ -29,9 +29,7 @@ keywords: Bizikov, Бизиков, Верстальщик, Разработчи�
     <ul class="post-main">{% for post in site.posts limit: 5 %}
         <li class="post-main-item">
             {% include post-special.html %}
-        </li>
-        {% endfor %}
-        <li class="post-main-more"><h2><a href="{{ site.url }}/archive">Eщё</a></h2>
-        </li>
+        </li>{% endfor %}
+        <li class="post-main-more"><a class="btn large blue" href="{{ site.url }}/archive">Eщё</a></li>
     </ul>
 </div>

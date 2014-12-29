@@ -144,8 +144,18 @@ table thead tr > td {
   padding: 0;
 }
 .navigation {
-  border-top: 2px solid #fc6341;
-  padding: .3em;
+  position: absolute;
+  z-index: 10;
+  top: 2em;
+  left: 2em;
+  font-size: 13px;
+}
+.navigation .icon-menu {
+  display: block;
+  width: 22px;
+  height: 22px;
+  float: left;
+  background-image: url('../svg/menu.svg');
 }
 .navigation ul {
   overflow: hidden;
@@ -240,23 +250,7 @@ table thead tr > td {
 }
 .post-main .post-main-more {
   text-align: center;
-  margin: 5em 0 3em 0;
-}
-.post-main .post-main-more a {
-  text-decoration: none;
-  padding: .2em 2em;
-  border: 2px solid;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.post-main .post-main-more a:hover {
-  padding: .2em 2.5em;
-  border-color: #fc6341;
+  margin: 4em 0 2em 0;
 }
 .post-main-special {
   position: relative;
@@ -393,7 +387,6 @@ article ol li img {
   border-radius: 1em;
 }
 .btn-tags li a {
-  font-size: 13px;
   text-decoration: none;
 }
 .btn-tags li a:hover {
@@ -502,7 +495,6 @@ article ol li img {
 /* Список похожих записей */
 .more {
   overflow: hidden;
-  padding: 0 80px 20px 80px;
   background-color: #f7f7f7;
 }
 .more .more-post-link {
@@ -729,4 +721,65 @@ hr {
 .folium.normal.ios img {
   width: 320px;
   height: 480px;
+}
+/* .btn */
+.list {
+  overflow: hidden;
+  padding: 0;
+  margin: 1em 0;
+}
+.list li {
+  list-style: none;
+  display: inline-block;
+  margin-right: .5em;
+}
+.btn {
+  text-decoration: none;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.btn.normal {
+  font-size: 13px;
+  padding: .4em 1em;
+  border-width: 1px;
+}
+.btn.large {
+  font-size: 29px;
+  font-weight: bold;
+  border-width: 2px;
+  padding: .2em 2em;
+}
+.btn.large:hover {
+  padding: .2em 2.5em;
+}
+.btn.light {
+  color: #ecf0f1;
+  border-style: solid;
+  border-color: #ecf0f1;
+}
+.btn.light:hover {
+  border-color: rgba(236, 240, 241, 0.4);
+}
+.btn.dark {
+  color: #999999;
+  border-style: solid;
+  border-color: #999999;
+}
+.btn.dark:hover {
+  color: #333333;
+  border-color: #333333;
+}
+.btn.blue {
+  color: #1d62f0;
+  border-style: solid;
+  border-color: #1d62f0;
+}
+.btn.blue:hover {
+  color: #fc6341;
+  border-color: #fc6341;
 }
