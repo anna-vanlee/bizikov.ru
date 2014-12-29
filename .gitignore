@@ -1,6 +1,6 @@
 /.idea
 /_site
-/style/css/color.css
-/style/css/post-style.css
-/style/css/syntax.css
+/assets/css/folium.css
+/assets/css/grid.css
+/assets/css/thank.css
 bizikov.iml
