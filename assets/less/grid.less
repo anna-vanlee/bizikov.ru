@@ -1,24 +1,16 @@
 /* -------------------------*/
 /*  LESS Grid
-/*  Version: 0.1
+/*  Version: 0.2
 /*  Author: Alexandr Bizikov
 /*  Author URI: http://bizikov.ru/
 /* -------------------------*/
 
-@desktop: 960px; /* Ширина контейнера */
+@desktop: 960px;
+@margin: 20px;
 
-@margin: 20px; /* Отступ */
-
-/* -------------------------*/
-/*  MIXIN
-/* -------------------------*/
 .cell-a-b(@a, @b) {
   width: 100% * @a / @b;
 }
-
-/* -------------------------*/
-/*  Пользовательская сетка
-/* -------------------------*/
 
 .container {
   width: @desktop;
@@ -37,12 +29,10 @@
 
   .module {
     margin: auto @margin / 2;
-    /* Обнуление отступа с левой стороны */
     &.alpha {
       margin-left: 0;
     }
 
-    /* Обнуление отступа с правой стороны */
     &.beta {
       margin-right: 0;
     }
