@@ -1,6 +1,8 @@
 /* VAR */
 @width: 960px;
 @font-size: 19px;
+@font-size-title: 24px;
+@font-size-post-title: 36px;
 
 @alpha: #ECF0F1;
 @beta: #333;
@@ -29,12 +31,20 @@
   transition: @arguments;
 }
 
+.transform(@duration: 0.3s) {
+  -moz-transform: @duration;
+  -o-transform: @duration;
+  -ms-transform: @duration;
+  -webkit-transform: @duration;
+  transform: @duration;
+}
+
 .box-shadow(@x: 0, @y: 0, @blur: 10px, @color: #666) {
   -webkit-box-shadow: @arguments;
   box-shadow: @arguments;
 }
 
-.mask {
+.mask() {
   mask: url('../svg/mask.svg') top left;
   -o-mask: url('../svg/mask.svg') top left;
   -ms-mask: url('../svg/mask.svg') top left;
@@ -42,8 +52,13 @@
   -o-mask-size: cover;
   -ms-mask-size: cover;
   -webkit-mask-size: cover;
+
 }
 
+.null() {
+  margin: 0;
+  padding: 0;
+}
 
 @import 'grid';
 @import 'main';
