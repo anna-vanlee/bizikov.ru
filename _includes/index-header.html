@@ -3,7 +3,7 @@
         <div class="cell-1-3">
             <div class="module about-me">
                 <a href="{{ site.url }}" title="{{ site.title }}">
-                    <img class="about-me" src="{{site.url}}/upload/page/home/me.jpg" alt=""/>
+                    <img class="about-me" src="{{ site.avatar | prepend: site.url }}" alt=""/>
                 </a>
             </div>
         </div>
