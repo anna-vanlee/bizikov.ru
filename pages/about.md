@@ -1,7 +1,6 @@
 ---
 layout: page
 title: О себе
-cover: upload/page/about/me.jpg
 keywords: Бизиков Александр, разработчик, frontend
 description: Привет. Этот сайт работает на Jekyll, исходные коды можно посмотреть на GitHub.
 permalink: /about/

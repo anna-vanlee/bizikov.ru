@@ -1,19 +1,15 @@
 <header class="post-header">
     <div class="container about">
         <div class="cell-1-4">
-            <div class="alpha module about-me">
+            <div class="module about-me">
                 <a href="{{ site.url }}" title="{{ site.title }}">
                     <img class="about-me" src="{{site.url}}/upload/page/home/me.jpg" alt=""/>
                 </a>
             </div>
         </div>
         <div class="cell-3-4">
-            <div class="beta module menu">
-                <ul class="list">
-                    {% for link in site.links %}
-                        <li><a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a></li>
-                    {% endfor %}
-                </ul>
+            <div class="module">
+                {% include nav.html %}
             </div>
         </div>
         <div class="clear"></div>
