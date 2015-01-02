@@ -1,4 +1,4 @@
-name: Александр Бизиков
+name: Блог Александра Бизикова
 description: Пишу об интересных и полезных для меня материалах
 disqus_shortname: bizikov
 version: 2.4
@@ -17,6 +17,8 @@ links:
     url: /tags/
   - title: О себе
     url: /about/
+
+twitter: "@bizi"
 
 # Ссылки на социальные сети
 social:
