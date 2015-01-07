@@ -3,7 +3,7 @@ layout: post
 title: "Как отключить Dashboard в OS X Mavericks"
 excerpt: "Как можно отключить Dashboard в OS X Mavericks."
 keywords: disable dashboard osx mavericks, osx mavericks, dashboard, disable dashboard
-cover: upload/article/2014/08/30/dashboard.png
+cover: /upload/article/2014/08/30/dashboard.png
 tags:
 - Mac OS
 - Mavericks

@@ -4,22 +4,22 @@ layout: default
 
 {% include post-header.html %}
 
-<div class="container">
-    <article class="content">
-        <div>
-            {% include page-special.html %}
-        </div>
+<article class="content">
+    {% include page-special.html %}
+
+    <div class="container">
         {{ content }}
         <div id="thank-box"></div>
-    </article>
-</div>
+    </div>
+</article>
 
 <aside class="more">
     <div class="container">
         <ul class="post-main">{% for post in site.related_posts limit: 1 %}
             <li class="post-main-item">
-                {% include post-special-more.html %}
-            </li>{% endfor %}
+                {% include post-special.html %}
+            </li>
+            {% endfor %}
             <li class="post-main-more"><a class="btn large blue" href="{{ site.url }}/archive">Eщё</a></li>
         </ul>
     </div>

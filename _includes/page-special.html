@@ -1,22 +1,11 @@
-{% if page.cover %}
-<div class="post-main-special">
-    <img class="post-main-special-cover" src="{{ site.url }}/{{ page.cover }}" alt="{{ page.title }}"/>
-    <div class="post-main-special-area">
-        <div class="post-main-special-excerpt">
-            <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
-            <h1 class="post-title-special">{{ page.title }}</h1>
-            <p>{{ page.excerpt }}</p>
-            <ul class="list">{% for tag in page.tags %}
-                <li><a class="btn normal light" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
-            </ul>
-        </div>
+<div class="container">
+    <div class="cell-1-1">
+        <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.cover %}<p><img src="{{ page.cover | prepend: site.url }}" alt="{{ page.title }}"/></p>{% endif %}
+        <p>{{ page.excerpt }}</p>
+        <ul class="list">{% for tag in page.tags %}
+            <li><a class="btn normal dark" href="{{ site.url }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a></li>{% endfor %}
+        </ul>
     </div>
 </div>
-{% else %}
-<time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
-<h1 class="post-title">{{ page.title }}</h1>
-<p>{{ page.excerpt }}</p>
-<ul class="list">{% for tag in page.tags %}
-    <li><a class="btn normal dark" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a></li>{% endfor %}
-</ul>
-{% endif %}
