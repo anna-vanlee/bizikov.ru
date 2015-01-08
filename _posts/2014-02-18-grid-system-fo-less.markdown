@@ -23,9 +23,7 @@ tags:
 
 Теперь подключаем в <code class="file"><head></code> файл:
 
-{% highlight html %}
-<link rel="stylesheet" href="grid.css"/>
-{% endhighlight %}
+{% highlight html %}<link rel="stylesheet" href="grid.css"/>{% endhighlight %}
 
 ### Дополнительные стили
 
@@ -35,11 +33,9 @@ tags:
 
 ### Пример блока
 
-{% highlight html %}
-<div class="cell-1-2"><div class="alpha module">1/2</div></div>
+{% highlight html %}<div class="cell-1-2"><div class="alpha module">1/2</div></div>
 <div class="cell-1-2"><div class="beta module">1/2</div></div>
-<div class="clear"></div>
-{% endhighlight %}
+<div class="clear"></div>{% endhighlight %}
 
 Вы скажете, что верстку можно было бы оптимизировать, используя всего один <span class="file">div</span> с классами <span class="file">.cell-\*-\*</span> и <span class="file">.module</span>. И вы будете правы. Используя свойство CSS3 **box-sizing**, можно добиться уменьшения элементов в верстке. Правда, в таком случае этот модный вариант сломается в старых браузерах, которые не поддерживают CSS3.
 В моем случае элементов на странице будет чуть больше, но это гарантирует кроссбраузерность, что немаловажно для моих проектов.
@@ -49,7 +45,3 @@ tags:
 Ниже приведены примеры html-страницы с сеткой и LESS-файл с сеткой.
 
 {% gist 9086486 %}
-
-### Демонстрация
-
-[На специальной странице]({{ site.url }}/laboratory/grid) вы можете увидеть работу системы сеток.

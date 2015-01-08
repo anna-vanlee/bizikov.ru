@@ -53,12 +53,11 @@ tags:
 
 <p>14. Вводим в командной строке:
 
-{% highlight bash %}
-fastboot -w
+<pre><code class="language-none">fastboot -w
 fastboot flash boot boot.img
 fastboot flash system system.img
 fastboot reboot
-{% endhighlight %}
+</code></pre>
 </p>
 
 <p>15. Происходит перезагрузка телефон и радуемся!</p>
