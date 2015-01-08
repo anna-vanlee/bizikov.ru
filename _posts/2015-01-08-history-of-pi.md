@@ -2,8 +2,8 @@
 layout: post
 title: "Краткая история числа Пи"
 keywords: Число Пи, История числа Пи
-cover: upload/article/2014/10/28/pi.jpg
 script: "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+published: false
 tags:
 - Математика
 ---

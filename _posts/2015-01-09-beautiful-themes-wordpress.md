@@ -3,6 +3,7 @@ layout: post
 title: Красивые темы Wordpress для разных целей
 excerpt: Коллекция тем Wordpress для разных целей
 keywords: wordpress, wordpress theme, шаблоны wordpress, красивые шаблоны wordpress
+published: false
 tags:
 - Design
 ---
