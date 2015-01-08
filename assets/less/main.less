@@ -61,7 +61,7 @@ img {
 }
 
 hr {
-  border: 1px solid @alpha;
+  border: 1px solid @epsilon;
   margin: 1em 0;
   clear: both;
 }
@@ -108,33 +108,6 @@ blockquote {
 
 }
 
-table {
-  width: 100%;
-  overflow: auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-  thead {
-    tr {
-      border: 1px solid @alpha;
-      border-bottom-width: 3px;
-      text-align: left;
-      th {
-        border: 1px solid @alpha;
-      }
-      & > th {
-        padding: 8px;
-        vertical-align: bottom;
-
-      }
-      & > td {
-        padding: 8px;
-        vertical-align: top;
-        border: 1px solid @alpha;
-      }
-    }
-  }
-}
-
 /*********************************************************************************************************************/
 
 .folium {
@@ -145,7 +118,7 @@ table {
   }
   &.normal {
     padding: 1em 0;
-    background: @alpha;
+    background: @epsilon;
     img {
       width: auto !important;
     }
@@ -201,11 +174,11 @@ table {
   }
 
   &.light {
-    color: @alpha;
+    color: @epsilon;
     border-style: solid;
-    border-color: @alpha;
+    border-color: @epsilon;
     &:hover {
-      border-color: fade(@alpha, 40%);
+      border-color: fade(@epsilon, 40%);
     }
   }
 
@@ -216,6 +189,15 @@ table {
     &:hover {
       color: @beta;
       border-color: @beta;
+    }
+  }
+  &.green {
+    color: @zeta;
+    border-style: solid;
+    border-color: @zeta;
+    &:hover {
+      color: @delta;
+      border-color: @delta;
     }
   }
   &.blue {
@@ -250,7 +232,7 @@ table {
 .file {
   font-size: @font-size * .8;
   padding: 2px 8px;
-  background-color: @alpha;
+  background-color: @epsilon;
   border-radius: 3px;
 }
 
@@ -264,26 +246,26 @@ table {
 /********************************************************/
 
 header {
-  background-color: @epsilon;
 }
 
 /********************************************************/
 
 .menu {
   font-size: @font-size / 1.5;
+  font-weight: bold;
   text-transform: uppercase;
   .menu-item {
     margin-right: 1em;
   }
   .menu-item-link {
     display: block;
-    color: lighten(@beta, 40%);
+    color: @beta;
     text-decoration: none;
     &:after {
       content: '';
       width: 0;
       display: block;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid @beta;
       .transition(@property: width);
     }
     &:hover {
@@ -312,6 +294,7 @@ header {
 
 .post-header {
   padding: 1em 0;
+  background-color: @epsilon;
   .about-me {
     width: 60px;
     height: 60px;
@@ -338,6 +321,7 @@ header {
     font-size: @font-size-post-title;
     line-height: @font-size-post-title * 1.5;
     font-weight: bold;
+    margin: .5em 0;
   }
   .about-description {
   }
@@ -353,17 +337,6 @@ header {
   position: relative;
   padding: 1em .5em;
   margin-top: 3em;
-  .note {
-    width: 100px;
-    font-size: @font-size * .8;
-    text-align: left;
-    position: absolute;
-    right: 10px;
-    margin: 0;
-    padding: 10px;
-    background: @alpha;
-    border-top: 2px solid @zeta;
-  }
   p {
     width: @width * 3/4;
     img {
@@ -435,53 +408,6 @@ article .post-title {
   .post-main-more {
     text-align: center;
     margin: 4em 0 2em 0;
-  }
-}
-
-/********************************************************/
-
-.post-main-special {
-  position: relative;
-  overflow: hidden;
-  .border-radius();
-  .post-main-special-cover {
-    float: left;
-  }
-  .post-main-special-area {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    color: @alpha;
-    background-color: fade(@delta, 50%);
-    .transition(@property: background);
-    &:hover {
-      background-color: fade(@delta, 30%);
-    }
-  }
-  .post-main-special-excerpt {
-    position: absolute;
-    left: 2em;
-    bottom: 2em;
-  }
-  .post-title-special {
-    a {
-      color: @alpha;
-      text-decoration: none;
-    }
-    &:hover {
-      text-decoration: none;
-    }
-    line-height: @font-size * 2;
-  }
-  img {
-    .transition();
-  }
-  &:hover {
-    img {
-      .transform(scale(1.09));
-    }
   }
 }
 
