@@ -6,7 +6,6 @@ version: 2.4
 url: http://bizikov.ru
 css:
   - /assets/css/style.css
-  - /assets/css/prism.css
 
 avatar: /upload/page/home/me.jpg
 
