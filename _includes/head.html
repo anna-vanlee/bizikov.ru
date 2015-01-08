@@ -25,5 +25,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
     <link rel="author" href="https://plus.google.com/u/0/+AlexandrBizikov">
-    <link rel="stylesheet" href="{{ site.css | prepend: site.url }}">
+    {% for stylesheet in site.css %}<link rel="stylesheet" href="{{ stylesheet | prepend: site.url }}">
+    {% endfor %}
 </head>
