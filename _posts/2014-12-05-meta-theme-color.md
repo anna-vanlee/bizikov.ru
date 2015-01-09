@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Меняем фон верхней панели браузера"
-excerpt: "С выходом Android 5.0, мобильный браузер Chrome начал поддерживать метатег theme-color"
+excerpt: "С выходом Android 5.0, мобильный браузер Chrome начал поддерживать метатег theme-color."
 keywords: "Android 5.0, Android lollipop, Firefox OS, theme-color, как поменять фон"
 tags:
 - HTML
