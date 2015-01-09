@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-  font-family: 'PT Serif', Georgia, serif;
+  font-family: "Arial", sans-serif;
   font-size: @font-size;
   line-height: 1.6em;
   color: @beta;
@@ -304,7 +304,6 @@ header {
 .about {
   .about-me {
     position: relative;
-    overflow: hidden;
     img {
       position: absolute;
       z-index: 1;
@@ -468,8 +467,9 @@ article .post-title {
   }
 }
 
-@media screen and (max-width: 960px) {
+/********************************************************/
 
+@media screen and (max-width: 960px) {
   blockquote {
     width: @mobile * 3/4;
   }
@@ -478,13 +478,7 @@ article .post-title {
     .about-me {
       width: 160px;
       height: 160px;
-      margin: auto;
-    }
-    .about-title {
-      text-align: center;
-    }
-    .about-description {
-      text-align: center;
+      margin: 1em auto 0 auto;
     }
   }
 
@@ -550,5 +544,18 @@ article .post-title {
 
   .btn.normal {
     padding: .2em .6em;
+  }
+}
+
+/********************************************************/
+
+@media screen and (max-width: 600px) {
+  .index-header {
+    .about-title {
+      text-align: center;
+    }
+    .about-description {
+      text-align: center;
+    }
   }
 }
