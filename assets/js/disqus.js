@@ -1,5 +1,5 @@
 var btn = document.getElementById('showBtn');
-document.addEventListener('click', function () {
+btn.addEventListener('click', function () {
     btn.style.display = 'none';
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
