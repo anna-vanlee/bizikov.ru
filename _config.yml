@@ -10,7 +10,7 @@ css:
 avatar: /upload/page/home/me.jpg
 
 # Ссылки для навигации
-links:
+header_menu:
   - title: Главная
     url: /
   - title: Заметки
@@ -19,6 +19,16 @@ links:
     url: /tags/
   - title: О себе
     url: /about/
+
+footer_menu:
+  - title: РСС
+    url: http://feeds.feedburner.com/bizikov
+  - title: Гитхаб
+    url: https://github.com/bizikov
+  - title: Твиттер
+    url: https://twitter.com/Bizi
+  - title: Инстаграмм
+    url: http://instagram.com/bizikov
 
 twitter: "@bizi"
 

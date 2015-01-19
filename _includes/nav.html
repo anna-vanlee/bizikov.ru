@@ -1,9 +1,9 @@
 <ul class="menu list">
-    {% for link in site.links %}<li class="menu-item"><a class="menu-item-link" title="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}
+    {% for link in site.header_menu %}<li class="menu-item"><a class="menu-item-link" title="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}
 </ul>
 
 <select class="mobile-menu" name="" id="menu">
     <option value="null">Меню</option>
-    {% for link in site.links %}<option value="{{ link.url }}">{{ link.title }}</option>{% endfor %}
+    {% for link in site.header_menu %}<option value="{{ link.url }}">{{ link.title }}</option>{% endfor %}
 </select>
 

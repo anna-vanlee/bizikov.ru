@@ -330,6 +330,13 @@ header {
 }
 
 /********************************************************/
+.subscribe {
+  overflow: hidden;
+  background-color: @epsilon;
+  padding: 2em 0;
+}
+
+/********************************************************/
 
 .content {
   position: relative;
@@ -457,6 +464,18 @@ article .post-title {
   }
 }
 
+/********************************************************/
+footer {
+  .list {
+    margin: 0;
+  }
+}
+
+.copy {
+  overflow: hidden;
+  padding: 2em 0;
+}
+
 /*********************************************************************************************************************/
 @media screen and (max-width: 1100px) {
   .archive-list {
@@ -521,9 +540,11 @@ article .post-title {
       }
     }
   }
+
   .comments {
     padding: 2% 6%;
   }
+
   .content {
     padding: 2% 6%;
     .post-title {
