@@ -11,18 +11,39 @@ layout: default
     </div>
 </article>
 
-<div class="share comments">
+<div class="share">
     <div class="container">
-        <div id="thank-box">
-            <h5>Поделиться ссылкой</h5>
+        <div class="cell-1-1">
+            <div class="alpha module beta">
+                <div class="sponsor">
+                    <h3 class="sponsor-title">Рекламная пауза</h3>
+                    {% include ads.html %}
+                </div>
+            </div>
         </div>
-        {{ include ads.html }}
-        <p><a id="showBtn" class="btn normal blue" href="#comments">Оставить комментарий</a></p>
+        <div class="clear"></div>
+        <div class="cell-3-4">
+            <div class="alpha module beta">
+                <div id="thank-box">
+                </div>
+            </div>
+        </div>
+        <div class="cell-1-4">
+            <div class="alpha module beta">
+                <p class="add-comment"><a id="showBtn" class="btn normal blue" href="#comments">Оставить комментарий</a></p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="comments">
+    <div class="container">
         <div id="disqus_thread"></div>
     </div>
 </div>
 
-<aside class="more">
+<div class="more">
     <div class="index-container container">
         <ul class="post-main">{% for post in site.related_posts limit: 1 %}
             <li class="post-main-item">
@@ -32,4 +53,4 @@ layout: default
             <li class="post-main-more"><a class="btn large blue" href="{{ site.url }}/archive">Eщё</a></li>
         </ul>
     </div>
-</aside>
+</div>
