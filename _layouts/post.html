@@ -6,20 +6,18 @@ layout: default
 
 <article class="content">
     {% include page-special.html %}
-
     <div class="container">
         {{ content }}
-        <div id="thank-box">
-            <h5>Поделиться ссылкой</h5>
-        </div>
     </div>
 </article>
 
-<div class="comments">
+<div class="share comments">
     <div class="container">
-        <div id="disqus_thread"></div>
+        <div id="thank-box">
+            <h5>Поделиться ссылкой</h5>
+        </div>
         <p><a id="showBtn" class="btn normal blue" href="#comments">Оставить комментарий</a></p>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <div id="disqus_thread"></div>
     </div>
 </div>
 
