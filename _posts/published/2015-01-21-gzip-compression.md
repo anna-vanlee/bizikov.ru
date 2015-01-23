@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Оптимизация сайта: Включаем gzip сжатие"
-excerpt: "У Google есть хороший сервис: PageSpeed Insights, который подскажет что необходимо оптимизировать у вас на сайте. Одним из советов является включение gzip сжатия на хостинге (или сервере), где размещается ваш сайт."
+excerpt: "У Google есть хороший сервис: PageSpeed Insights, который подскажет, что необходимо оптимизировать у вас на сайте. Одним из советов является включение gzip сжатия на хостинге (или сервере), где размещается ваш сайт."
 published: true
 keywords: оптимизация сайта, gzip сжатие, сжатие на сервере, как включить сжатие на сервере, настройка .htaccess
 tags:
@@ -10,9 +10,9 @@ tags:
 - .htaccess
 ---
 
-У Google есть хороший сервис: <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a>, который подскажет что необходимо оптимизировать у вас на сайте. Одним из советов является <mark>включение gzip сжатия</mark> на хостинге (или сервере), где размещается ваш сайт.
+У Google есть хороший сервис: <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">PageSpeed Insights</a>, который подскажет, что необходимо оптимизировать у вас на сайте. Одним из советов является <mark>включение gzip сжатия</mark> на хостинге (или сервере), где размещается ваш сайт.
 
-Описывать зачем нужно ускорять загрузку своего сайта, думаю нет необходимости :-)
+Описывать, зачем нужно ускорять загрузку своего сайта, думаю, нет необходимости :-)
 
 Для включения gzip сжатия необходимо иметь работающий сайт на php и хостинг (или сервер), где он будет размещаться.
 
@@ -33,7 +33,7 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </IfModule>
 {% endhighlight %}
 
-Если файла <span class="file">.htaccess</span> еще нет, то его необходимо создать, вставить выше указанные строки и добавить его в корень сайта.
+Если файла <span class="file">.htaccess</span> еще нет, то его необходимо создать, вставить вышеуказанные строки и добавить его в корень сайта.
 
 2) Добавить в файл <span class="file">php.ini</span> строку:
 
@@ -41,7 +41,7 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 zlib.output_compression = On
 {% endhighlight %}
 
-Проверить включилось ли сжатие на вашем сайте или нет, можно через тот же PageSpeed Insights или через сервисы:
+Проверить, включилось ли сжатие на вашем сайте или нет, можно через тот же PageSpeed Insights или через сервисы:
 
 - <a href="http://www.whatsmyip.org/http-compression-test/" target="_blank">HTTP Compression Test</a>
 - <a href="http://www.gidnetwork.com/tools/gzip-test.php" target="_blank">GIDZipTest</a>
