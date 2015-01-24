@@ -11,4 +11,4 @@ tags:
 
 Озвучил видео с выступлением Артура Бенджамина на TEDGlobal 2013 про великолепные числа Фибоначчи.
 
-<iframe width="800" height="450" src="//www.youtube.com/embed/50kPD_iy8xU" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="540" src="//www.youtube.com/embed/50kPD_iy8xU" frameborder="0" allowfullscreen></iframe>
