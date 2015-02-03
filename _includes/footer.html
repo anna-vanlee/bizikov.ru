@@ -1,17 +1,3 @@
-<footer class="container copy">
-    <div class="cell-2-3">
-        <div class="module">
-            &copy; 2015, Александр Бизиков.
-        </div>
-    </div>
-    <div class="cell-1-3">
-        <div class="module">
-            <ul class="menu list">
-                {% for link in site.footer_menu %}<li class="menu-item"><a class="menu-item-link" title="{{ link.title }}" target="_blank" href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}
-            </ul>
-        </div>
-    </div>
-</footer>
 <!-- Подтверждение авторства для гугл плюса -->
 <a href="{{ site.social.google }}" rel="publisher" style="display: none"></a>
 <script type="text/javascript" src="{{ site.url }}/assets/js/folium.min.js"></script>

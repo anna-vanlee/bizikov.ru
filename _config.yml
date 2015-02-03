@@ -19,6 +19,8 @@ header_menu:
     url: /tags/
   - title: О себе
     url: /about/
+  - title: РСС
+    url: /feed.xml
 
 footer_menu:
   - title: РСС
