@@ -222,13 +222,19 @@ blockquote {
   font-size: @font-size * .6;
   color: #b2b2b2;
 }
-
-.align-right {
+.square-align-right, .square-align-left {
+  width: 300px !important;
+  height: auto;
+}
+.square-align-right {
   float: right;
+  margin-left: 1em;
+  margin-right: -3em;
 }
 
-.align-left {
+.square-align-left {
   float: left;
+  margin-left: -3em;
   margin-right: 1em;
 }
 
@@ -499,14 +505,15 @@ article .post-title {
 .archive-list {
   margin: 0;
   padding: 0 !important;
-  .archive-post-year {
-    margin-left: -3.4em;
-    margin-bottom: -1.4em;
-  }
   li {
     list-style: none;
     margin-bottom: 1em;
   }
+}
+
+.archive-post-year {
+  margin-left: -3.4em;
+  margin-bottom: -1.4em;
 }
 
 /********************************************************/
@@ -523,10 +530,12 @@ footer {
 
 /*********************************************************************************************************************/
 @media screen and (max-width: 1100px) {
-  .archive-list {
-    .archive-post-year {
-      margin: 0;
-    }
+  .archive-post-year {
+    margin: 0;
+  }
+
+  .square-align-left {
+    margin-left: 0;
   }
 }
 
@@ -558,14 +567,6 @@ footer {
         float: left;
       }
     }
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: block;
   }
 
   .post-main {
@@ -616,13 +617,13 @@ footer {
 
 /********************************************************/
 @media screen and (max-width: 720px) {
-  .share{
+  .share {
     .cell-1-4, .cell-3-4 {
       width: @mobile;
       float: none;
     }
-    .add-comment{
-      .btn{
+    .add-comment {
+      .btn {
         display: block;
         text-align: center;
         width: 100%;
@@ -631,6 +632,7 @@ footer {
     }
   }
 }
+
 /********************************************************/
 
 @media screen and (max-width: 600px) {
@@ -644,5 +646,18 @@ footer {
     .about-description {
       text-align: center;
     }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .square-align-left {
+    width: 100% !important;
+    float: none;
   }
 }
