@@ -12,6 +12,6 @@ permalink: /about/
     <img src="{{ site.url }}/upload/page/about/we.jpg" />
 </div>
 
-Я занимаюсь разработкой сайтов, люблю Wordpress, но это не мешает мне использовать другие решения, как например генератор статических сайтов Jekyll, на котором работает блог. Кстати, он хостится на  <a href="https://github.com/bizikov/bizikov.ru" target="_blank">гитхабе</a>.
+Занимаюсь разработкой сайтов, люблю Wordpress, но это не мешает мне использовать другие решения, как например генератор статических сайтов Jekyll, на котором работает блог. Кстати, он хостится на  <a href="https://github.com/bizikov/bizikov.ru" target="_blank">гитхабе</a>.
 
 Если есть вопрос, то можете написать на почту <span class="file">alexandr@bizikov.ru</span>
