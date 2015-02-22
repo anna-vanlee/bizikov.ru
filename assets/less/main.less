@@ -222,17 +222,19 @@ blockquote {
   font-size: @font-size * .6;
   color: #b2b2b2;
 }
-.square-align-right, .square-align-left {
+.align-right, .align-left {
+  font-family: Georgia, serif;
+  font-size: @font-size * 3/4;
   width: 300px !important;
   height: auto;
 }
-.square-align-right {
+.align-right {
   float: right;
   margin-left: 1em;
   margin-right: -3em;
 }
 
-.square-align-left {
+.align-left {
   float: left;
   margin-left: -3em;
   margin-right: 1em;
@@ -361,7 +363,7 @@ header {
     img {
       max-width: @width;
       width: @width;
-      margin-bottom: 2em;
+      margin: 1em 0;
       display: block;
       &.original {
         width: auto !important;
@@ -405,7 +407,10 @@ ol {
     margin: 0 auto;
   }
 }
-
+/********************************************************/
+.travel {
+  margin-top: 1em;
+}
 /********************************************************/
 .share {
   margin-bottom: 1em;
@@ -534,11 +539,11 @@ footer {
     margin: 0;
   }
 
-  .square-align-right {
+ .align-right {
     margin-right: 0;
   }
 
-  .square-align-left {
+ .align-left {
     margin-left: 0;
   }
 }
@@ -660,7 +665,7 @@ footer {
     display: block;
   }
 
-  .square-align-right, .square-align-left {
+ .align-right,.align-left {
     width: 100% !important;
     float: none;
     margin: auto 0;
