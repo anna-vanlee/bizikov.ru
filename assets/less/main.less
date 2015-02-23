@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "PT Serif", "Arial", sans-serif;
   font-size: @font-size;
   line-height: 1.6em;
   color: @beta;
@@ -222,12 +222,14 @@ blockquote {
   font-size: @font-size * .6;
   color: #b2b2b2;
 }
+
 .align-right, .align-left {
   font-family: Georgia, serif;
   font-size: @font-size * 3/4;
   width: 300px !important;
   height: auto;
 }
+
 .align-right {
   float: right;
   margin-left: 1em;
@@ -241,9 +243,12 @@ blockquote {
 }
 
 .file {
-  padding: 2px 8px;
+  font-size: @font-size * 0.9;
+  padding: 1px 4px;
+  margin: 0 2px;
   background-color: @epsilon;
-  border-radius: 3px;
+  border-bottom: 2px solid darken(@epsilon, 10%);
+  .border-radius;
 }
 
 /********************************************************/
@@ -407,10 +412,12 @@ ol {
     margin: 0 auto;
   }
 }
+
 /********************************************************/
 .travel {
   margin-top: 1em;
 }
+
 /********************************************************/
 .share {
   margin-bottom: 1em;
@@ -539,11 +546,11 @@ footer {
     margin: 0;
   }
 
- .align-right {
+  .align-right {
     margin-right: 0;
   }
 
- .align-left {
+  .align-left {
     margin-left: 0;
   }
 }
@@ -665,7 +672,7 @@ footer {
     display: block;
   }
 
- .align-right,.align-left {
+  .align-right, .align-left {
     width: 100% !important;
     float: none;
     margin: auto 0;
