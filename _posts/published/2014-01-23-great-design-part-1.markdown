@@ -58,3 +58,5 @@ tags:
 45. [Timothy](http://timothyachumba.com/)
 46. [Jeremias Menichelli](http://jeremenichelli.github.io/)
 47. [Nick Pettit](http://nickpettit.com/)
+48. [Vivek Ravin](http://www.vivekrav.in/)
+49. [Maxim Siebert](http://www.maximsiebert.com/)
