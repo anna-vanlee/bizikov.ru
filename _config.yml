@@ -15,8 +15,6 @@ header_menu:
     url: /
   - title: Заметки
     url: /archive/
-  - title: Города
-    url: /travel/
   - title: Теги
     url: /tags/
   - title: О себе
