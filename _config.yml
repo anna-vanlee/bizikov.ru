@@ -1,7 +1,7 @@
 name: Блог Александра Бизикова
 description: "Привет, меня зовут Александр Бизиков. Я знаю HTML, CSS, JavaScript. Верстаю сайты, делаю темы для Wordpress. Люблю фотографировать, работаю веб-разработчиком в i-Sys."
 disqus_shortname: bizikov
-version: 2.4
+version: 2.5
 #url: http://localhost:4000
 url: http://bizikov.ru
 
@@ -22,39 +22,7 @@ header_menu:
   - title: РСС
     url: /feed.xml
 
-footer_menu:
-  - title: РСС
-    url: http://feeds.feedburner.com/bizikov
-  - title: Гитхаб
-    url: https://github.com/bizikov
-  - title: Твиттер
-    url: https://twitter.com/Bizi
-  - title: Инстаграмм
-    url: http://instagram.com/bizikov
-
-twitter: "@bizi"
-
-social:
-  Инстаграм: http://instagram.com/bizikov
-  Твиттер: https://twitter.com/bizi
-  Вконтакте: http://vk.com/bizikov
-  Фэйсбук:  https://facebook.com/bizikov
-  Гугл плюс: https://plus.google.com/+AlexandrBizikov
-  Яндекс.Фотки: http://fotki.yandex.ru/users/alexandr-bizikov/
-  Кинопоиск: http://www.kinopoisk.ru/user/1129585/
-  Мои сериалы: http://myshows.ru/bizikov
-  Мои книги: http://bibla.ru/Bizi/
-  Фликр: http://www.flickr.com/photos/48363663@N05/
-  Пинтерест: http://pinterest.com/bizikov/
-  Форсквер: https://ru.foursquare.com/bizi
-  Ютуб: https://www.youtube.com/user/Bizikov
-  ЖЖЖ: http://bizikov.livejournal.com/
-  Хабр: http://habrahabr.ru/users/bizikov/
-  Вайн: https://vine.co/u/906514742397517824
-  Вимео: http://vimeo.com/bizikov
-
-permalink: /:categories/:year/:month/:title/
-
+permalink:   /:categories/:year/:month/:title/
 timezone:    Asia/Yerevan
 future:      true
 highlighter: pygments
@@ -62,4 +30,3 @@ markdown:    kramdown
 kramdown:
   auto_ids: false
 
-copyright: "&copy; 2009 — 2015, Александр Бизиков."

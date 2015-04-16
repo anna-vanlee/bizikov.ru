@@ -2,42 +2,18 @@
 layout: default
 ---
 
-{% include post-header.html %}
+{% include header.html %}
 
 <article class="content">
-    {% include page-special.html %}
     <div class="container">
+        <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" | replace: 'January', 'январь' | replace: 'February', 'февраль' | replace: 'March', 'март' | replace: 'April', 'апрель' | replace: 'May', 'май' | replace: 'June', 'июнь' | replace: 'July', 'июль' | replace: 'August', 'август' | replace: 'September', 'сентябрь' | replace: 'October', 'октябрь' | replace: 'November', 'ноябрь' | replace: 'December', 'декабрь' }}</time>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <ul class="list">{% for tag in page.tags %}
+            <li><a class="btn normal green" href="{{ site.url }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a></li>{% endfor %}
+        </ul>
         {{ content }}
+        {% include share.html %}
     </div>
 </article>
 
-<div class="share">
-    <div class="container">
-        <div class="cell-3-4">
-            <div class="alpha module beta">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-via="Bizi" data-lang="ru" data-size="large" data-related="bizi" data-count="none">Твитнуть</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
-
-<div class="comments">
-    <div class="container">
-        <div id="disqus_thread"></div>
-    </div>
-</div>
-
-<div class="more">
-    <div class="index-container container">
-        <ul class="post-main">{% for post in site.related_posts limit: 1 %}
-            <li class="post-main-item">
-                {% include post-special.html %}
-            </li>
-            {% endfor %}
-            <li class="post-main-more"><a class="btn large blue" href="{{ site.url }}/archive">Eщё</a></li>
-        </ul>
-    </div>
-</div>
+{% include post-more.html %}

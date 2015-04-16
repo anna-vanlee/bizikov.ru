@@ -1,0 +1,7 @@
+<div class="share">
+    <div class="share-btn">
+        {% if post.title %}<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ post.url | prepend: site.url }}" data-text="{{ post.title }}" data-lang="ru" data-size="large" data-count="none">Твитнуть</a>{% else %}<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend: site.url }}" data-text="{{ page.title }}" data-lang="ru" data-size="large" data-count="none">Твитнуть</a>{% endif %}
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+    <div class="btn-help-text">Понравилась заметка? Поделись с друзьями!</div>
+</div>

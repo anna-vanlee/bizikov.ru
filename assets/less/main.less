@@ -314,16 +314,7 @@ header {
 }
 
 /********************************************************/
-.index-header {
-  padding: 1em 0;
-  .animation();
-  .about-me {
-    width: 260px;
-    height: 260px;
-  }
-}
-
-.post-header {
+header{
   padding: 1em 0;
   background-color: @epsilon;
   .animation();
@@ -434,9 +425,20 @@ ol {
 
 /********************************************************/
 .share {
-  margin-bottom: 1em;
-  .add-comment {
-    text-align: right;
+  overflow: hidden;
+  margin-top: 3em;
+  .share-btn {
+    float: left;
+  }
+  .btn-help-text {
+    float: left;
+    font-size: @font-size * 4/5;
+    font-style: normal;
+    color: darken(@epsilon, 20%);
+    margin-left: 1em;
+    &:before {
+      content: "\2014 \2009";
+    }
   }
 }
 
@@ -486,6 +488,7 @@ article .post-title {
   }
   .post-main-item {
     margin-top: 2em;
+    margin-bottom: 6em;
   }
   .post-main-more {
     text-align: center;
@@ -576,15 +579,7 @@ footer {
     width: @mobile * 3/4;
   }
 
-  .index-header {
-    .about-me {
-      width: 160px;
-      height: 160px;
-      margin: 1em auto 0 auto;
-    }
-  }
-
-  .post-header {
+  header{
     .container {
       padding: 0 6%;
       .cell-1-4 {
@@ -615,10 +610,6 @@ footer {
         }
       }
     }
-  }
-
-  .comments, .share {
-    padding: 2% 6%;
   }
 
   .content {
@@ -666,18 +657,6 @@ footer {
 /********************************************************/
 
 @media screen and (max-width: 600px) {
-  .index-header {
-    .about-me {
-      margin: 0 auto;
-    }
-    .about-title {
-      text-align: center;
-    }
-    .about-description {
-      text-align: center;
-    }
-  }
-
   .menu {
     display: none;
   }
@@ -690,5 +669,11 @@ footer {
     width: 100% !important;
     float: none;
     margin: auto 0;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .btn-help-text {
+    display: none;
   }
 }
