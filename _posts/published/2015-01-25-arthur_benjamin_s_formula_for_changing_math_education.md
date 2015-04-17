@@ -12,4 +12,4 @@ tags:
 
 Кто-нибудь всегда спрашивает учителя математики: «Пригодится ли мне математический анализ в реальной жизни?». И для большинства из нас, говорит Артур Бенджамин, ответ будет «нет». Он высказывает смелую идею, как создать систему математического образования, актуальную в цифровой век.
 
-<iframe width="100%" height="540" src="//www.youtube.com/embed/h9SvtUTu9gI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<iframe class="video-frame" width="100%" height="540" src="//www.youtube.com/embed/h9SvtUTu9gI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
