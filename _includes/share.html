@@ -1,6 +1,5 @@
 <div class="share">
     <div class="share-btn share-vk">
-        <!-- Put this div tag to the place, where the Like block will be -->
         <div id="vk_like"></div>
         <script type="text/javascript">
             VK.Widgets.Like("vk_like", {type: "mini", pageTitle: '{{ post.title }}', pageUrl: '{{ post.url | prepend: site.url }}', height: 20});
