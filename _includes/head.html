@@ -1,16 +1,13 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
-    <link rel="icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
-    <link rel="shortcut icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
-    {% for stylesheet in site.css %}<link rel="stylesheet" href="{{ stylesheet | prepend: site.url }}">{% endfor %}
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.feed }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
+    <link rel="icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.feed }}" />
     <meta name="google-site-verification" content="31GFDRk73zQxozznVPGgFu5VuuooTH7ROKIb1DTgXZs"/>
     <meta name="yandex-verification" content="6b185dd4e3de51e8" />
     <meta property="fb:app_id" content="1576126745978702"/>
     <meta property="og:type" content="article" />
-    <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-    <script type="text/javascript">VK.init({apiId: 2126013, onlyWidgets: true});</script>
+    {% for stylesheet in site.css %}<link rel="stylesheet" href="{{ stylesheet | prepend: site.url }}">{% endfor %}
 </head>
-
