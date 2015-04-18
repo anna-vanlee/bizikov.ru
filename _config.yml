@@ -8,6 +8,8 @@ css:
   - /assets/css/style.css
 
 avatar: /upload/page/home/me.jpg
+fb_admins: http://facebook.com/bizikov
+fb_appid: 1576126745978702
 favicon: /favicon.ico
 
 feed: http://feeds.feedburner.com/bizikov

@@ -5,9 +5,18 @@
     <link rel="shortcut icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
     <link rel="icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.feed }}" />
-    <meta name="google-site-verification" content="31GFDRk73zQxozznVPGgFu5VuuooTH7ROKIb1DTgXZs"/>
-    <meta name="yandex-verification" content="6b185dd4e3de51e8" />
-    <meta property="fb:app_id" content="1576126745978702"/>
-    <meta property="og:type" content="article" />
+    <!-- Start OP -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:type" content="{% if page.cover %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <meta property="og:image" content="{% if page.cover %}{{ page.cover | prepend: site.url }}{% else %}{{ site.avatar | prepend: site.url }}{% endif %}">
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    <meta property="article:author" content="{{ site.fb_admins }}">
+    {% for post in site.related_posts limit:3 %}<meta property="og:see_also" content="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% endfor %}{% endif %}
+    <!-- End OP -->
+    <meta property="fb:admins" content="{{ site.fb_admins }}">
+    <meta property="fb:app_id" content="{{ site.fb_appid }}">
     {% for stylesheet in site.css %}<link rel="stylesheet" href="{{ stylesheet | prepend: site.url }}">{% endfor %}
 </head>
