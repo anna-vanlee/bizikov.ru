@@ -447,9 +447,8 @@ ol {
       vertical-align: top !important;
     }
   }
-  .share-vk {
-    min-width: 80px;
-    width: 80px;
+  .share-fb {
+    min-width: 110px;
   }
   .btn-help-text {
     float: left;
@@ -457,6 +456,7 @@ ol {
     font-style: normal;
     line-height: @font-size;
     color: darken(@epsilon, 20%);
+    margin-left: -1em;
     &:before {
       content: "\2014 \2009";
     }
@@ -578,6 +578,16 @@ footer {
   padding: 2em 0;
 }
 
+/********************************************************/
+.load-next-page {
+  width: 100%;
+  .load-progress {
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+  }
+}
 /*********************************************************************************************************************/
 @media screen and (max-width: 1100px) {
   .archive-post-year {
