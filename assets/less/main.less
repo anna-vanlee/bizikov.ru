@@ -124,6 +124,7 @@ blockquote {
     content: 'Источник: ';
   }
 }
+
 /*********************************************************************************************************************/
 
 .folium {
@@ -326,7 +327,7 @@ header {
 }
 
 /********************************************************/
-header{
+header {
   padding: 1em 0;
   background-color: @epsilon;
   .animation();
@@ -440,14 +441,18 @@ ol {
   overflow: hidden;
   margin-top: 3em;
   .share-btn {
+    min-width: 100px;
     float: left;
+    span, iframe {
+      vertical-align: top !important;
+    }
   }
   .btn-help-text {
     float: left;
-    font-size: @font-size * 4/5;
+    font-size: @font-size - 6;
     font-style: normal;
+    line-height: @font-size;
     color: darken(@epsilon, 20%);
-    margin-left: 1em;
     &:before {
       content: "\2014 \2009";
     }
@@ -591,7 +596,7 @@ footer {
     width: @mobile * 3/4;
   }
 
-  header{
+  header {
     .container {
       padding: 0 6%;
       .cell-1-4 {

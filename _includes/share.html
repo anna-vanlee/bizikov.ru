@@ -1,7 +1,16 @@
 <div class="share">
-    <div class="share-btn">
-        {% if post.title %}<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ post.url | prepend: site.url }}" data-text="{{ post.title }}" data-lang="ru" data-size="large" data-count="none">Твитнуть</a>{% else %}<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend: site.url }}" data-text="{{ page.title }}" data-lang="ru" data-size="large" data-count="none">Твитнуть</a>{% endif %}
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div class="share-btn share-vk">
+        <!-- Put this div tag to the place, where the Like block will be -->
+        <div id="vk_like"></div>
+        <script type="text/javascript">
+            VK.Widgets.Like("vk_like", {type: "mini", pageTitle: '{{ post.title }}', pageUrl: '{{ post.url | prepend: site.url }}', height: 20});
+        </script>
+    </div>
+    <div class="share-btn share-fb">
+        <div class="fb-share-button" data-href="{{ post.url | prepend: site.url }}" data-layout="button_count"></div>
+    </div>
+    <div class="share-btn share-tw">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ post.url | prepend: site.url }}" data-text="{{ post.title | prepend: site.title }}" data-count="true" data-related="bizi">Tweet</a>
     </div>
     <div class="btn-help-text">Понравилась заметка? Поделись с друзьями!</div>
 </div>
