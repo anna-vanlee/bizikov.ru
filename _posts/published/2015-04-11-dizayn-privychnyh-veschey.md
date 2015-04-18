@@ -3,7 +3,7 @@ layout: post
 title: "Книга: Дизайн привычных вещей"
 excerpt: "Книга «Дизайн привычных вещей». Автор Дональд Норман — бывший вице-президент Эппл, автор 11 книг и основатель одной из ведущих компаний в области дизайна Нильсен Норман Групп."
 published: true
-cover: /upload/article/2015/04/11/book-cover.png
+cover: /upload/article/2015/04/11/macintosh.jpg
 keywords: Дизайн
 tags:
 - Книга
