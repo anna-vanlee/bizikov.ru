@@ -5,6 +5,7 @@
     <link rel="shortcut icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
     <link rel="icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.feed }}" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
     <!-- Start OP -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:type" content="{% if page.cover %}article{% else %}website{% endif %}">
