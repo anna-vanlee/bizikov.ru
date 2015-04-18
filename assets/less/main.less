@@ -116,6 +116,14 @@ blockquote {
   .box-shadow();
 }
 
+.image-source {
+  font-size: @font-size / 1.4;
+  color: darken(@epsilon, 20%);
+  font-style: normal;
+  &:before {
+    content: 'Источник: ';
+  }
+}
 /*********************************************************************************************************************/
 
 .folium {
@@ -377,7 +385,7 @@ header{
     img {
       max-width: @width;
       width: @width;
-      margin: 1em 0;
+      margin: 1em 0 0 0;
       display: block;
       &.original {
         width: auto !important;

@@ -1,31 +1,12 @@
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ site.favicon | prepend: site.url }}" type="image/x-icon" />
+    {% for stylesheet in site.css %}<link rel="stylesheet" href="{{ stylesheet | prepend: site.url }}">{% endfor %}
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.feed }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="keywords" content="{{ page.keywords }}"/>
-    <meta name="description" content="{{ page.excerpt }}"/>
     <meta name="google-site-verification" content="31GFDRk73zQxozznVPGgFu5VuuooTH7ROKIb1DTgXZs"/>
     <meta name="yandex-verification" content="6b185dd4e3de51e8" />
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="{{ site.twitter }}"/>
-    <meta name="twitter:creator" content="{{ site.twitter }}"/>
-    <meta name="twitter:title" content="{{ page.title }}"/>
-    <meta name="twitter:description" content="{{ page.excerpt }}"/>
-    <meta name="twitter:image:src" content="{% if page.cover %}{{ page.cover | prepend: site.url }}{% else %}{{ site.avatar | prepend: site.url }}{% endif %}"/>
-    <meta name="twitter:domain" content="{{ site.url }}"/>
-    <meta property="og:title" content="{{ page.title }}"/>
-    <meta property="og:url" content="{{ site.url }}{{ page.url}}"/>
-    <meta property="og:site_name" content="{{ site.name }}"/>
-    <meta property="og:type" content="blog"/>
-    <meta property="og:description" content="{{ page.excerpt }}"/>
-    <meta property="og:image" content="{% if page.cover %}{{ page.cover | prepend: site.url }}{% else %}{{ site.avatar | prepend: site.url }}{% endif %}"/>
-    <link rel="image_src" href="{% if page.cover %}{{ page.cover | prepend: site.url }}{% else %}{{ site.avatar | prepend: site.url }}{% endif %}"/>
-    <link rel="apple-touch-icon" href="{{ site.avatar | prepend: site.url }}"/>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
-    <link rel="author" href="https://plus.google.com/u/0/+AlexandrBizikov">
-    {% for stylesheet in site.css %}<link rel="stylesheet" href="{{ stylesheet | prepend: site.url }}">
-    {% endfor %}
+    <meta property="og:type" content="article" />
 </head>

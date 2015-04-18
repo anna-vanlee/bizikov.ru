@@ -1,6 +1,5 @@
 name: Блог Александра Бизикова
 description: "Привет, меня зовут Александр Бизиков. Я знаю HTML, CSS, JavaScript. Верстаю сайты, делаю темы для Wordpress. Люблю фотографировать, работаю веб-разработчиком в i-Sys."
-disqus_shortname: bizikov
 version: 2.5
 #url: http://localhost:4000
 url: http://bizikov.ru
@@ -9,6 +8,9 @@ css:
   - /assets/css/style.css
 
 avatar: /upload/page/home/me.jpg
+favicon: /favicon.ico
+
+feed: http://feeds.feedburner.com/bizikov
 
 header_menu:
   - title: Главная
