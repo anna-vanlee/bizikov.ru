@@ -7,7 +7,7 @@
     {% else %}
     <div class="share-btn share-vk"><div id="vk_like"></div><script type="text/javascript">VK.Widgets.Like("vk_like", {type: "mini", pageTitle: '{{ page.title }}', pageUrl: '{{ page.url | prepend: site.url }}', width: 80, height: 20});</script></div>
     <div class="share-btn share-fb"><div class="fb-share-button" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count"></div></div>
-    <div class="share-btn share-tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend: site.url }}" data-text="{{ page.title | prepend: site.title }}" data-count="true" data-related="bizi">Tweet</a></div>
+    <div class="share-btn share-tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend: site.url }}" data-text="{{ page.title }}" data-count="true" data-related="bizi" data-lang="en">Tweet</a></div>
     <div class="btn-help-text">Понравилась заметка? Поделись с друзьями!</div>
     {% endif %}
 </div>
