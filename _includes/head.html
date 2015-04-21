@@ -8,6 +8,7 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
     <!-- Start OP -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ page.excerpt }}" >
     <meta property="og:type" content="{% if page.cover %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:image" content="{% if page.cover %}{{ page.cover | prepend: site.url }}{% else %}{{ site.avatar | prepend: site.url }}{% endif %}">
@@ -21,5 +22,6 @@
     <!-- End OP -->
     <meta property="fb:admins" content="{{ site.fb_admins }}">
     <meta property="fb:app_id" content="{{ site.fb_appid }}">
+    <meta property="vk:app_id" content="{{ site.vk_appid }}">
     {% for stylesheet in site.css %}<link rel="stylesheet" href="{{ stylesheet | prepend: site.url }}">{% endfor %}
 </head>

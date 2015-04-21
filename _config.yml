@@ -12,8 +12,10 @@ favicon: /favicon.ico
 
 fb_admins: http://facebook.com/bizikov
 fb_appid: 337414769782635
+vk_appid: 2126013
 
 feed: http://feeds.feedburner.com/bizikov
+twitter: bizi
 
 header_menu:
   - title: Главная
@@ -25,7 +27,7 @@ header_menu:
   - title: О себе
     url: /about/
   - title: РСС
-    url: /feed.xml
+    url: http://feeds.feedburner.com/bizikov
 
 permalink:   /:categories/:year/:month/:title/
 timezone:    Asia/Yerevan
