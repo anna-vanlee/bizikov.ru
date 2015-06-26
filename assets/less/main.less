@@ -120,9 +120,6 @@ blockquote {
   font-size: @font-size / 1.4;
   color: darken(@epsilon, 20%);
   font-style: normal;
-  &:before {
-    content: 'Источник: ';
-  }
 }
 
 /*********************************************************************************************************************/
@@ -239,20 +236,29 @@ blockquote {
 .align-right, .align-left {
   font-family: Georgia, serif;
   font-size: @font-size * 3/4;
-  width: 300px !important;
+  width: 400px !important;
   height: auto;
+  opacity: 1;
+  .transition();
+  &:hover {
+    opacity: .8;
+  }
 }
 
 .align-right {
   float: right;
   margin-left: 1em;
-  margin-right: -3em;
+  margin-right: -200px;
 }
 
 .align-left {
   float: left;
-  margin-left: -3em;
+  margin-left: -200px;
   margin-right: 1em;
+  .image-source {
+    display: block;
+    text-align: right;
+  }
 }
 
 .file {
@@ -588,18 +594,24 @@ footer {
     background-color: red;
   }
 }
-/*********************************************************************************************************************/
-@media screen and (max-width: 1100px) {
-  .archive-post-year {
-    margin: 0;
-  }
 
+/*********************************************************************************************************************/
+@media screen and (max-width: 1380px) {
   .align-right {
     margin-right: 0;
   }
 
   .align-left {
     margin-left: 0;
+    .image-source {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .archive-post-year {
+    margin: 0;
   }
 }
 
@@ -669,6 +681,12 @@ footer {
 
 /********************************************************/
 @media screen and (max-width: 720px) {
+  .align-right, .align-left {
+    width: 100% !important;
+    float: none;
+    margin: auto 0;
+  }
+
   .share {
     .cell-1-4, .cell-3-4 {
       width: @mobile;
@@ -694,12 +712,6 @@ footer {
 
   .mobile-menu {
     display: block;
-  }
-
-  .align-right, .align-left {
-    width: 100% !important;
-    float: none;
-    margin: auto 0;
   }
 }
 
