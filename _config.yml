@@ -19,13 +19,13 @@ twitter: bizi
 
 header_menu:
   - title: Главная
-    url: /
+    url: http://bizikov.github.io/bizikov.ru/
   - title: Заметки
-    url: /archive/
+    url: http://bizikov.github.io/bizikov.ru/archive/
   - title: Теги
-    url: /tags/
+    url: http://bizikov.github.io/bizikov.ru/tags/
   - title: О себе
-    url: /about/
+    url: http://bizikov.github.io/bizikov.ru/about/
   - title: РСС
     url: http://feeds.feedburner.com/bizikov
 
